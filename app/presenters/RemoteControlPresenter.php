@@ -26,33 +26,45 @@ class RemoteControlPresenter extends BasePresenter {
     }
 
     public function handleGetPlaylist() {
-
-        $playlistXml = @file_get_contents($this->apiURL.$this->methods['playlist'], false, $this->context);
-        $playlistArray = $this->xml2array($playlistXml);
-        \Nette\Diagnostics\Debugger::dump($playlistArray);die();
+        $playlistArray = $this->requestVLC('playlist');
+        $played = $playlistArray['node']['node'][0]['leaf'];
+        $playlist = array();
+        $show = false;
+        foreach ($played as $leaf) {
+            $item = $leaf['@attributes'];
+            $show = $show || isset($item['current']);
+            if ($show)
+                $playlist[] = $item;
+        }
 
         $this->sendJson(array(
-            'playlist' => array(
-                array('name' => 'shit')
-            )
+            'playlist' => $playlist
         ));
     }
 
-    protected function xml2array($xmlContent) {
-        $xml = new SimpleXMLElement($xmlContent);
-        $arXML = array();
-        $arXML['name'] = trim($xml->getName());
-        $arXML['value'] = trim((string)$xml);
-        $t = array();
-        foreach($xml->attributes() as $name => $value){
-            $t[$name] = trim($value);
-        }
-        $arXML['attr'] = $t;
-        $t=array();
-        foreach($xml->children() as $name => $xmlchild) {
-            $t[$name][] = $this->xml2array($xmlchild); //FIX : For multivalued node
-        }
-        $arXML['children'] = $t;
-        return($arXML);
+    public function handleControlPlaylist() {
+        $streamUrl = $this->getRawParameter('streamUrl');
+        $status = $this->requestVLC('in_queue', $streamUrl);
+        $this->sendJson(array(
+            'status' => $status
+        ));
+    }
+
+
+    protected function requestVLC($method, $param = null) {
+        $uri = $this->apiURL.$this->methods[$method];
+        if ($param !== null)
+            $uri.= rawurlencode($param);
+        $xml = @file_get_contents($uri, false, $this->context);
+        $array = XML2Array::createArray($xml);
+        return $array;
+    }
+
+    protected function getRawParameter($name, $default = null) {
+        $params = \Nette\Utils\Json::decode(@file_get_contents("php://input"), true);
+        if (isset($params[$name]))
+            return $params[$name];
+
+        return $default;
     }
 } 

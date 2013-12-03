@@ -5,9 +5,10 @@
 
 function PlaylistLoader($http) {
     this.$http = $http;
+    this.url = '/';
 }
 
-PlaylistLoader.prototype.bind = function (url, callback) {
+PlaylistLoader.prototype.get = function (url, callback) {
     this.$http.get(url)
         .success(function (resp) {
             if (typeof resp.playlist === 'undefined') {
@@ -16,7 +17,19 @@ PlaylistLoader.prototype.bind = function (url, callback) {
             }
 
             callback(null, resp.playlist);
+        })
+        .error(function (resp) {
+            callback(new Error('Chybná odpověď serveru'))
         });
+};
+
+PlaylistLoader.prototype.bind = function (url, callback) {
+    this.url = url;
+    this.get(this.url, callback);
+};
+
+PlaylistLoader.prototype.refresh = function (callback) {
+    this.get(this.url, callback);
 };
 
 angular.module('remoteControl').factory('playlistLoader', function ($http) {
