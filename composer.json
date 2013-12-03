@@ -1,0 +1,25 @@
+{
+	"name": "misak113/vlc-radio-master",
+	"description": "VLC Rádio mástr",
+	"homepage": "http://github.com/misak113/vlc-radio-master",
+	"type": "project",
+	"license": ["MIT"],
+	"authors": [
+		{
+			"name": "Michael Žabka",
+			"homepage": "http://zabka.avantcore.com"
+		}
+	],
+	"config": {
+		"vendor-dir": "libs"
+	},
+	"require": {
+		"php": ">= 5.3.0",
+		"nette/nette": "@dev",
+		"dg/adminer-custom": "1.*"
+	},
+	"require-dev": {
+		"nette/tester": "0.9.*"
+	},
+    "minimal-stability": "dev"
+}
