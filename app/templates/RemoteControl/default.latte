@@ -1,0 +1,25 @@
+
+{# head}
+    <script type="text/javascript" src="{$baseUrl}/js/RemoteControl/RemoteControl.js"></script>
+    <script type="text/javascript" src="{$baseUrl}/js/RemoteControl/Message.js"></script>
+    <script type="text/javascript" src="{$baseUrl}/js/RemoteControl/PlaylistLoader.js"></script>
+    <script type="text/javascript" src="{$baseUrl}/js/RemoteControl/MediaPlaylistCtrl.js"></script>
+{/#}
+
+{# content}
+<div ng-app="remoteControl" id="ng-app" class="remoteControl:ng-app">
+
+    <div ng-controller="MediaPlaylistCtrl"
+         ng-init="bindPlaylist('{link getPlaylist!}')">
+
+        <div class="alert alert-danger"
+             ng-show="message"
+             ng-bind="message.text"></div>
+
+        <ul class="media-playlist">
+            <li ng-repeat="media in playlist"
+                ng-bind="media.name"></li>
+        </ul>
+    </div>
+</div>
+{/#}
