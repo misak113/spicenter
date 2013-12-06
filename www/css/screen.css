@@ -3,6 +3,7 @@ body {
   line-height: 1.6;
   color: #333;
   background: white;
+  padding-top: 70px;
 }
 h1 {
   color: #3484D2;
@@ -181,4 +182,7 @@ html.js .jshidden {
   right: 90%;
   top: 70%;
   border-color: #e60000;
+}
+.methodology .part.principle .image {
+  width: 100%;
 }
