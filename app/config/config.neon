@@ -29,6 +29,8 @@ common:
 		routerFactory: RouterFactory
 		router: @routerFactory::createRouter
 
+		metodologies: Methodologies
+
 
 	factories:
 

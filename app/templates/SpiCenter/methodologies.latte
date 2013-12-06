@@ -1,4 +1,4 @@
-
+{#content}
 <div class="methodologies">
     <h2>Graf pro orientaci v metodikách</h2>
     <div class="graph">
@@ -9,8 +9,8 @@
         <div class="axis y down">Robustní</div>
 
         <!-- RUP -->
-        <div class="item formality-4 rup">
-            <a href="./rup.html" class="name">RUP</a>
+        <div n:foreach="$methodologies as $name => $methodology" class="item formality-4 {$name}">
+            <a n:href="SpiCenter:methodology, id => $name" class="name">{$methodology['name']}</a>
             <span class="count">6</span>
             <span class="license paid"></span>
         </div>
@@ -21,7 +21,11 @@
     <div class="alphabetical-list">
         <h2>Abecední seznam</h2>
         <ul>
-            <li><a href="./rup.html">RUP</a> - Rational Unified Process: komplexní metodika pro řízení vývoje</li>
+            <li n:foreach="$methodologies as $name => $methodology">
+                <a n:href="SpiCenter:methodology, id => $name">{$methodology['name']}</a>
+                <span class="desc">{$methodology['desc']}</span>
+            </li>
         </ul>
     </div>
 </div>
+{/#}

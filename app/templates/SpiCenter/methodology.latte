@@ -1,4 +1,5 @@
-<div class="methodology rup">
+{#content}
+<div class="methodology {$name}">
     <h1>{$m['name']}</h1>
 
 
@@ -13,7 +14,7 @@
     <div class="part principle">
         <h2>Princip</h2>
         <div class="map">
-            <img src="./resource/{$m['name']}.png"
+            <img src="{$baseUrl}/resource/{$m['principleImage']}"
                  alt="Princip {$m['name']}"
                  class="image" />
             <a n:foreach="$m['principleLinks'] as $link"
@@ -92,3 +93,5 @@
     </div>
 
 </div>
+
+{/#}
