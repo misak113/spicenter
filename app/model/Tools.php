@@ -11,21 +11,25 @@ class Tools {
     /** @var array */
     protected $tools = array(
         // RUP
-        "rup" => array(
-            "name" => "RUP",
-            "desc" => "Rational Unified Process: komplexní metodika pro řízení vývoje",
+        "trello" => array(
+            "name" => "Trello",
+            "desc" => "",
+            "parameters" => array(
+                "generality" => 5, // řízení projektů (1) x vývoj software (10)
+                "formality" => 6, // formální (1) x volné (10)
+                "agility" => 4, // agilní (1) x robustní (10)
+                "waterfall" => 6, // vodopádové (1) x iterativní (10)
+                "usability" => 5, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2000, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'free', // open, free, paid
+            ),
             "info" => array(
                 ""
             ),
-            "principleImage" => "rup.png",
-            "principleLinks" => array(
-                array(
-                    "title" => "",
-                    "href" => "",
-                ),
+            "images" => array(
+                "rup.png"
             ),
-            "principleDesc" => "",
-            "specifications" => array(
+            "downloads" => array(
                 array(
                     "title" => "",
                     "href" => "",
@@ -45,7 +49,7 @@ class Tools {
                     ),
                 ),
             ),
-            "tools" => array(
+            "methodologies" => array(
                 array(
                     "href" => "",
                     "title" => "",
@@ -79,6 +83,8 @@ class Tools {
      * @return array
      */
     public function getTool($name) {
+        if (!isset($this->tools[$name]))
+            return null;
         return $this->tools[$name];
     }
 

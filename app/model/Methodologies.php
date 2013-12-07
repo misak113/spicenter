@@ -8,11 +8,11 @@ class Methodologies {
             "name" => "RUP",
             "desc" => "Rational Unified Process: komplexní metodika pro řízení vývoje",
             "parameters" => array(
-                "generality" => 0.9, // řízení projektů (1) x vývoj software (10)
-                "formality" => 0.4, // formální (1) x volné (10)
-                "agility" => 0.7, // agilní (1) x robustní (10)
-                "waterfall" => 0.7, // vodopádové (1) x iterativní (10)
-                "usability" => 0.9, // v praxi využívané (1) x nevyužívané (10)
+                "generality" => 9, // řízení projektů (1) x vývoj software (10)
+                "formality" => 4, // formální (1) x volné (10)
+                "agility" => 7, // agilní (1) x robustní (10)
+                "waterfall" => 7, // vodopádové (1) x iterativní (10)
+                "usability" => 9, // v praxi využívané (1) x nevyužívané (10)
                 "enveloped" => 1997, // rok kdy byla hitem resp. vytvoření
                 "openness" => 'paid', // open, free, paid
             ),
@@ -261,6 +261,15 @@ class Methodologies {
         "lean" => array(
             "name" => "Lean",
             "desc" => "",
+            "parameters" => array(
+                "generality" => 4, // řízení projektů (1) x vývoj software (10)
+                "formality" => 9, // formální (1) x volné (10)
+                "agility" => 1, // agilní (1) x robustní (10)
+                "waterfall" => 9, // vodopádové (1) x iterativní (10)
+                "usability" => 4, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2010, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'open', // open, free, paid
+            ),
             "info" => array(
                 "Termín Lean software development vznikl v Japonsku a do světa tento pojem pronikl v 80. letech 20. století. Do češtiny tento pojem můžeme volně přeložit jako lehký, či štíhlý softwarový vývoj, což v praxi znamená uplatnění a aplikování lean principů týkajících se vývoje software. Metodika je převážně zaměřena na vývoj softwaru a analýzu rizik. Nemůžeme jí však chápat pouze jako řízení nebo rozvoj metodologie, ale jedná se převážně o principy, které usnadňují konkrétní vývoj a návrh software. Silný důraz je kladen na využívání zdrojů, času a rozpočtového plánu, kde konkrétně Lean software development pracuje s třetinovým časem, třetinovými zdroji a třetinovým rozpočtovým plánem. Výhodou metodiky také je, že se relativně snadno dá kombinovat s ostatními agilními metodikami.",
                 "Hlavní myšlenkou je soustředit se na snížení objemu odpadu. Tento přístup vychází z předpokladu, že každý prostředek využívaný při vývoji a v jednotlivých procesech se spojených s vývojem má potenciál být promarněný, proto je potřeba identifikovat oblast úniku zdrojů a zamezit opakovaného úniku zdrojů. Tento způsob vymezení je patrný prakticky ve všech oblastech a činnostech spojených s vývojem např. od získávání informací a požadavků od zákazníků, až po vytvoření produktu. Rozlišují se činnosti s efektem pro organizaci a zákazníka a činnosti, které žádný efekt v procesu nepřináší. Činnosti, které nepřináší žádný efekt a nejsou v souladu s konečným cílem a efektem pro zákazníka se většinou snaží podnik eliminovat a tyto činnosti se považují za odpad. Tímto stylem řízení lze dostat řízení zdrojů projektu vývoje pod kontrolu.",
@@ -320,6 +329,15 @@ class Methodologies {
         "lean-startup" => array(
             "name" => "Lean Startup",
             "desc" => "",
+            "parameters" => array(
+                "generality" => 5, // řízení projektů (1) x vývoj software (10)
+                "formality" => 8, // formální (1) x volné (10)
+                "agility" => 1, // agilní (1) x robustní (10)
+                "waterfall" => 10, // vodopádové (1) x iterativní (10)
+                "usability" => 3, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2011, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'free', // open, free, paid
+            ),
             "info" => array(
                 "Termín Lean Startup označuje metodiku, která pomáhá dodat úplně nový produkt nebo službu na trh s minimálním rizikem. Kombinuje v sobě principy agilního vývoje, customer development a lean thinking. Jeho zakladatelem je Eric Ries. Na rozdíl od klasických metodik, které jsou vytvořeny pro řešení konkrétního problému s předem specifikovanými problémy, tato metodika je vytvořena pro prostředí starupů, které velmi často vytváří produkt pouze na základě domněnek a neotestovaných hypotéz. Jejím cílem je minimalizovat riziko, v kterém se začínající startup nachází. Je založena na třech pilířích - agilního vývoje, customer development proces a lean thinking a celý proces se dělí na tři základní fáze - Problem/Solution Fit, Product/Market Fit, Scale.  Při prvních dvou fázích by se měl startup soustředit na kontinuální učení se a přizpůsobování se trhu pomocí pivotů. V případě poslední fáze je nutné se soustředit na kontinuální růst, který by měl v případě úspěchu vykreslit proslulou hokejovou hůl na grafu nárostu počtu uživatelů a tržeb."
             ),
@@ -381,6 +399,15 @@ class Methodologies {
         "dad" => array(
             "name" => "DAD",
             "desc" => "",
+            "parameters" => array(
+                "generality" => 7, // řízení projektů (1) x vývoj software (10)
+                "formality" => 7, // formální (1) x volné (10)
+                "agility" => 8, // agilní (1) x robustní (10)
+                "waterfall" => 7, // vodopádové (1) x iterativní (10)
+                "usability" => 9, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2008, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'free', // open, free, paid
+            ),
             "info" => array(
                 "Disciplined Agile Delivery je poměrně nová metodika pro postupy a způsoby dodání určitého IT řešení zákazníkovi. Scott W. Ambler na jejím konceptu začal pracovat v roce 2007. Z velké části vychází z již známých agilních metodik (Scrum, Extrémní programování, Agilní modelování a dalších) a staví tedy na základních principech Manifestu agilního programování z roku 2001. Zároveň však tyto rozšiřuje a upřesňuje a přidává například popis celého životního cyklu dodávky IT řešení. Důvodem vzniku DAD byla především absence metodiky, která by umožnila používat agilní přístup zodpovědně i ve větších organizacích a týmech. Následky v případě neúspěchu by tam totiž byly mnohem závažnější než u týmu malého. Pokud jde o charakteristiku DAD, dala by se popsat jako hybridní agilní metodika, která klade důraz na jedinečnou úlohu lidí v agilním vývojářském týmu, na význam jejich ochoty a schopnosti se učit, na skutečnou hodnotu vyvíjeného řešení a na životní cyklus dodávky řízený cíli. Dalšími charakteristickými vlastnostmi metodiky je její škálovatelnost a zohledňování okolních podmínek v podniku u každé dodávky IT řešení."
             ),
@@ -437,6 +464,15 @@ class Methodologies {
         "kanban" => array(
             "name" => "Kanban",
             "desc" => "",
+            "parameters" => array(
+                "generality" => 3, // řízení projektů (1) x vývoj software (10)
+                "formality" => 10, // formální (1) x volné (10)
+                "agility" => 10, // agilní (1) x robustní (10)
+                "waterfall" => 10, // vodopádové (1) x iterativní (10)
+                "usability" => 3, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 1985, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'free', // open, free, paid
+            ),
             "info" => array(
                 "Kanban byl původně vyvinut ve čtyřicátých letech japonskou automobilkou Toyota. Pří jeho vývoji se Toyota zabývala se především myšlenkou toho, aby zákazníci dostali to, co chtějí a ve správný okamžik a množství, které oni vyžadují. Poznatky načerpané studiem retailového prodeje se pak Toyota snažila implementovat na vnitřní procesy vlastní firmy. Podobně jako v supermarketech byly vývěsní štítky, dle kterých se zboží opět naskladňovalo do regálu, používá Kanban karty dle kterých se řídí nejenom tok materiálu ale i práce. Slovo Kanban vzniklo spojením „Kan“, a „ban“, což lze do češtiny přeložit jako vizualizační tabule. Jde tedy především o vizualizaci výroby pomocí takzvaných Kanban karet a tabulí. Je to jednoduchá technologie koordinující pohyb materiálu a práce při využití vizuálních prvků, usnadňující řízení plánování výroby a řízení zásob. ",
                 "Vývoj softwaru a výrobní činnost není to samé. Z tohoto vyplývají i rozdíly mezi Kanbanem výrobním a vývojovým. Softwaroví inženýři vytváří pokaždé jiné věci, zatím co při výrobě produkujeme stejné věci pokaždé dokola. Kanban pro IT přebírá jen určité techniky jak organizovat práci v týmech a soustředí se především na vizualizaci průběhu procesu.  Každá jednotlivá funkcionalita výsledného programu musí být nejdříve zanalyzována, navrhnuta. Po těchto krocích následuje samotné naprogramování, testování a implementace do většího celku. V obou dvou případech lze jednotlivé úkony generalizovat a řetězce rozdrobit na jednotlivé činnosti.",
@@ -517,6 +553,15 @@ class Methodologies {
         "xp" => array(
             "name" => "XP",
             "desc" => "eXtrémní Programování",
+            "parameters" => array(
+                "generality" => 10, // řízení projektů (1) x vývoj software (10)
+                "formality" => 4, // formální (1) x volné (10)
+                "agility" => 1, // agilní (1) x robustní (10)
+                "waterfall" => 7, // vodopádové (1) x iterativní (10)
+                "usability" => 4, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2003, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'open', // open, free, paid
+            ),
             "info" => array(
                 "Extrémní programování je metodika, kterou zavedl Kent Back. Jejím základem je jednoduchý, realistický způsob myšlení, používání poměrně standardních principů a postupů, jako psaní kódu, testování, apod.  Principem a XP a důvodem, proč se jmenuje extrémní, jsou myšlenky dotažené do extrémů. Díky tomu je možné dosáhnout vyšší kvality a pružněji reagovat na změny klientových požadavků během vývoje. Manažeři, zákazníci i vývojáři tvoří jeden tým.  Každý vyvíjený projekt Extrémního programování lze rozdělit na 5 oblastí, které mají svá neměnná pravidla. Jsou to Plánování, Řízení, Design, Programování a Testování.  Extrémní programování také na hodnotách, které je třeba během procesu vývoje dodržovat. Tyto hodnoty jsou jednoduchost, komunikace, zpětná vazba.",
                 "Vše začíná plánováním. Během plánování se na základě požadavků vytvoří Users stories. Jednotlivé User strories se následně ohodnotí z hlediska náročnosti. Na základě toho zákazník vybírá, které Stories budou implementovány v další iteraci. Ty jsou následně podrobněji rozebrány v Iteračním plánu po technické stránce do jednotlivých programových úkolů a opět na základě Stories jsou navrženy akceptační testy. Vyskytne-li se nějaký náročný technický problém, využívá se takzvaných Spike Solutions. Jedná se o krátké experimentální kódy, které stojí mimo produkční kód a dávají rychlou odpověď na daný problém. Výsledkem Release planningu je definování projektu pomocí čtyř proměnných: Velikost, Čas, Zdroje a Kvalita. Tyto proměnné nemůže nikdo určit nezávisle, protože každý stakeholder má povědomí o parametrech jiné proměnné, ale zároveň jedna proměnná ovlivňuje druhou.",
@@ -604,6 +649,15 @@ class Methodologies {
         "scrum" => array(
             "name" => "Scrum",
             "desc" => "",
+            "parameters" => array(
+                "generality" => 2, // řízení projektů (1) x vývoj software (10)
+                "formality" => 9, // formální (1) x volné (10)
+                "agility" => 3, // agilní (1) x robustní (10)
+                "waterfall" => 9, // vodopádové (1) x iterativní (10)
+                "usability" => 10, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2002, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'free', // open, free, paid
+            ),
             "info" => array(
                 "Scrum je moderní metodika projektového řízení. Spíše než konkrétní proces, je Srum procesní rámec, který umožňuje využívání různých technik a vývojových procesů. Scrum je koncipovaný jako jednoduchá a srozumitelná metodika, kterou lze rychle implementovat a jejíž pomocí je možné zvládnout složité adaptivní problémy a zároveň vytvářet produkty vysoké kvality. Přesto je ale dokonalé zvládnutí této metodiky považováno za velmi obtížné. Scrum využívá iterační a inkrementální přístup k optimalizaci řízení a řízení rizik. Teorie Scrumu je postavena na třech piliřích – transparentnosti, kontrole a adaptaci. Tyto pilíře mají zaručit, že během vývoje nebude docházet k nedorozuměním a že výsledný produkt bude plně splňovat požadované vlastnosti a nároky na kvalitu. Scrum také definuje složení týmu a týmové role, činnosti a artefakty, nezbytné pro zajištění optimální řízení projektu."
             ),
@@ -686,6 +740,15 @@ class Methodologies {
         "planning-poker" => array(
             "name" => "Plannig poker",
             "desc" => "",
+            "parameters" => array(
+                "generality" => 5, // řízení projektů (1) x vývoj software (10)
+                "formality" => 5, // formální (1) x volné (10)
+                "agility" => 3, // agilní (1) x robustní (10)
+                "waterfall" => 8, // vodopádové (1) x iterativní (10)
+                "usability" => 10, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2010, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'free', // open, free, paid
+            ),
             "info" => array(
                 "Planning poker, je nástroj, který umožňuje vytvářet velmi přesné odhady náročnosti během vývoje softwaru. Je založený na technice známé jako Wideband Delphi, která byla vytvořena společností RAND ve 40. letech minulého století. Hlavní myšlenka této metody spočívá v aplikaci známého přísloví, že více hlav víc více ví. Metoda kombinuje znalecké posudky, analogii a zábavný přístup, který vede k rychlým, ale velice spolehlivým odhadům. Plannig pokeru se vždy účastní všichni členové týmu, který by ale neměl být větší než deset lidí. V takovém případě pak dochází k jeho rozdělení. Meetingu by se měl účastnit také Product owner, který ale sám odhadovat nebude, Jeho hlavní rolí, je přesný popis produktu a požadavků na jednotlivé funkcionality, aby umožnil členům týmu co nejlepší odhad.  Každý jednotlivý člen týmu odhaduje samostatně. Každý člen týmu dostane na začátku karty, které na sobě mají napsány určité hodnoty, označující náročnost. Následně zvolený moderátor přečte popis produktu, na jehož základě dochází k hodnocení náročnosti. Každý člen týmu si vybere kartu, ale neukazuje jí, dokud si jí nevyberou i všichni ostatní. Pak dojde k odhalení. Pokud se jednotlivé odhady liší, což je pravděpodobné, následuje diskuze. Následuje další kolo odhadu. Tento proces pokračuje, dokud se tým nedohodne na použitelném odhadu."
             ),
@@ -771,6 +834,15 @@ class Methodologies {
         "cmmi" => array(
             "name" => "CMMI",
             "desc" => "",
+            "parameters" => array(
+                "generality" => 3, // řízení projektů (1) x vývoj software (10)
+                "formality" => 1, // formální (1) x volné (10)
+                "agility" => 7, // agilní (1) x robustní (10)
+                "waterfall" => 4, // vodopádové (1) x iterativní (10)
+                "usability" => 4, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 1995, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'paid', // open, free, paid
+            ),
             "info" => array(
                 "Capability Maturity Model Integration(for Development) je metodika tvořená pod záštitou Software Engineering Institute na univerzitě Carnegie Mellon. Její první verze (1.1) byla vydána roku 2002 a nahradila původní zastaralý koncept Capability Maturity Model (CMM) vyvíjený v letech 1987 - 1997 tamtéž. (Wikipedia contributors, 2011)",
                 "Aktuálně je CMMI ve verzi 1.3 a představuje kolekci průmyslových best practice pro tvorbu a implementaci organizačních procesů na takové úrovni, aby byla zajištěna plná podpora celého životního cyklu produktů a služeb organizace. Cílovou skupinu metodiky tak tvoří všechny organizace, které by buďto rády zlepšily své procesy a zefektivnily tvorbu svých produktů a poskytování svých služeb, nebo již na zlepšování procesů pracují a hledají referenční model, se kterým by srovnaly aktuální stav svých procesů. Samotná metodika sestává z celkem 22 procesních oblastí, přičemž 16 z nich tvoří tzv. jádro metodiky, které je sdíleno napříč všemi implementačními modely CMMI.",
@@ -1006,6 +1078,15 @@ class Methodologies {
         "other" => array(
             "name" => "Ostatní témata",
             "desc" => "",
+            "parameters" => array(
+                "generality" => 5, // řízení projektů (1) x vývoj software (10)
+                "formality" => 6, // formální (1) x volné (10)
+                "agility" => 4, // agilní (1) x robustní (10)
+                "waterfall" => 6, // vodopádové (1) x iterativní (10)
+                "usability" => 5, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2000, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'free', // open, free, paid
+            ),
             "info" => array(
                 "V této časti naleznete uveřejněné semestrální práce předmětu 4IT421 Zlepšování procesů budování IS, které nespadají svým tématem pod žádnou specifickou metodiku. Jedná se tedy o práce, které řeší přesahy jednotlivých metodik nebo se jedná o popis různých SW nástrojů na podporu vývoje a týmové spolupráce. Případně se může jednat o minoritní metodiky, které se snaží rozvinout známější a používanější metodiky. ",
                 "Momentálně zde můžete nalézt práce, které se zabývají především monitoringem a správou chyb aplikací a změnových řízení při vývoji SW. Dále se zde uvedené práce zabývají vývojem počítačových her a metodickým rámcem vývoje od společnosti Microsoft.",

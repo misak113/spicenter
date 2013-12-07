@@ -1,4 +1,55 @@
-
 {#content}
 
+<ol class="breadcrumb">
+    <li><a n:href="SpiCenter:">SPI Center</a></li>
+    <li class="active">Nástroje</li>
+</ol>
+
+<script type="text/javascript">
+    jQuery(window).load(function () {
+        jQuery('.graph').removeClass('not-started');
+    });
+</script>
+
+<div class="tools">
+    <h2>Graf pro orientaci v nástrojích</h2>
+    <div class="graph not-started">
+        <!-- AXIS -->
+        <div class="axis x right">Projektové řízení</div>
+        <div class="axis x left">Vývoj software</div>
+        <div class="axis y up">Agilní</div>
+        <div class="axis y down">Robustní</div>
+
+        <!-- AXIS desc -->
+        <div class="axis-desc x left"></div>
+        <div class="axis-desc x right"></div>
+        <div class="axis-desc y up"></div>
+        <div class="axis-desc y down"></div>
+
+        <div class="items">
+            <!-- Tools -->
+            <div n:foreach="$tools as $name => $tool"
+                 class="item {foreach $tool['parameters'] as $parameter => $value}{$parameter}-{$value} {/foreach} {$name}"
+                 title="{$tool['desc']}">
+                <a n:href="SpiCenter:tool, id => $name" class="name">{$tool['name']}</a>
+                <span class="count" title="Počet zpracovaných prací">{$tool['works']|count:works}</span>
+                <span class="license {$tool['parameters']['openness']}"
+                        {var $o = $tool['parameters']['openness']}
+                      title="{if $o == 'paid'}Placený{elseif $o == 'free'}Zdarma{elseif $o == 'open'}Otevřená licence{/if}"></span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="alphabetical-list internal-link-list">
+        <h2>Abecední seznam</h2>
+        <ul>
+            <li n:foreach="$tools as $name => $tool">
+                <a n:href="SpiCenter:tool, id => $name">{$tool['name']}</a>
+                <span class="desc">{$tool['desc']}</span>
+            </li>
+        </ul>
+    </div>
+</div>
 {/#}

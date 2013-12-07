@@ -56,13 +56,14 @@ html.js .jshidden {
 }
 
 
-.methodologies {
+.methodologies, .tools {
 
   .graph {
     margin: auto;
     position: relative;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
     border: 1px solid black;
     font-family: Tahoma;
 
@@ -86,7 +87,7 @@ html.js .jshidden {
         &.left {
           background-image: url(../images/arrow_left.png);
           bottom: 1px;
-          left: 1px;
+          left: 25px;
           text-align: right;
         }
       }
@@ -110,104 +111,259 @@ html.js .jshidden {
       }
     }
 
-    .item {
-      background: #DDDDDD;
+    .axis-desc {
       position: absolute;
-      display: block;
-      width: 40px;
-      height: 40px;
-      padding: 10px;
-      border: 2px solid red;
-
-      .name {
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
-        font-size: 12px;
-        margin-top: 13px;
+      width: 150px;
+      height: 150px;
+      background-repeat: no-repeat;
+      background-position: middle center;
+      background-size: 150px 150px;
+      z-index: -1;
+      opacity: 0.2;
+      &.x {
+        top: 40%;
+        &.left {
+          background-image: url(../images/development.png);
+          left: 0;
+        }
+        &.right {
+          background-image: url(../images/project.png);
+          right: 0;
+        }
       }
-      .count {
-        display: block;
+      &.y {
+        left: 40%;
+        &.up {
+          background-image: url(../images/agile.png);
+          top: 0;
+        }
+        &.down {
+          background-image: url(../images/robust.png);
+          bottom: 0;
+        }
+      }
+    }
+
+
+    &.not-started {
+      .item {
+        top: 50% !important;
+        right: 50% !important;
+      }
+    }
+
+    .items {
+      position: relative;
+      width: 80%;
+      height: 80%;
+      margin: auto;
+
+      .item {
+        background: #DDDDDD;
         position: absolute;
-        width: 14px;
-        height: 14px;
-        border-radius: 7px;
-        border: 1px solid black;
-        background: white;
-        font-size: 11px;
-        text-align: center;
-        bottom: 2px;
-        right: 2px;
-      }
-      .license {
-        display: block;
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 8px;
-        border: 1px solid black;
-        background: white;
-        top: 2px;
-        right: 0px;
-        &.open {
-          background-image: url(../images/open.png);
-        }
-        &.close, &.free {
-          background-image: url(../images/lock.png);
-        }
-        &.close, &.paid {
-          background-image: url(../images/dollar.png);
-        }
-      }
+        //display: block;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border: 2px solid black;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        display: table;
+        overflow: visible;
+        background-size: 100%;
 
-      &.formality-1 {
-        border-radius: 50%;
-      }
-      &.formality-2 {
-        border-radius: 45%;
-      }
-      &.formality-3 {
-        border-radius: 40%;
-      }
-      &.formality-4 {
-        border-radius: 35%;
-      }
-      &.formality-5 {
-        border-radius: 30%;
-      }
-      &.formality-6 {
-        border-radius: 25%;
-      }
-      &.formality-7 {
-        border-radius: 20%;
-      }
-      &.formality-8 {
-        border-radius: 15%;
-      }
-      &.formality-9 {
-        border-radius: 10%;
-      }
-      &.formality-10 {
-        border-radius: 5%;
-      }
+        &:hover {
+          width: 80px;
+          height: 80px;
+          margin-right: -20px;
+          margin-top: -20px;
+          z-index: 10;
+          transition: all 0.4s;
+          -webkit-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -ms-transition: all 0.4s;
+        }
 
-      // metodiky
-      &.rup {
-        // #1. řízení projektů (1) x vývoj software (10)
-        right: 90%; // 9
-        // #2. formální (1) x volné (10)
-        // 4
-        // #3. agilní (1) x robustní (10)
-        top: 70%; // 7
-        // #4. vodopádové (1) x iterativní (10)
-        // 7
-        // #5. v praxi využívané (1) x nevyužívané (10)
-        border-color: rgb(90%, 0, 0); // 9
-        // #6. rok kdy byla hitem
-        // 97
-        // #7. open x free x paid
-        // paid
+        .name {
+          //display: block;
+          width: 100%;
+          text-align: center;
+          font-weight: bold;
+          font-size: 9px;
+          margin-top: 13px;
+          color: white;
+          display: table-cell;
+          vertical-align: middle;
+        }
+        .count {
+          display: block;
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          line-height: 14px;
+          border-radius: 7px;
+          border: 1px solid black;
+          background: white;
+          font-size: 11px;
+          text-align: center;
+          bottom: 2px;
+          right: 2px;
+        }
+        .license {
+          display: block;
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          border-radius: 13px;
+          border: 1px solid black;
+          background: white;
+          background-repeat: no-repeat;
+          background-position: center center;
+          top: -4px;
+          right: -2px;
+          &.open {
+            background-image: url(../images/open.png);
+          }
+          &.close, &.free {
+            background-image: url(../images/lock.png);
+          }
+          &.close, &.paid {
+            background-image: url(../images/dollar.png);
+          }
+        }
+
+        // formality
+        &.formality-1 {
+          border-radius: 50%;
+        }
+        &.formality-2 {
+          border-radius: 45%;
+        }
+        &.formality-3 {
+          border-radius: 40%;
+        }
+        &.formality-4 {
+          border-radius: 35%;
+        }
+        &.formality-5 {
+          border-radius: 30%;
+        }
+        &.formality-6 {
+          border-radius: 25%;
+        }
+        &.formality-7 {
+          border-radius: 20%;
+        }
+        &.formality-8 {
+          border-radius: 15%;
+        }
+        &.formality-9 {
+          border-radius: 10%;
+        }
+        &.formality-10 {
+          border-radius: 5%;
+        }
+
+        // generality
+        &.generality-1 {
+          right: 10%;
+        }
+        &.generality-2 {
+          right: 20%;
+        }
+        &.generality-3 {
+          right: 30%;
+        }
+        &.generality-4 {
+          right: 40%;
+        }
+        &.generality-5 {
+          right: 50%;
+        }
+        &.generality-6 {
+          right: 60%;
+        }
+        &.generality-7 {
+          right: 70%;
+        }
+        &.generality-8 {
+          right: 80%;
+        }
+        &.generality-9 {
+          right: 90%;
+        }
+        &.generality-10 {
+          right: 100%;
+        }
+
+        // agility
+        &.agility-1 {
+          top: 10%;
+        }
+        &.agility-2 {
+          top: 20%;
+        }
+        &.agility-3 {
+          top: 30%;
+        }
+        &.agility-4 {
+          top: 40%;
+        }
+        &.agility-5 {
+          top: 50%;
+        }
+        &.agility-6 {
+          top: 60%;
+        }
+        &.agility-7 {
+          top: 70%;
+        }
+        &.agility-8 {
+          top: 80%;
+        }
+        &.agility-9 {
+          top: 90%;
+        }
+        &.agility-10 {
+          top: 100%;
+        }
+
+        // usability
+        &.usability-1 {
+          background-color: rgb(10%, 10%, 10%);
+        }
+        &.usability-2 {
+          background-color: rgb(15%, 15%, 15%);
+        }
+        &.usability-3 {
+          background-color: rgb(20%, 20%, 20%);
+        }
+        &.usability-4 {
+          background-color: rgb(25%, 25%, 25%);
+        }
+        &.usability-5 {
+          background-color: rgb(30%, 30%, 30%);
+        }
+        &.usability-6 {
+          background-color: rgb(35%, 35%, 35%);
+        }
+        &.usability-7 {
+          background-color: rgb(40%, 40%, 40%);
+        }
+        &.usability-8 {
+          background-color: rgb(45%, 45%, 45%);
+        }
+        &.usability-9 {
+          background-color: rgb(50%, 50%, 50%);
+        }
+        &.usability-10 {
+          background-color: rgb(55%, 55%, 55%);
+        }
+
       }
     }
 
@@ -216,7 +372,7 @@ html.js .jshidden {
 }
 
 
-.methodology {
+.methodology, .tool {
 
   p {
     text-align: justify;

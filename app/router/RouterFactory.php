@@ -17,7 +17,7 @@ class RouterFactory
 	public function createRouter()
 	{
 		$router = new RouteList();
-        $router[] = new Route('<presenter>/<action>[/<id>]', 'SpiCenter:methodologies');
+        $router[] = new Route('<presenter>/<action>[/<id>]', 'SpiCenter:default');
 		$router[] = new Route('<presenter>/<action>[/<id>]', 'Homepage:default');
 		return $router;
 	}

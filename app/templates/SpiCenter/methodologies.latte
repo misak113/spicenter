@@ -1,24 +1,48 @@
 {#content}
+
+<ol class="breadcrumb">
+    <li><a n:href="SpiCenter:">SPI Center</a></li>
+    <li class="active">Metodiky</li>
+</ol>
+
+<script type="text/javascript">
+    jQuery(window).load(function () {
+        jQuery('.graph').removeClass('not-started');
+    });
+</script>
+
 <div class="methodologies">
     <h2>Graf pro orientaci v metodikách</h2>
-    <div class="graph">
+    <div class="graph not-started">
         <!-- AXIS -->
         <div class="axis x right">Projektové řízení</div>
         <div class="axis x left">Vývoj software</div>
         <div class="axis y up">Agilní</div>
         <div class="axis y down">Robustní</div>
 
-        <!-- RUP -->
-        <div n:foreach="$methodologies as $name => $methodology" class="item formality-4 {$name}">
-            <a n:href="SpiCenter:methodology, id => $name" class="name">{$methodology['name']}</a>
-            <span class="count">6</span>
-            <span class="license paid"></span>
+        <!-- AXIS desc -->
+        <div class="axis-desc x left"></div>
+        <div class="axis-desc x right"></div>
+        <div class="axis-desc y up"></div>
+        <div class="axis-desc y down"></div>
+
+        <div class="items">
+            <!-- Methodologies -->
+            <div n:foreach="$methodologies as $name => $methodology"
+                 class="item {foreach $methodology['parameters'] as $parameter => $value}{$parameter}-{$value} {/foreach} {$name}"
+                 title="{$methodology['desc']}">
+                <a n:href="SpiCenter:methodology, id => $name" class="name">{$methodology['name']}</a>
+                <span class="count" title="Počet zpracovaných prací">{$methodology['works']|count:works}</span>
+                <span class="license {$methodology['parameters']['openness']}"
+                      {var $o = $methodology['parameters']['openness']}
+                      title="{if $o == 'paid'}Placená{elseif $o == 'free'}Zdarma{elseif $o == 'open'}Otevřená licence{/if}"></span>
+            </div>
         </div>
 
 
     </div>
 
-    <div class="alphabetical-list">
+    <div class="alphabetical-list internal-link-list">
         <h2>Abecední seznam</h2>
         <ul>
             <li n:foreach="$methodologies as $name => $methodology">
