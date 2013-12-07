@@ -23,17 +23,41 @@
             {$paragraph}
             {/if}
             </p>
+            <p n:if="empty($t['info'])">
+                Popisek není dispozici
+            </p>
         </div>
 
 
         <!-- Obrázky -->
         <div id="tool-images" class="part images">
             <h2>Obrázky</h2>
-            <div class="images">
-                <img n:foreach="$t['images'] as $image"
-                     src="{$baseUrl}/resource/{$image}"
-                     alt="Obrázek {$t['name']}"
-                     class="image" />
+            <div id="carousel-images" class="images carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li n:foreach="$t['images'] as $i => $image"
+                        data-target="#carousel-images" data-slide-to="{$i}"
+                        class="{first}active{/first}"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div n:foreach="$t['images'] as $image"
+                         class="item{first} active{/first}">
+                        <img src="{$baseUrl}/resource/{$image}"
+                             alt="Obrázek {$t['name']}"
+                             class="image" />
+                        <div class="carousel-caption"></div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-images" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-images" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
         </div>
 
@@ -48,6 +72,9 @@
                     </a>
                 </li>
             </ul>
+            <p n:if="empty($t['downloads'])">
+                Zatím není k dispozici nic ke stažení
+            </p>
         </div>
 
 
@@ -70,6 +97,9 @@
                     </ul>
                 </div>
             </div>
+            <p n:if="empty($t['works'])">
+                Zatím nejsou k dispozici žádné práce
+            </p>
         </div>
 
         <div id="tool-methodologies" class="part methodologies">
@@ -81,6 +111,9 @@
                     <span class="desc">{$methodology['desc']}</span>
                 </li>
             </ul>
+            <p n:if="empty($t['methodologies'])">
+                Zatím nejsou přiřazeny žádné metodiky
+            </p>
         </div>
 
         <div id="tool-similar" class="part similar tools">
@@ -91,6 +124,9 @@
                     <a href="$tool['href']">{$tool['title']}</a>
                 </li>
             </ul>
+            <p n:if="empty($t['similar'])">
+                Zatím nejsou specifikovány žádné podobné nástroje
+            </p>
         </div>
 
         <div id="tool-projects" class="part projects">
