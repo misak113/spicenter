@@ -106,8 +106,9 @@
             <h2>Metodiky</h2>
 
             <ul class="internal-link-list">
-                <li n:foreach="$t['methodologies'] as $methodology">
-                    <a href="{$methodology['href']}" class="name">{$methodology['title']}</a>
+                <li n:foreach="$t['methodologies'] as $methodology"
+                    n:class="isset($methodology['missing'])?missing">
+                    <a n:href="SpiCenter:methodology, id => $methodology['href']" class="name">{$methodology['title']}</a>
                     <span class="desc">{$methodology['desc']}</span>
                 </li>
             </ul>
@@ -120,8 +121,10 @@
             <h2>Podobné nástroje</h2>
 
             <ul class="internal-link-list">
-                <li n:foreach="$t['similar'] as $tool">
-                    <a href="$tool['href']">{$tool['title']}</a>
+                <li n:foreach="$t['similar'] as $tool"
+                    n:class="isset($tool['missing'])?missing">
+                    <a n:href="SpiCenter:tool, id => $tool['href']">{$tool['title']}</a>
+                    <span class="desc">{$tool['desc']}</span>
                 </li>
             </ul>
             <p n:if="empty($t['similar'])">
@@ -150,13 +153,13 @@
         <div class="bs-sidebar affix well" role="complementary">
             <h4>Obsah</h4>
             <ul class="nav bs-sidenav">
-                <li><a href="#tool-info">Informace</a></li>
-                <li><a href="#tool-images">Obrázky</a></li>
-                <li><a href="#tool-downloads">Ke stažení</a></li>
-                <li><a href="#tool-works">Práce</a></li>
-                <li><a href="#tool-methodologies">Metodiky</a></li>
-                <li><a href="#tool-similar">Podobné nástroje</a></li>
-                <li><a href="#tool-projects">Projekty</a></li>
+                <li><a href="#tool-info" n:class="empty($t['info'])?missing">Informace</a></li>
+                <li><a href="#tool-images" n:class="empty($t['images'])?missing">Obrázky</a></li>
+                <li><a href="#tool-downloads" n:class="empty($t['downloads'])?missing">Ke stažení</a></li>
+                <li><a href="#tool-works" n:class="empty($t['works'])?missing">Práce</a></li>
+                <li><a href="#tool-methodologies" n:class="empty($t['methodologies'])?missing">Metodiky</a></li>
+                <li><a href="#tool-similar" n:class="empty($t['similar'])?missing">Podobné nástroje</a></li>
+                <li><a href="#tool-projects" n:class="empty($t['projects'])?missing">Projekty</a></li>
             </ul>
         </div>
     </div>

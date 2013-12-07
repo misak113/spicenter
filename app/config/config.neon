@@ -31,6 +31,12 @@ common:
 
 		metodologies: Methodologies
 		tools: Tools
+		relationsDispatcher:
+			class: RelationsDispatcher
+			setup:
+				- relateTools()
+				- relateMethodologies()
+			run: true
 
 
 	factories:

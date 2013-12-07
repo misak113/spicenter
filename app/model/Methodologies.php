@@ -214,12 +214,12 @@ class Methodologies {
             ),
             "tools" => array(
                 array(
-                    "href" => "ide-eclipse",
+                    "href" => "eclipse",
                     "title" => "IDE Eclipse",
                     "desc" => "Integrované vývojové prostředí",
                 ),
                 array(
-                    "href" => "ide-visual-studio",
+                    "href" => "visual-studio",
                     "title" => "IDE Visual Studio",
                     "desc" => "Integrované vývojové prostředí",
                 ),
@@ -243,14 +243,17 @@ class Methodologies {
                 array(
                     "href" => "rup-v7",
                     "title" => "RUPv7 postaven na konceptu UMA",
+                    "desc" => "",
                 ),
                 array(
                     "href" => "up",
                     "title" => "Unified Process (UP) – nekomerční verze RUP",
+                    "desc" => "",
                 ),
                 array(
                     "href" => "open-up",
                     "title" => "OpenUP – zeštíhlená metodika UP",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -315,6 +318,7 @@ class Methodologies {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -385,6 +389,7 @@ class Methodologies {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -450,6 +455,7 @@ class Methodologies {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -539,6 +545,7 @@ class Methodologies {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -635,6 +642,7 @@ class Methodologies {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -725,6 +733,7 @@ class Methodologies {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -820,6 +829,7 @@ class Methodologies {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -1045,7 +1055,7 @@ class Methodologies {
             ),
             "tools" => array(
                 array(
-                    "href" => "ms-visual-studio",
+                    "href" => "visual-studio",
                     "title" => "MS Visual Studio",
                     "desc" => "",
                 ),
@@ -1064,6 +1074,7 @@ class Methodologies {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -1214,6 +1225,7 @@ class Methodologies {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -1226,13 +1238,29 @@ class Methodologies {
 
     );
 
+    /**
+     * @return array
+     */
     public function getMethodologies() {
         return $this->methodologies;
     }
 
+    /**
+     * @param string $name
+     * @return array|null
+     */
     public function getMethodology($name) {
         if (!isset($this->methodologies[$name]))
             return null;
         return $this->methodologies[$name];
+    }
+
+    /**
+     * @param array $methodologies
+     * @return $this
+     */
+    public function setMethodologies($methodologies) {
+        $this->methodologies = $methodologies;
+        return $this;
     }
 }

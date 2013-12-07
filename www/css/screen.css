@@ -469,3 +469,12 @@ html.js .jshidden {
 .methodologies .internal-link-list {
   list-style-image: url(../images/arrow_circle.png);
 }
+.missing {
+  opacity: 0.3;
+}
+.missing:hover {
+  opacity: 1;
+}
+.missing a {
+  color: #888888;
+}

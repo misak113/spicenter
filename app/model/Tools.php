@@ -13,9 +13,9 @@ class Tools {
         // Trello
         "trello" => array(
             "name" => "Trello",
-            "desc" => "",
+            "desc" => "Nástroj pro správu úkolů formou štítků",
             "parameters" => array(
-                "generality" => 8, // řízení projektů (1) x vývoj software (10)
+                "generality" => 7, // řízení projektů (1) x vývoj software (10)
                 "formality" => 7, // formální (1) x volné (10)
                 "agility" => 2, // agilní (1) x robustní (10)
                 "waterfall" => 8, // vodopádové (1) x iterativní (10)
@@ -60,6 +60,7 @@ class Tools {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -75,13 +76,13 @@ class Tools {
             "name" => "Eclipse",
             "desc" => "Integrované vývojové prostředí",
             "parameters" => array(
-                "generality" => 8, // řízení projektů (1) x vývoj software (10)
-                "formality" => 7, // formální (1) x volné (10)
-                "agility" => 2, // agilní (1) x robustní (10)
-                "waterfall" => 8, // vodopádové (1) x iterativní (10)
-                "usability" => 2, // v praxi využívané (1) x nevyužívané (10)
+                "generality" => 10, // řízení projektů (1) x vývoj software (10)
+                "formality" => 3, // formální (1) x volné (10)
+                "agility" => 6, // agilní (1) x robustní (10)
+                "waterfall" => 6, // vodopádové (1) x iterativní (10)
+                "usability" => 1, // v praxi využívané (1) x nevyužívané (10)
                 "enveloped" => 2000, // rok kdy byla hitem resp. vytvoření
-                "openness" => 'free', // open, free, paid
+                "openness" => 'open', // open, free, paid
             ),
             "info" => array(
                 "Eclipse je open source vývojová platforma, která je se řadí mezi integrovaná vývojová prostředí (IDE). Nejčastěji se zde pracuje s programovacím jazykem Java, ovšem Eclipse umožňuje i vícejazykovvou podporu programovacích jazyků a to pomocí pluginů (můžeme rozšířit o C++, PHP, UML, HTML..). Základní verze obsahuje pouze prostředky pro vývoj Javy, jako je kompilátor, debugger.., ale neobsahuje nástroj pro vizuální návrh grafických uživatelských rozhraní desktopových aplikací nebo aplikační server. Tato rozšíření se musí provést právě pomocí pluginů. Z tohoto důvodu vzniklo mnoho subprojektů, které zastřešují rozšíření pro jednotlivé oblasti softwarového vývoje v Javě. Eclipse je v současnosti nejpoulárnější IDE pro Javu.",
@@ -117,6 +118,7 @@ class Tools {
                 array(
                     "href" => "visual-studio",
                     "title" => "Visual Studio",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -128,13 +130,13 @@ class Tools {
             "name" => "Visual Studio",
             "desc" => "Integrované vývojové prostředí",
             "parameters" => array(
-                "generality" => 8, // řízení projektů (1) x vývoj software (10)
-                "formality" => 7, // formální (1) x volné (10)
-                "agility" => 2, // agilní (1) x robustní (10)
-                "waterfall" => 8, // vodopádové (1) x iterativní (10)
-                "usability" => 2, // v praxi využívané (1) x nevyužívané (10)
+                "generality" => 10, // řízení projektů (1) x vývoj software (10)
+                "formality" => 3, // formální (1) x volné (10)
+                "agility" => 7, // agilní (1) x robustní (10)
+                "waterfall" => 4, // vodopádové (1) x iterativní (10)
+                "usability" => 4, // v praxi využívané (1) x nevyužívané (10)
                 "enveloped" => 2000, // rok kdy byla hitem resp. vytvoření
-                "openness" => 'free', // open, free, paid
+                "openness" => 'paid', // open, free, paid
             ),
             "info" => array(
                 "Jedná se o další nástroj spadající do skupiny IDE (integrované vývojové prostředí). Microsoft Visual Studio je balík nástrojů a služeb určený k vývoji softwarových aplikací pro desktopové i dotykové prostředí Windows, pro web/HTML 5, SharePoint, mobilní zařízení i cloud prostředí. Umožňuje vývoj všech typů aplikací pro prakticky všechny druhy koncových HW zařízení. V rámci MSDN služeb obsahuje nástroje podpora řízení sw. projektů, testování a spolupráce v týmu. Existuje mnoho edic, Express pro začátečníky, Test pro testery až po Ultimate pro vývojáře a team leadery. Studenti mají Visual Studio Professional zdarma.",
@@ -166,6 +168,7 @@ class Tools {
                 array(
                     "href" => "eclipse",
                     "title" => "Eclipse",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -177,13 +180,13 @@ class Tools {
             "name" => "Rational RequisitePro",
             "desc" => "Nástroj pro správu požadavků",
             "parameters" => array(
-                "generality" => 8, // řízení projektů (1) x vývoj software (10)
-                "formality" => 7, // formální (1) x volné (10)
-                "agility" => 2, // agilní (1) x robustní (10)
-                "waterfall" => 8, // vodopádové (1) x iterativní (10)
-                "usability" => 2, // v praxi využívané (1) x nevyužívané (10)
+                "generality" => 3, // řízení projektů (1) x vývoj software (10)
+                "formality" => 6, // formální (1) x volné (10)
+                "agility" => 3, // agilní (1) x robustní (10)
+                "waterfall" => 7, // vodopádové (1) x iterativní (10)
+                "usability" => 6, // v praxi využívané (1) x nevyužívané (10)
                 "enveloped" => 2000, // rok kdy byla hitem resp. vytvoření
-                "openness" => 'free', // open, free, paid
+                "openness" => 'paid', // open, free, paid
             ),
             "info" => array(
                 "Jedná se o nástroj pro projektové týmy navržený pro správu požadavků a příkladů použití. Týmy mohou jeho prostřednictvím vytvářet a sdílet požadavky za použití důvěrně známých metod založených na dokumentech při současném využití databázových funkcí, tj. například sledovatelnosti požadavků a analýzy dopadů. Pomáhá vyhnutí se duplicitám a zbytečným opravám, omezuje složitost díky podrobným pohledům sledovatelnosti nebo umožňuje zachytávat a analyzovat informace o požadavcích s možností podrobného přizpůsobení a filtrování atributů a mnoho dalších.",
@@ -215,6 +218,7 @@ class Tools {
                 array(
                     "href" => "jira",
                     "title" => "Jira",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -224,15 +228,15 @@ class Tools {
         // Jira
         "jira" => array(
             "name" => "Jira",
-            "desc" => "",
+            "desc" => "Nástroj pro řízení projektů a požadavků",
             "parameters" => array(
-                "generality" => 8, // řízení projektů (1) x vývoj software (10)
-                "formality" => 7, // formální (1) x volné (10)
-                "agility" => 2, // agilní (1) x robustní (10)
+                "generality" => 2, // řízení projektů (1) x vývoj software (10)
+                "formality" => 6, // formální (1) x volné (10)
+                "agility" => 3, // agilní (1) x robustní (10)
                 "waterfall" => 8, // vodopádové (1) x iterativní (10)
-                "usability" => 2, // v praxi využívané (1) x nevyužívané (10)
+                "usability" => 5, // v praxi využívané (1) x nevyužívané (10)
                 "enveloped" => 2000, // rok kdy byla hitem resp. vytvoření
-                "openness" => 'free', // open, free, paid
+                "openness" => 'paid', // open, free, paid
             ),
             "info" => array(
                 "Atlassian JIRA 6.1 je designována pro podporu vývojářských týmů během všech fází dodávky a provozu SW řešení. Software JIRA podporuje a usnadňuje proces řízení projektů a požadavků - nabízí flexibilní a uživatelské nástroje pro řízení a sledování pracovníků při výkonu plnění úkolů. JIRA se orientuje na podporu dosažení očekávaného výkonu na projektu.",
@@ -265,6 +269,7 @@ class Tools {
                 array(
                     "href" => "rational-requisite-pro",
                     "title" => "Rational RequisitePro",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -276,13 +281,13 @@ class Tools {
             "name" => "MagicDraw",
             "desc" => "Vizuálních modelovacích nástroj",
             "parameters" => array(
-                "generality" => 8, // řízení projektů (1) x vývoj software (10)
-                "formality" => 7, // formální (1) x volné (10)
-                "agility" => 2, // agilní (1) x robustní (10)
-                "waterfall" => 8, // vodopádové (1) x iterativní (10)
-                "usability" => 2, // v praxi využívané (1) x nevyužívané (10)
+                "generality" => 6, // řízení projektů (1) x vývoj software (10)
+                "formality" => 8, // formální (1) x volné (10)
+                "agility" => 6, // agilní (1) x robustní (10)
+                "waterfall" => 5, // vodopádové (1) x iterativní (10)
+                "usability" => 6, // v praxi využívané (1) x nevyužívané (10)
                 "enveloped" => 2000, // rok kdy byla hitem resp. vytvoření
-                "openness" => 'free', // open, free, paid
+                "openness" => 'paid', // open, free, paid
             ),
             "info" => array(
                 "Jedná se o jeden ze známých vizuálních modelovacích nástrojů. MagicDraw je modelovací nástroj, pro podporu modelů business procesů, architektury a softwaru. Disponuje i podporou týmové spolupráce. Zahrnuje UML 2.0, BPMN, generování kódu (Java, C++, C#, .NET, XML a další), datové modelování, automatické generování reportů (v HTML, PDF, RTF), možnost tvorby vlastních diagramů a další možnosti."
@@ -314,12 +319,13 @@ class Tools {
                 array(
                     "href" => "power-designer",
                     "title" => "Power Designer",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
             ),
         ),
-
+/*
         // Empty
         "" => array(
             "name" => "",
@@ -370,65 +376,7 @@ class Tools {
                 array(
                     "href" => "",
                     "title" => "",
-                ),
-            ),
-            "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
-            ),
-        ),
-        // Empty
-        "" => array(
-            "name" => "",
-            "desc" => "",
-            "parameters" => array(
-                "generality" => 8, // řízení projektů (1) x vývoj software (10)
-                "formality" => 7, // formální (1) x volné (10)
-                "agility" => 2, // agilní (1) x robustní (10)
-                "waterfall" => 8, // vodopádové (1) x iterativní (10)
-                "usability" => 2, // v praxi využívané (1) x nevyužívané (10)
-                "enveloped" => 2000, // rok kdy byla hitem resp. vytvoření
-                "openness" => 'free', // open, free, paid
-            ),
-            "info" => array(
-                ""
-            ),
-            "images" => array(
-                "trello.png",
-            ),
-            "downloads" => array(
-                array(
-                    "title" => "",
-                    "href" => "",
-                ),
-            ),
-            "works" => array(
-                array(
-                    "title" => "",
-                    "works" => array(
-                        array(
-                            "title" => "",
-                            "href" => "",
-                            "author" => "",
-                            "year" => "",
-                            "desc" => "",
-                        ),
-                    ),
-                ),
-            ),
-            "methodologies" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
                     "desc" => "",
-                ),
-            ),
-            "similar" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
                 ),
             ),
             "projects" => array(
@@ -488,6 +436,7 @@ class Tools {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -547,6 +496,7 @@ class Tools {
                 array(
                     "href" => "",
                     "title" => "",
+                    "desc" => "",
                 ),
             ),
             "projects" => array(
@@ -556,6 +506,67 @@ class Tools {
                 ),
             ),
         ),
+        // Empty
+        "" => array(
+            "name" => "",
+            "desc" => "",
+            "parameters" => array(
+                "generality" => 8, // řízení projektů (1) x vývoj software (10)
+                "formality" => 7, // formální (1) x volné (10)
+                "agility" => 2, // agilní (1) x robustní (10)
+                "waterfall" => 8, // vodopádové (1) x iterativní (10)
+                "usability" => 2, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2000, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'free', // open, free, paid
+            ),
+            "info" => array(
+                ""
+            ),
+            "images" => array(
+                "trello.png",
+            ),
+            "downloads" => array(
+                array(
+                    "title" => "",
+                    "href" => "",
+                ),
+            ),
+            "works" => array(
+                array(
+                    "title" => "",
+                    "works" => array(
+                        array(
+                            "title" => "",
+                            "href" => "",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                    ),
+                ),
+            ),
+            "methodologies" => array(
+                array(
+                    "href" => "",
+                    "title" => "",
+                    "desc" => "",
+                ),
+            ),
+            "similar" => array(
+                array(
+                    "href" => "",
+                    "title" => "",
+                    "desc" => "",
+                ),
+            ),
+            "projects" => array(
+                array(
+                    "href" => "",
+                    "title" => "",
+                ),
+            ),
+        ),
+*/
     );
 
     /**
@@ -567,12 +578,21 @@ class Tools {
 
     /**
      * @param $name
-     * @return array
+     * @return array|null
      */
     public function getTool($name) {
         if (!isset($this->tools[$name]))
             return null;
         return $this->tools[$name];
+    }
+
+    /**
+     * @param array $tools
+     * @return $this
+     */
+    public function setTools($tools) {
+        $this->tools = $tools;
+        return $this;
     }
 
 }
