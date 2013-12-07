@@ -218,7 +218,19 @@ html.js .jshidden {
 
 .methodology {
 
+  p {
+    text-align: justify;
+  }
+  p, li {
+    line-height: 160%;
+  }
+
   .part {
+    border-top: 3px solid #655E5E;
+    margin-top: 70px;
+    h2 {
+      margin-top: 10px;
+    }
 
     &.principle {
 
@@ -227,4 +239,49 @@ html.js .jshidden {
       }
     }
   }
+}
+
+.works {
+  .work {
+    .name {
+      font-weight: bold;
+      display: block;
+    }
+    .author {
+      &:before {
+        content: '(';
+      }
+      &:after {
+        content: ')';
+      }
+      font-weight: bold;
+      font-size: 80%;
+    }
+    .year {
+      font-size: 90%;
+    }
+    .desc {
+      display: block;
+      padding-left: 20px;
+      font-size: 90%;
+    }
+    border-top: 1px solid #777777;
+    margin-bottom: 15px;
+  }
+}
+
+.link-list {
+  list-style-image: url(../images/external.gif);
+}
+
+.download-list {
+  list-style-image: url(../images/download_icon.png);
+}
+
+.tools .internal-link-list {
+  list-style-image: url(../images/tool.png);
+}
+
+.methodologies .internal-link-list {
+  list-style-image: url(../images/arrow_circle.png);
 }

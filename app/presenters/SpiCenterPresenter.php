@@ -12,7 +12,11 @@ class SpiCenterPresenter extends BasePresenter
      * @param string $id
      */
     public function renderMethodology($id) {
-        $this->template->m = $this->methodologies->getMethodology($id);
+        $methodology = $this->methodologies->getMethodology($id);
+        if (!$methodology) {
+            throw new \Nette\Application\BadRequestException("Metodika ".$id." neexistuje");
+        }
+        $this->template->m = $methodology;
         $this->template->name = $id;
     }
 

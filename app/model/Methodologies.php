@@ -7,55 +7,253 @@ class Methodologies {
         "rup" => array(
             "name" => "RUP",
             "desc" => "Rational Unified Process: komplexní metodika pro řízení vývoje",
+            "parameters" => array(
+                "generality" => 0.9, // řízení projektů (1) x vývoj software (10)
+                "formality" => 0.4, // formální (1) x volné (10)
+                "agility" => 0.7, // agilní (1) x robustní (10)
+                "waterfall" => 0.7, // vodopádové (1) x iterativní (10)
+                "usability" => 0.9, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 1997, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'paid', // open, free, paid
+            ),
             "info" => array(
-                ""
+                "Metodika vznikal v roce 1995 spojením přístupu Rational a metodiky Objectory Process. Díky své podrobnosti se původně řadila do kategorie rigorózních metodik. Od roku 2003 je však doplňována o agilní praktiky. RUP je deskriptivní a proto se často používá pro vývoj systémů založených na objektových a komponentových technologiích. Jedná se o komerční metodiku, ale existuje i volně dostupná verze Unified Process (UP). Ta byla posléze zeštíhlena a vznikla OpenUP.",
+                "Poslední verzí je RUPv7, který je postaven na konceptu Unified Method Architecture (UMA) http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Kufner-Obecny_koncept_UMA.pdf. ",
+                "RUP stanovuje klíčové praktiky a procesy a vede uživatele k vytváření pouze toho, co je opravdu potřeba, minimalizaci papírové dokumentace, poučení se z chyb, prověřování rizik, definovaní cílů a metrik pokroku.",
+                "Celkem je definováno 6 praktik:",
+                array(
+                    "Iterativní a inkrementální vývoj",
+                    "Správa požadavků - http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Stas-Sprava_poziadaviek_ako_disciplina_RUP.pdf",
+                    "Použití komponentové architektury",
+                    "Vizuální modelování",
+                    "Kontrola a ověřování kvality",
+                    "Řízení změn",
+                ),
             ),
             "principleImage" => "rup.png",
             "principleLinks" => array(
                 array(
-                    "title" => "",
-                    "href" => "",
+                    "title" => "Tvorba podnikového modelu",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kocura-Business_modeling_podle_metodiky_RUP.pdf",
+                ),
+                array(
+                    "title" => "Správa požadavků",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Noskova-RUP_-_requirements.pdf",
+                ),
+                array(
+                    "title" => "Analýza a návrh",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Soukup-4IT421_RUP_Analysis_and_Design.pdf",
+                ),
+                array(
+                    "title" => "Implementace",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Bazala-RUP_Implementation_Bazala_Guhl.pdf",
+                ),
+                array(
+                    "title" => "Testování",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kastner-xkasv10_RUP_test.pdf",
+                ),
+                array(
+                    "title" => "Nasazení",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Koroleva-RUP_disciplina_Deployment_xkorj35.pdf",
+                ),
+                array(
+                    "title" => "Konfigurace a změny",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Majer-4IT421CMMIConfig.pdf",
+                ),
+                array(
+                    "title" => "Řízení projektu",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hanusova-4IT421-_Seminarni_prace_-_Hanusova_Kuliskova.pdf",
+                ),
+                array(
+                    "title" => "Správa prostředí",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2013/01/RUP_Environment.pdf",
                 ),
             ),
-            "principleDesc" => "",
+            "principleDesc" => "Proces vývoje SW je popsán v rámci dvou dimenzí – osy na obrázku níže. Horizontální osa představuje dynamický pohled na proces, který je vyjádřen pomocí cyklů, fází, iterací a milníků. Vertikální reprezentuje statické hledisko procesu, popis činností, artefaktů, pracovníků a prachovních toků. Tato osa zahrnuje 9 disciplín, které představují logické seskupení činností.Životní cyklus SW je rozdělen na cykly. Předmětem každého cyklu je nová verze produktu. Jeden vývojový cyklus je rozdělen do čtyř fází uvedených níže.",
             "specifications" => array(
                 array(
-                    "title" => "",
-                    "href" => "",
+                    "title" => "Základní informace o RUP",
+                    "href" => "http://testovanisoftwaru.cz/manualni-testovani/modely-zivotniho-cyklu-softwaru/rup/",
+                ),
+                array(
+                    "title" => "RUP – best practices for SW development teams",
+                    "href" => "http://www.ibm.com/developerworks/rational/library/content/03July/1000/1251/1251_bestpractices_TP026B.pdf",
+                ),
+                array(
+                    "title" => "Metodika a SW testování",
+                    "href" => "http://www.swtestovani.cz/index.php?option=com_content&view=article&id=43:metodika-rup-a-testovani&catid=3:zaklady&Itemid=11",
+                ),
+                array(
+                    "title" => "Kdy zvolit metodiku RUP",
+                    "href" => "http://www.systemonline.cz/clanky/kvalitni-metodika.htm",
                 ),
             ),
             "works" => array(
                 array(
-                    "title" => "",
+                    "title" => "Základní disciplíny",
                     "works" => array(
                         array(
-                            "title" => "",
-                            "href" => "",
-                            "author" => "",
-                            "year" => "",
-                            "desc" => "",
+                            "title" => "Business modeling podle metodiky RUP",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kocura-Business_modeling_podle_metodiky_RUP.pdf",
+                            "author" => "Petr Kocura",
+                            "year" => "2011",
+                            "desc" => "Práce popisuje disciplínu Byznys modelování podle ve verzi 7 pro velké projekty. Detailněji popisuje proces modelování a jednotlivé metodické prvky – role, artefakty a související návody.",
+                        ),
+                        array(
+                            "title" => "RUP disciplína Requirements",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Noskova-RUP_-_requirements.pdf",
+                            "author" => "Michaela Nosková",
+                            "year" => "2011",
+                            "desc" => "Práce popisuje disciplínu Správa požadavků z manažerského pohledu. Práce charakterizuje úkoly, aktivity, artefakty a role, které se v této disciplíně využívají.",
+                        ),
+                        array(
+                            "title" => "RUP disciplína Analysis & Design",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Roman-RUP_disciplina_Analysis__Design.pdf",
+                            "author" => "Martin Roman",
+                            "year" => "2011",
+                            "desc" => "Práce popisuje disciplínu Analýza a návrh, uvádí jednotlivé role pracovníků, popisuje činnosti, které se mají vykonat a uvádí jaké by měly být výsledné produkty této fáze.",
+                        ),
+                        array(
+                            "title" => "RUP – Disciplína implementation",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Bazala-RUP_Implementation_Bazala_Guhl.pdf",
+                            "author" => "Jan Bazala",
+                            "year" => "2012",
+                            "desc" => "Práce popisuje role, činnosti, produkty a návody disciplíny Implementace. Dále porovnává využití této disciplíny velkými a malými projekty.",
+                        ),
+                        array(
+                            "title" => "RUP - disciplína Test",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kucera-KUCERA-RUP-TEST.pdf",
+                            "author" => "Antonín Kučera",
+                            "year" => "2011",
+                            "desc" => "Práce se detailně zabývá disciplínou Testování, uvádí jednotlivé role pracovníků, detailněji specifikuje úkoly, které mají být řešeny a jednotlivé vstupy a výstupy.",
+                        ),
+                        array(
+                            "title" => "RUP – disciplína Deployment",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Koroleva-RUP_disciplina_Deployment_xkorj35.pdf",
+                            "author" => "Julie Koroleva",
+                            "year" => "2011",
+                            "desc" => "Práce se detailně zabývá disciplínou Nasazení, uvádí jednotlivé role pracovníků, detailněji specifikuje úkoly, které mají být řešeny a jednotlivé vstupy a výstupy.",
+                        ),
+                        array(
+                            "title" => "RUP disciplína Configuration & Change Management",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Majer-4IT421CMMIConfig.pdf",
+                            "author" => "Patrik Majer, Filip Mikschik",
+                            "year" => "2012",
+                            "desc" => "Práce charakterizuje disciplínu Konfigurace a změny, jednotlivé role pracovníků, činnosti, produkty a návody.",
+                        ),
+                        array(
+                            "title" => "RUP disciplína Project management",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hanusova-4IT421-_Seminarni_prace_-_Hanusova_Kuliskova.pdf",
+                            "author" => "Lucie Hanusová, Romana Kulíšková",
+                            "year" => "2012",
+                            "desc" => "Práce popisuje disciplínu řízení projektu, životní cyklus projektu, činnosti, které by měly být vykonávány a výhody a nevýhody metodiky RUP.",
+                        ),
+                        array(
+                            "title" => "RUP disciplína Environment",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2013/01/RUP_Environment.pdf",
+                            "author" => "Richard Günzl",
+                            "year" => "2012",
+                            "desc" => "Práce charakterizuje disciplínu Enviroment, jednotlivé role pracovníků, činnosti, produkty, návody a rozdíly v disciplíně při aplikaci na malé projekty.",
+                        ),
+                    ),
+                ),
+                array(
+                    "title" => "Další",
+                    "works" => array(
+                        array(
+                            "title" => "Správa požiadaviek ako disciplína RUP",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Stas-Sprava_poziadaviek_ako_disciplina_RUP.pdf",
+                            "author" => "Jakub Staš",
+                            "year" => "2011",
+                            "desc" => "Práce shrnuje manažerské shrnutí disciplíny správa požadavků. Stručný popis disciplíny, popis významu požadavků, dopady na use case modelování, popis cyklu správy požadavků a popis rolí a artefaktů.",
+                        ),
+                        array(
+                            "title" => "RUP disciplína Deployment",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Sich-4IT421_xsicj03_RUP_deployement.pdf",
+                            "author" => "Jan Šich",
+                            "year" => "2011",
+                            "desc" => "Práce se detailně zabývá disciplínou Nasazení, uvádí jednotlivé role pracovníků a detailněji specifikuje úkoly, které mají být řešeny.",
+                        ),
+                        array(
+                            "title" => "RUP – disciplína Analysis & Design",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Soukup-4IT421_RUP_Analysis_and_Design.pdf",
+                            "author" => "Petr Soukup",
+                            "year" => "2011",
+                            "desc" => "Práce se zaměřuje na detailní popis procesu disciplíny Analýza a Design v metodice Rational Unified Process ver.: 7.5.1 ve variantě metodiky pro menší projekty.",
+                        ),
+                        array(
+                            "title" => "RUP disciplína Test",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kastner-xkasv10_RUP_test.pdf",
+                            "author" => "Vojtěch Kastner",
+                            "year" => "2011",
+                            "desc" => "Práce je zaměřena na praktické přiblížení disciplíny Testování, kterou teoreticky popisuje práce RUP - disciplína Test (Antonín Kučera), 2011",
+                        ),
+                        array(
+                            "title" => "RUP: Service oriented modeling architecture",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Neumann-4IT421_RUP_-_SOMA_v5.pdf",
+                            "author" => "Marek Jansa, Martin Neumann",
+                            "year" => "2011",
+                            "desc" => "Práce podrobně rozebírá metodu RUP – Service-Oriented Modeling and Architecture (SOMA). Metodiku vymezuje, rozebírá jednotlivé fáze SOMA a popisuje činnosti a podčinnosti. V závěru je stručný výčet rolí.",
+                        ),
+                        array(
+                            "title" => "RUP pro malé a velké projekty – Rozdíly",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Pacourek-RUP_Rozdily_Pacourek_Nespor.pdf",
+                            "author" => "Jan Nešpor, Kryštof Pacourek",
+                            "year" => "2012",
+                            "desc" => "Práce srovnává využití metodiky RUP pro malé a velké projekty. Pro názornost práce obsahuje reálné využití metodiky v prostředí malého projektu.",
+                        ),
+                        array(
+                            "title" => "Popis konceptu Unified Method Architecture (UMA) a jeho použití v RUPv.7",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Kufner-Obecny_koncept_UMA.pdf",
+                            "author" => "Jiří Kűfner, Ondřej Andr",
+                            "year" => "2012",
+                            "desc" => "Práce uvádí vznik a popis konceptu UMA. Dále jsou definovány jednotlivé elementy a klíčové vlastnosti. Práce obsahuje několik příkladů a také porovnání RUPv7 s RUPv2003.",
                         ),
                     ),
                 ),
             ),
             "tools" => array(
                 array(
-                    "href" => "",
-                    "title" => "",
-                    "desc" => "",
+                    "href" => "ide-eclipse",
+                    "title" => "IDE Eclipse",
+                    "desc" => "Integrované vývojové prostředí",
+                ),
+                array(
+                    "href" => "ide-visual-studio",
+                    "title" => "IDE Visual Studio",
+                    "desc" => "Integrované vývojové prostředí",
+                ),
+                array(
+                    "href" => "rational-requisite-pro",
+                    "title" => "Rational Requisite Pro",
+                    "desc" => "Nástroj pro správu požadavků",
+                ),
+                array(
+                    "href" => "jira",
+                    "title" => "Jira",
+                    "desc" => "Nástroj pro správu požadavků",
+                ),
+                array(
+                    "href" => "magic-draw",
+                    "title" => "Magic Draw",
+                    "desc" => "Vizuální modelovací nástroj",
                 ),
             ),
             "similar" => array(
                 array(
-                    "href" => "",
-                    "title" => "",
+                    "href" => "rup-v7",
+                    "title" => "RUPv7 postaven na konceptu UMA",
+                ),
+                array(
+                    "href" => "up",
+                    "title" => "Unified Process (UP) – nekomerční verze RUP",
+                ),
+                array(
+                    "href" => "open-up",
+                    "title" => "OpenUP – zeštíhlená metodika UP",
                 ),
             ),
             "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
             ),
         ),
 
@@ -952,6 +1150,8 @@ class Methodologies {
     }
 
     public function getMethodology($name) {
+        if (!isset($this->methodologies[$name]))
+            return null;
         return $this->methodologies[$name];
     }
 }

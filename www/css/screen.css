@@ -183,6 +183,58 @@ html.js .jshidden {
   top: 70%;
   border-color: #e60000;
 }
+.methodology p {
+  text-align: justify;
+}
+.methodology p,
+.methodology li {
+  line-height: 160%;
+}
+.methodology .part {
+  border-top: 3px solid #655E5E;
+  margin-top: 70px;
+}
+.methodology .part h2 {
+  margin-top: 10px;
+}
 .methodology .part.principle .image {
   width: 100%;
+}
+.works .work {
+  border-top: 1px solid #777777;
+  margin-bottom: 15px;
+}
+.works .work .name {
+  font-weight: bold;
+  display: block;
+}
+.works .work .author {
+  font-weight: bold;
+  font-size: 80%;
+}
+.works .work .author:before {
+  content: '(';
+}
+.works .work .author:after {
+  content: ')';
+}
+.works .work .year {
+  font-size: 90%;
+}
+.works .work .desc {
+  display: block;
+  padding-left: 20px;
+  font-size: 90%;
+}
+.link-list {
+  list-style-image: url(../images/external.gif);
+}
+.download-list {
+  list-style-image: url(../images/download_icon.png);
+}
+.tools .internal-link-list {
+  list-style-image: url(../images/tool.png);
+}
+.methodologies .internal-link-list {
+  list-style-image: url(../images/arrow_circle.png);
 }

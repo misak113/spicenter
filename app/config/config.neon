@@ -14,7 +14,7 @@ common:
 	nette:
 		application:
 			errorPresenter: Error
-
+			catchExceptions: true
 		#database:
 		#	dsn: 'mysql:host=localhost;dbname=vlc_radio_master'
 		#	user: root
