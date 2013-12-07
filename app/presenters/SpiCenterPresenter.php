@@ -38,7 +38,9 @@ class SpiCenterPresenter extends BasePresenter
     }
 
     public function renderMethodologies() {
-        $this->template->methodologies = $this->methodologies->getMethodologies();
+        $methodologies = $this->methodologies->getMethodologies();
+        $methodologies = Sorting::sortByKey($methodologies, 'name');
+        $this->template->methodologies = $methodologies;
     }
 
 
@@ -54,6 +56,8 @@ class SpiCenterPresenter extends BasePresenter
         $this->template->name = $id;
     }
     public function renderTools() {
-        $this->template->tools = $this->tools->getTools();
+        $tools = $this->tools->getTools();
+        $tools = Sorting::sortByKey($tools, 'name');
+        $this->template->tools = $tools;
     }
 }
