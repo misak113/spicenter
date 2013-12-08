@@ -73,6 +73,7 @@ class SpiCenterPresenter extends BasePresenter
         }
         $this->setLayout('class');
         $this->setView('class/'.$id);
+        $this->template->id = $id;
 
         // render
         $this->template->weeks = $this->javaVseCzParser->getWeeks();

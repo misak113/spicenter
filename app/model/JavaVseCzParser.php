@@ -21,78 +21,45 @@ class JavaVseCzParser {
     }
 
     public function getWeeks() {
-        $this->pageUri = self::MAIN_URI;
-        $page = $this->getPagePartXmlArray(
-            "<table border='1' cellpadding='5' width='600' >", "</table>"
-        );
-        $weeks = array();
-        $indexes = array();
-        foreach ($page['table']['tr'] as $i => $row) {
-            if ($i === 0) {
-                foreach ($row['td'] as $index => $td) {
-                    $indexes[$index] = isset($td['@value']) ?$td['@value'] :$td;
-                }
-                continue;
-            }
-            $week = array();
-            foreach ($row['td'] as $index => $td) {
-                $week[$indexes[$index]] = isset($td['@value']) ?$td['@value'] :$td;
-            }
-            $weeks[] = $week;
-        }
-        return $weeks;
+        return $this->getArray(1);
     }
 
     public function getConditions() {
-        $this->pageUri = self::MAIN_URI;
-        $page = $this->getPagePartXmlArray(
-            "<table border='1' cellpadding='5' width='600' >", "</table>", 2
-        );
-        $weeks = array();
-        $indexes = array();
-        foreach ($page['table']['tr'] as $i => $row) {
-            if ($i === 0) {
-                foreach ($row['th'] as $index => $td) {
-                    $indexes[$index] = isset($td['@value']) ?$td['@value'] :$td;
-                }
-                continue;
-            }
-            $week = array();
-            foreach ($row['td'] as $index => $td) {
-                $week[$indexes[$index]] = isset($td['@value']) ?$td['@value'] :$td;
-            }
-            $weeks[] = $week;
-        }
-        return $weeks;
+        return $this->getArray(2);
     }
 
     public function getBibliography() {
-        $this->pageUri = self::MAIN_URI;
-        $page = $this->getPagePartXmlArray(
-            "<table border='1' cellpadding='5' width='600' >", "</table>", 3
-        );
-        $weeks = array();
-        $indexes = array();
-        foreach ($page['table']['tr'] as $i => $row) {
-            if ($i === 0) {
-                foreach ($row['th'] as $index => $td) {
-                    $indexes[$index] = isset($td['@value']) ?$td['@value'] :$td;
-                }
-                continue;
-            }
-            $week = array();
-            foreach ($row['td'] as $index => $td) {
-                $week[$indexes[$index]] = isset($td['@value']) ?$td['@value'] :$td;
-            }
-            $weeks[] = $week;
-        }
-        return $weeks;
+        return $this->getArray(3);
     }
 
     public function getWorksInfo() {
         $this->pageUri = self::WORKS_URI;
         $html = $this->getPagePart("<div id='wikitext'>", "<div class='vspace'></div></div>");
         return $html;
+    }
+
+    protected function getArray($count) {
+        $this->pageUri = self::MAIN_URI;
+        $page = $this->getPagePartXmlArray(
+            "<table border='1' cellpadding='5' width='600' >", "</table>", $count
+        );
+        $weeks = array();
+        $indexes = array();
+        foreach ($page['table']['tr'] as $i => $row) {
+            if ($i === 0) {
+                $cells = isset($row['td']) ?$row['td'] :$row['th'];
+                foreach ($cells as $index => $td) {
+                    $indexes[$index] = isset($td['@value']) ?$td['@value'] :$td;
+                }
+                continue;
+            }
+            $week = array();
+            foreach ($row['td'] as $index => $td) {
+                $week[$indexes[$index]] = isset($td['@value']) ?$td['@value'] :$td;
+            }
+            $weeks[] = $week;
+        }
+        return $weeks;
     }
 
     protected function getPagePart($start, $end, $count = 1) {

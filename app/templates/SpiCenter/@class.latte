@@ -1,18 +1,35 @@
 {layout ../@layout.latte}
 
+{define #classTitle}{$id}{/define}
+
 {#content}
+
+<ol class="breadcrumb">
+    <li><a n:href="SpiCenter:">SPI Center</a></li>
+    <li>
+        <a n:if="$id != default" n:href="SpiCenter:class">Předmět</a>
+        <span n:if="$id == default" class="active">Předmět</span>
+    </li>
+    <li n:if="$id != default" class="active">{include #classTitle}</li>
+</ol>
+
+
     <ul class="nav nav-tabs nav-justified row">
         <li class="schedule col-md-3{ifCurrent SpiCenter:class, id => schedule} active{/ifCurrent}">
-            <a n:href="SpiCenter:class, id => schedule">Harmonogram</a>
+            <a n:href="SpiCenter:class, id => schedule"><div>Harmonogram</div>
+            <small>přednášek předmětu</small></a>
         </li>
         <li class="conditions col-md-3{ifCurrent SpiCenter:class, id => conditions} active{/ifCurrent}">
-            <a n:href="SpiCenter:class, id => conditions">Podmínky</a>
+            <a n:href="SpiCenter:class, id => conditions"><div>Podmínky</div>
+            <small>splnění kurzu</small></a>
         </li>
         <li class="works col-md-3{ifCurrent SpiCenter:class, id => works} active{/ifCurrent}">
-            <a n:href="SpiCenter:class, id => works">Práce</a>
+            <a n:href="SpiCenter:class, id => works"><div>Práce</div>
+            <small>semestrální</small></a>
         </li>
         <li class="bibliography col-md-3{ifCurrent SpiCenter:class, id => bibliography} active{/ifCurrent}">
-            <a n:href="SpiCenter:class, id => bibliography">Publikace</a>
+            <a n:href="SpiCenter:class, id => bibliography"><div>Publikace</div>
+            <small>pro studium</small></a>
         </li>
     </ul>
     <div class="tab-content">
