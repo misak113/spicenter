@@ -491,8 +491,10 @@ html.js .jshidden {
 
 
 .class-default {
-  h2 {
-    display: none;
+  @media (min-width: 992px) {
+    h2 {
+      display: none;
+    }
   }
   h3 {
     font-size: 130%;
@@ -505,6 +507,17 @@ html.js .jshidden {
   .class-bibliography {
     .column-1, .column-3, .column-4, .column-6, .column-0 {
       display: none;
+    }
+  }
+}
+
+.navbar-header {
+  .navbar-brand {
+    @media (max-width: 768px) {
+      max-width: 75%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 }

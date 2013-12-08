@@ -532,8 +532,10 @@ html.js .jshidden {
 .missing a {
   color: #888888;
 }
-.class-default h2 {
-  display: none;
+@media (min-width: 992px) {
+  .class-default h2 {
+    display: none;
+  }
 }
 .class-default h3 {
   font-size: 130%;
@@ -548,4 +550,12 @@ html.js .jshidden {
 .class-default .class-bibliography .column-6,
 .class-default .class-bibliography .column-0 {
   display: none;
+}
+@media (max-width: 768px) {
+  .navbar-header .navbar-brand {
+    max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
