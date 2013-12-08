@@ -49,17 +49,21 @@ class JavaVseCzParser {
             if ($i === 0) {
                 $cells = isset($row['td']) ?$row['td'] :$row['th'];
                 foreach ($cells as $index => $td) {
-                    $indexes[$index] = isset($td['@value']) ?$td['@value'] :$td;
+                    $indexes[$index] = $this->getElementValue($td);
                 }
                 continue;
             }
             $week = array();
             foreach ($row['td'] as $index => $td) {
-                $week[$indexes[$index]] = isset($td['@value']) ?$td['@value'] :$td;
+                $week[$indexes[$index]] = $this->getElementValue($td);
             }
             $weeks[] = $week;
         }
         return $weeks;
+    }
+    
+    protected function getElementValue($element) {
+    	return is_array($element) ?$element['@value'] :$element;
     }
 
     protected function getPagePart($start, $end, $count = 1) {
