@@ -423,12 +423,13 @@ html.js .jshidden {
 }
 .methodology .part,
 .tool .part {
-  border-top: 3px solid #655E5E;
-  margin-top: 70px;
+  padding-top: 30px;
+  margin-top: 40px;
 }
-.methodology .part h2,
-.tool .part h2 {
-  margin-top: 10px;
+.methodology .part > h2,
+.tool .part > h2 {
+  border-top: 3px solid #655E5E;
+  padding-top: 10px;
 }
 .methodology .part.principle .map,
 .tool .part.principle .map {
