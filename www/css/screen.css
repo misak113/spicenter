@@ -455,14 +455,24 @@ html.js .jshidden {
 .methodology .part.principle .image,
 .tool .part.principle .image {
   width: 100%;
-  min-height: 400px;
   max-height: 500px;
+}
+@media (min-width: 768px) {
+  .methodology .part.principle .image,
+  .tool .part.principle .image {
+    min-height: 400px;
+  }
 }
 .methodology .part.images .image,
 .tool .part.images .image {
   width: 100%;
   min-height: 400px;
   max-height: 500px;
+}
+.methodology .part.specification .spec .desc,
+.tool .part.specification .spec .desc {
+  display: block;
+  font-size: 80%;
 }
 .works .work,
 .principle .work,
@@ -523,8 +533,14 @@ html.js .jshidden {
 .methodologies .internal-link-list {
   list-style-image: url(../images/arrow_circle.png);
 }
+.external-link {
+  list-style-image: url(../images/external.gif);
+}
 .missing {
   opacity: 0.3;
+}
+.missing.external-link {
+  opacity: 0.5;
 }
 .missing:hover {
   opacity: 1;

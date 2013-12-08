@@ -115,11 +115,12 @@
         <div id="methodology-specifications" class="part specification">
             <h2>Specifikace</h2>
             <ul class="link-list">
-                <li n:foreach="$m['specifications'] as $spec">
+                <li n:foreach="$m['specifications'] as $spec" class="spec">
                     <a href="{$spec['href']}"
                        target="_blank">
                         {$spec['title']}
                     </a>
+                    <span n:ifset="$spec['desc']" class="desc">{$spec['desc']}</span>
                 </li>
             </ul>
         </div>
@@ -151,6 +152,8 @@
             </p>
         </div>
 
+
+        <!-- Nástroje  -->
         <div id="methodology-tools" class="part tools">
             <h2>Nástroje</h2>
 
@@ -166,13 +169,16 @@
             </p>
         </div>
 
+
+        <!-- Podobné -->
         <div id="methodology-similar" class="part similar methodologies">
             <h2>Podobné metodiky</h2>
 
             <ul class="internal-link-list">
                 <li n:foreach="$m['similar'] as $met"
-                    n:class="isset($met['missing'])?missing">
-                    <a n:href="SpiCenter:methodology, id => $met['href']">{$met['title']}</a>
+                    n:class="isset($met['missing'])?missing, isset($met['http'])?external-link">
+                    <a n:if="!isset($met['http'])" n:href="SpiCenter:methodology, id => $met['href']">{$met['title']}</a>
+                    <a n:if="isset($met['http'])" href="{$met['http']}">{$met['title']}</a>
                     <span class="desc">{$met['desc']}</span>
                 </li>
             </ul>
@@ -181,6 +187,8 @@
             </p>
         </div>
 
+
+        <!-- Projekty -->
         <div id="methodology-projects" class="part projects">
             <h2>Projekty</h2>
             <ul class="link-list">

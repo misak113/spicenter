@@ -418,7 +418,9 @@ html.js .jshidden {
 
       .image {
         width: 100%;
-        min-height: 400px;
+        @media (min-width: 768px) {
+          min-height: 400px;
+        }
         max-height: 500px;
       }
     }
@@ -428,6 +430,15 @@ html.js .jshidden {
         width: 100%;
         min-height: 400px;
         max-height: 500px;
+      }
+    }
+
+    &.specification {
+      .spec {
+        .desc {
+          display: block;
+          font-size: 80%;
+        }
       }
     }
   }
@@ -478,7 +489,14 @@ html.js .jshidden {
   list-style-image: url(../images/arrow_circle.png);
 }
 
+.external-link {
+  list-style-image: url(../images/external.gif);
+}
+
 .missing {
+  &.external-link {
+    opacity: 0.5;
+  }
   //text-decoration: line-through;
   opacity: 0.3;
   &:hover {

@@ -1026,22 +1026,29 @@ class Methodologies {
                 ),
             ),
             "principleDesc" => "",
+            "images" => array(
+                "cmmi-similar.jpg"
+            ),
             "specifications" => array(
                 array(
                     "title" => "dokument CMMI® for Development, Version 1.3",
                     "href" => "http://www.sei.cmu.edu/reports/10tr033.pdf",
+                    "desc" => "Základní definice CMMI-DEV v1.3 vydaná SEI (Software Engineering Institute) (ENG)",
                 ),
                 array(
                     "title" => "Wikipedia - CMMI",
                     "href" => "http://cs.wikipedia.org/wiki/CMMI",
+                    "desc" => "Obecnější popis CMMI na Wikipedii (CZ)",
                 ),
                 array(
                     "title" => "Wikipedia - Capability Maturity Model",
                     "href" => "http://en.wikipedia.org/wiki/Capability_Maturity_Model",
+                    "desc" => "Podrobnější popis oproti české verzi na Wikipedii (ENG)",
                 ),
                 array(
                     "title" => "SEI CMU",
                     "href" => "http://www.sei.cmu.edu",
+                    "desc" => "Oficiální webové stránky SEI (Software Engineering Institute) - autoři CMMI",
                 ),
             ),
             "works" => array(
@@ -1179,15 +1186,15 @@ class Methodologies {
                     "title" => "Zajímavé",
                     "works" => array(
                         array(
-                            "title" => "delší přenáška o CMMI",
+                            "title" => "Adrian Harston přednáší o změnách, které přineslo CMMI v1.3 (45 min - ENG)",
                             "href" => "http://www.youtube.com/watch?v=8h622dpHB10",
-                            "author" => "Trinity",
+                            "author" => "Trinity Management Consulting",
                             "year" => "2011",
                             "desc" => "",
                             "size" => "",
                         ),
                         array(
-                            "title" => "kratší přednáška o CMMI",
+                            "title" => "Představení CMMI (8 min - ENG)",
                             "href" => "http://www.youtube.com/watch?v=2DLS-HuC6pU",
                             "author" => "",
                             "year" => "2008",
@@ -1232,16 +1239,49 @@ class Methodologies {
             ),
             "similar" => array(
                 array(
-                    "href" => "",
-                    "title" => "",
-                    "desc" => "",
+                    "href" => "agile",
+                    "http" => "http://en.wikipedia.org/wiki/Agile_software_development",
+                    "title" => "Agile",
+                    "desc" => "skupina metod vývoje SW založená na iterativním a inkrementálním principu.",
+                ),
+                array(
+                    "href" => "team-software-process",
+                    "http" => "http://en.wikipedia.org/wiki/Team_Software_Process",
+                    "title" => "Team Software process",
+                    "desc" => "procesní rámec jak pro produkci tak vývoj s účelem zlepšování kvality a produktivity.",
+                ),
+                array(
+                    "href" => "iso-15504",
+                    "http" => "http://en.wikipedia.org/wiki/ISO/IEC_15504",
+                    "title" => "ISO 15504",
+                    "desc" => "Nazývaný též SPICE (Software Process Improvement and Capability Determination) - rámec vývoje SW používající některé přístupy k zralosti jako CMMI.",
+                ),
+                array(
+                    "href" => "iso-9000-2000",
+                    "http" => "http://en.wikipedia.org/wiki/ISO_9000#2000_version",
+                    "title" => "ISO 9000:2000",
+                    "desc" => "Norma týkající se kvality, efektivity a neustálemu zlepšování procesů.",
+                ),
+                array(
+                    "href" => "iso-20000",
+                    "http" => "http://www.eiso.cz/poradenstvi/zavadeni-systemu/ISO-20000/",
+                    "title" => "ISO 20000",
+                    "desc" => "Norma týkající se managementu IT služeb - zlepšování kvality, zvyšování efektivity atp.",
+                ),
+                array(
+                    "href" => "pdca",
+                    "http" => "http://en.wikipedia.org/wiki/PDCA",
+                    "title" => "PDCA",
+                    "desc" => "Tzv. Demingův model pro zdokonalování procesů.",
+                ),
+                array(
+                    "href" => "total-quality-management",
+                    "http" => "http://en.wikipedia.org/wiki/Total_quality_management",
+                    "title" => "Total quality management",
+                    "desc" => "TQM je komplexní přístup k řízení s důrazem na kvalitu ve všech aspektech organizace.",
                 ),
             ),
             "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
             ),
         ),
 
