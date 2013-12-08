@@ -9,6 +9,8 @@ class SpiCenterPresenter extends BasePresenter
     public $methodologies;
     /** @var Tools @inject */
     public $tools;
+    /** @var JavaVseCzParser @inject */
+    public $javaVseCzParser;
 
     protected function startup() {
         parent::startup();
@@ -59,5 +61,23 @@ class SpiCenterPresenter extends BasePresenter
         $tools = $this->tools->getTools();
         $tools = Sorting::sortByKey($tools, 'name');
         $this->template->tools = $tools;
+    }
+
+    /**
+     * @param string $id
+     */
+    public function renderClass($id = 'default') {
+        $classPages = array('default', 'schedule', 'conditions', 'works', 'bibliography');
+        if (!in_array($id, $classPages)) {
+            throw new \Nette\Application\BadRequestException('Stránka s požadovanými informacemi o předmětu neexistuje');
+        }
+        $this->setLayout('class');
+        $this->setView('class/'.$id);
+
+        // render
+        $this->template->weeks = $this->javaVseCzParser->getWeeks();
+        $this->template->conditions = $this->javaVseCzParser->getConditions();
+        $this->template->worksInfo = $this->javaVseCzParser->getWorksInfo();
+        $this->template->bibliography = $this->javaVseCzParser->getBibliography();
     }
 }

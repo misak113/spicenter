@@ -1,0 +1,16 @@
+
+{#contentClass}
+<h2>Podmínky splnění kurzu</h2>
+<table class="table table-striped class-conditions">
+    <thead>
+    <tr>
+        <th n:foreach="$conditions[0] as $name => $value" class="column-{$iterations}">{$name}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr n:foreach="$conditions as $condition">
+        <td n:foreach="$condition as $name => $value" class="column-{$iterations}">{$value}</td>
+    </tr>
+    </tbody>
+</table>
+{/#}

@@ -531,3 +531,20 @@ html.js .jshidden {
 .missing a {
   color: #888888;
 }
+.class-default h2 {
+  display: none;
+}
+.class-default h3 {
+  font-size: 130%;
+}
+.class-default .class-schedule .column-2,
+.class-default .class-schedule .column-3 {
+  display: none;
+}
+.class-default .class-bibliography .column-1,
+.class-default .class-bibliography .column-3,
+.class-default .class-bibliography .column-4,
+.class-default .class-bibliography .column-6,
+.class-default .class-bibliography .column-0 {
+  display: none;
+}

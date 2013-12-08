@@ -37,6 +37,7 @@ common:
 				- relateTools()
 				- relateMethodologies()
 			run: true
+		javaVseCzParser: JavaVseCzParser
 
 
 	factories:

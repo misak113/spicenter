@@ -1,0 +1,24 @@
+{layout ../@layout.latte}
+
+{#content}
+    <ul class="nav nav-tabs nav-justified row">
+        <li class="schedule col-md-3{ifCurrent SpiCenter:class, id => schedule} active{/ifCurrent}">
+            <a n:href="SpiCenter:class, id => schedule">Harmonogram</a>
+        </li>
+        <li class="conditions col-md-3{ifCurrent SpiCenter:class, id => conditions} active{/ifCurrent}">
+            <a n:href="SpiCenter:class, id => conditions">Podmínky</a>
+        </li>
+        <li class="works col-md-3{ifCurrent SpiCenter:class, id => works} active{/ifCurrent}">
+            <a n:href="SpiCenter:class, id => works">Práce</a>
+        </li>
+        <li class="bibliography col-md-3{ifCurrent SpiCenter:class, id => bibliography} active{/ifCurrent}">
+            <a n:href="SpiCenter:class, id => bibliography">Publikace</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade active in">
+            {include #contentClass}
+        </div>
+    </div>
+
+{/#}

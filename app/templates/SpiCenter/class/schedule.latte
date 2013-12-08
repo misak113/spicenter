@@ -1,0 +1,16 @@
+
+{#contentClass}
+<h2>Harmonogram přednášek</h2>
+    <table class="table table-striped class-schedule">
+        <thead>
+            <tr>
+                <th n:foreach="$weeks[0] as $name => $value" class="column-{$iterations}">{$name}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr n:foreach="$weeks as $week">
+                <td n:foreach="$week as $name => $value" class="column-{$iterations}">{$value}</td>
+            </tr>
+        </tbody>
+    </table>
+{/#}
