@@ -244,43 +244,43 @@ html.js .jshidden {
 }
 .methodologies .graph .items .item.formality-1,
 .tools .graph .items .item.formality-1 {
-  border-radius: 50%;
+  border-radius: 5%;
 }
 .methodologies .graph .items .item.formality-2,
 .tools .graph .items .item.formality-2 {
-  border-radius: 45%;
+  border-radius: 10%;
 }
 .methodologies .graph .items .item.formality-3,
 .tools .graph .items .item.formality-3 {
-  border-radius: 40%;
+  border-radius: 15%;
 }
 .methodologies .graph .items .item.formality-4,
 .tools .graph .items .item.formality-4 {
-  border-radius: 35%;
+  border-radius: 20%;
 }
 .methodologies .graph .items .item.formality-5,
 .tools .graph .items .item.formality-5 {
-  border-radius: 30%;
+  border-radius: 25%;
 }
 .methodologies .graph .items .item.formality-6,
 .tools .graph .items .item.formality-6 {
-  border-radius: 25%;
+  border-radius: 30%;
 }
 .methodologies .graph .items .item.formality-7,
 .tools .graph .items .item.formality-7 {
-  border-radius: 20%;
+  border-radius: 35%;
 }
 .methodologies .graph .items .item.formality-8,
 .tools .graph .items .item.formality-8 {
-  border-radius: 15%;
+  border-radius: 40%;
 }
 .methodologies .graph .items .item.formality-9,
 .tools .graph .items .item.formality-9 {
-  border-radius: 10%;
+  border-radius: 45%;
 }
 .methodologies .graph .items .item.formality-10,
 .tools .graph .items .item.formality-10 {
-  border-radius: 5%;
+  border-radius: 50%;
 }
 .methodologies .graph .items .item.generality-1,
 .tools .graph .items .item.generality-1 {
