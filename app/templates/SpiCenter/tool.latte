@@ -32,7 +32,8 @@
         <!-- Obrázky -->
         <div id="tool-images" class="part images">
             <h2>Obrázky</h2>
-            <div id="carousel-images" class="images carousel slide" data-ride="carousel">
+            <div id="carousel-images" class="images carousel slide"
+                 data-pause="false">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li n:foreach="$t['images'] as $i => $image"
@@ -44,9 +45,14 @@
                 <div class="carousel-inner">
                     <div n:foreach="$t['images'] as $image"
                          class="item{first} active{/first}">
-                        <img src="{$baseUrl}/resource/{$image}"
-                             alt="Obrázek {$t['name']}"
-                             class="image" />
+                        {if strpos($image, 'youtube.com') !== false}
+                            <iframe src="{$image|replace:'watch?v=':'embed/'}" frameborder="0"
+                                    class="image"></iframe>
+                        {else}
+                            <img src="{$baseUrl}/resource/{$image}"
+                                 alt="Obrázek {$t['name']}"
+                                 class="image" />
+                        {/if}
                         <div class="carousel-caption"></div>
                     </div>
                 </div>

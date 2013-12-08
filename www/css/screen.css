@@ -424,11 +424,13 @@ html.js .jshidden {
 .methodology .part.principle .image,
 .tool .part.principle .image {
   width: 100%;
+  min-height: 400px;
   max-height: 500px;
 }
 .methodology .part.images .image,
 .tool .part.images .image {
   width: 100%;
+  min-height: 400px;
   max-height: 500px;
 }
 .works .work {
