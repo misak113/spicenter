@@ -1288,7 +1288,7 @@ class Methodologies {
         // Ostatní témata
         "other" => array(
             "name" => "Ostatní témata",
-            "desc" => "",
+            "desc" => "metodiky a nástroje, jejichž téma nepatří mezi ostatní",
             "parameters" => array(
                 "generality" => 5, // řízení projektů (1) x vývoj software (10)
                 "formality" => 6, // formální (1) x volné (10)
@@ -1397,14 +1397,16 @@ class Methodologies {
                             "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011O-Zmatlik-nastrojeNaSledovaniChyb.pdf",
                             "author" => "Rostislav Zmátlík",
                             "year" => "2011",
-                            "desc" => "Keywords: bug tracking, sledování chyb, Bug tracker, Mantis bug tracker, Bugzilla",
+                            "desc" => "Srovnání tří nástrojů na sledování chyb.",
+                            "keywords" => "bug tracking, sledování chyb, Bug tracker, Mantis bug tracker, Bugzilla",
                         ),
                         array(
                             "title" => "Srovnání issue a bug tracking komerčních nástrojů",
                             "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011O-BugTracking.pdf",
                             "author" => "Jakub Houžvička",
                             "year" => "2011",
-                            "desc" => "Keywords: issue tracking, bug tracking, Pivotal Tracker, Gemini, JIRA",
+                            "desc" => "Metodické srovnání tří komerčních Bug tracking řešení. ",
+                            "keywords" => "issue tracking, bug tracking, Pivotal Tracker, Gemini, JIRA",
                         ),
                     ),
                 ),
@@ -1416,21 +1418,24 @@ class Methodologies {
                             "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011O-Kotlaba-Metodiky_pro_vyvoj_pocitacovych_her.pdf",
                             "author" => "Josef Kotlaba",
                             "year" => "2011",
-                            "desc" => "Keywords: vývoj počítačových her, životní cyklus, sběr požadavků, testování",
+                            "desc" => "Popis metodik pro vývoj počítačových her.",
+                            "keywords" => "vývoj počítačových her, životní cyklus, sběr požadavků, testování",
                         ),
                         array(
                             "title" => "Implementace metodiky Rational Unified Process v systému Unicorn Universe",
                             "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hanus-4it421_hanus_meszaros.pdf",
                             "author" => "Mészáros Maroš, Oldřich Hanuš",
                             "year" => "2012",
-                            "desc" => "Keywords: RUP, Unicorn Universe, metodika, agilní, tradiční, projektový management",
+                            "desc" => "Vývoj SW dle RUP v Unicorn Universe",
+                            "keywords" => "RUP, Unicorn Universe, metodika, agilní, tradiční, projektový management",
                         ),
                         array(
                             "title" => "Microsoft Solutions Framework ",
                             "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Smahel-smahel_MSF.pdf",
                             "author" => "Martin Šmahel",
                             "year" => "2012",
-                            "desc" => "Keywords: Microsoft Solutions Framework, metodický rámec, agilní vývoj, CMMI, týmový model, governance model, řízení projektu",
+                            "desc" => "Představení metodického rámce MFS od společnosti Microsoft. ",
+                            "keywords" => "Microsoft Solutions Framework, metodický rámec, agilní vývoj, CMMI, týmový model, governance model, řízení projektu",
                         ),
                     ),
                 ),
@@ -1483,23 +1488,21 @@ class Methodologies {
                 ),
             ),
             "tools" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                    "desc" => "",
-                ),
             ),
             "similar" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                    "desc" => "",
-                ),
             ),
             "projects" => array(
                 array(
-                    "href" => "",
-                    "title" => "",
+                    "href" => "http://www.iiitd.edu.in/~ashish/APSEC-2012.pdf",
+                    "title" => "Bug tracking při vývoji Google Chrome",
+                ),
+                array(
+                    "href" => "http://www.netresultstracker.com/product/apps/cs_games_software.html",
+                    "title" => "Implementace NetResults tracker",
+                ),
+                array(
+                    "href" => "https://www.google.cz/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CC8QFjAA&url=http%3A%2F%2Fwww.lifesize.com%2F~%2Fmedia%2FDocuments%2FCase%2520Studies%2FCompanies%2520A%2520Through%2520L%2FActivision%2520Case%2520Study%2520EN.ashx&ei=4vakUrfMDYbW7Qaq6IHoDQ&usg=AFQjCNGBK2DN14mtqBhdJq-tDGkeI85c3Q&sig2=ip8grRxEB2-nKpL0D_t6vg&bvm=bv.57752919,d.ZGU",
+                    "title" => "Case study popisující spolupráci vývojářů ve společnosti Activision",
                 ),
             ),
         ),
