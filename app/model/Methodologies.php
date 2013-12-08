@@ -1236,6 +1236,259 @@ class Methodologies {
             ),
         ),
 
+
+
+        // ISO 29110
+        "iso-29110" => array(
+            "name" => "ISO 29110",
+            "desc" => "Standard pro malé entity",
+            "parameters" => array(
+                "generality" => 2, // řízení projektů (1) x vývoj software (10)
+                "formality" => 1, // formální (1) x volné (10)
+                "agility" => 7, // agilní (1) x robustní (10)
+                "waterfall" => 5, // vodopádové (1) x iterativní (10)
+                "usability" => 8, // v praxi využívané (1) x nevyužívané (10)
+                "enveloped" => 2010, // rok kdy byla hitem resp. vytvoření
+                "openness" => 'free', // open, free, paid
+            ),
+            "info" => array(
+                "Mezinárodní norma ISO/IEC 29110 Life-Cycle Profiles for Very Small Entities je vytvářena pracovní skupinou WG24, která je součástí ISO/IEC JTC1/SC07, pro posuzování a zlepšování procesů ve velmi malých podnicích.",
+                "Zavádění standardů a norem v oblasti softwarových procesů je náročné na zdroje, a tak je realizují spíše větší organizace. Přitom podíl malých firem je v oblasti vývoje softwaru velmi vysoký. Navíc malé podniky vyvíjí životně důležité systémy, systémy kritické pro poslání organizace, anebo systémy pro státní správu. To podtrhuje význam, který má pro tyto podniky certifikace. Průzkum realizovaný v roce 2006 [Laporte, 2006] ukázal zajímavé rozdíly v počtu certifikovaných firem ve vztahu k velikosti firmy. V kategorii velmi malých podniků bylo certifikováno méně než 18% firem. Naproti tomu u firem s více než 25 zaměstnanci bylo certifikováno už 53% firem. Certifikované firmy používají v 55% ISO normy a v 47% modely CMM, respektive CMMI [Octaba, 2008]. Protože se u velmi malých podniků předpokládala menší míra používání standardů, obsahoval průzkum také otázku, z jakého důvodu firma standardy a normy nepoužívá. Jako nejčastější důvody byly uváděny nedostatek zdrojů (28%) a skutečnost, že standardy nejsou vyžadovány (24%). 15% respondentů uvedlo, že standardy jsou příliš byrokratické a nejsou k dispozici návody na jejich aplikaci. Na druhé straně ale převážná většina velmi malých podniků (74%) uvedla, že je pro ně velmi důležité získat certifikaci.",
+            ),
+            "principleImage" => "iso-29110.jpg",
+            "principleLinks" => array(
+                array(
+                    "title" => "",
+                    "href" => "",
+                ),
+            ),
+            "principleDesc" => array(
+                "Pracovní skupina WG24 připravuje množinu dokumentů, technických zpráv (TR) a mezinárodních standardizovaných profilů (ISP) pod obecným názvem Life-Cycle Profiles for Very Small Entities (VSEP), která obsahuje:",
+                array(
+                    "TR 29110-1 Overview",
+                    "ISP 29110-2 Framework and Taxonomy",
+                    "TR 29110-3 Profile Assesment Guide",
+                    "TR 29110-4.1 Basic Profile Specification",
+                    "TR 29110-5.1 Management and Engineering Guide for Basic Profile",
+                ),
+                "Základní profil se skládá ze dvou skupin procesů – Implementace softwaru a Řízení projektu. Na obrázku 1 jsou znázorněny jednotlivé procesy, jejich vstupy a výstupy. Skupina WG24 počítá s tím, že vytvoří další profily, které umožní organizaci dosáhnout vyšší úrovně způsobilosti procesů a umožní jí postupně se dopracovat k certifikaci na ISO 9001. Součástí normy je také návod, jak implementovat softwarové procesy a pro každý proces obsažený v základním profilu je vytvořen tzv. balíček nasazení, který vysvětluje smysl procesu, cíl jeho zavedení, způsob jeho zavedení, doporučuje techniky a metody, které slouží k realizaci procesu a obsahuje šablony dokumentů, které je třeba při realizaci procesu vytvářet. Norma TR 29110 je ve stádiu vytváření, ale pracovní verze dokumentů a některé balíčky nasazení jsou již k dispozici. Pracovní skupina nyní zvažuje, v jaké formě bude postupy publikovat. Jako možné řešení se jeví využít nástroj pro správu obsahu Eclipse Process Framework Composer (EPF Composer), který je volně dostupný a umožňuje snadnou konfiguraci a přizpůsobení postupů.",
+                "Zdroje:" => array(
+                    "BASL a kol., 2011 Inovace podnikových informačních systémů, 1. vyd. Praha : PROFESSIONAL PUBLISHING, 2011. 151 s. ISBN 978-80-7431-045-4.",
+                    "OCTABA, H.; PIETINI, M. 2008. Software Process Improvement for Small and Medium Enterprises: Techniques and case studies. Information Science Reference, Hershey, New York, 2008, ISBN 978-1-59904-906-9.",
+                    "LAPORTE, C. Y.; APRIL, A.; RENAULT, A. 2006. Applying ISO/IEC software engineering standards in small settings, Historical perspectives and initial achievements. In Proceedings of the SPICE conference, Luxembourg (pp.57-62), May 2006.",
+                    "MÄKINEN, T.; VARKOI, T. 2008. Analyzing a Process Profile for Very Small Software Enterprises. In Proceedings of the SPICE 2008 conference, Norimberk, 2008.",
+                ),
+                "Cíle normy:" => "Při vytváření normy byly stanoveny následující cíle:",
+                array(
+                    "pomoci velmi malým podnikům produkovat kvalitní softwarové systémy bez počátečních nákladů pro zavedení a udržování celé sady norem a systémů softwarového inženýrství či provádění komplexních hodnocení procesů",
+                    "poskytnout snadno pochopitelné, dostupné a použitelné návody pro velmi malé podniky",
+                    "vytvořit sadu profilů, které umožní zavést a zlepšovat procesy ve velmi malých podnicích",
+                    "poskytnout velmi malým podnikům doménově specifické profily",
+                    "poskytnout velmi malým podnikům příklady, které pomohou při zavádění a dodržování procesů podporujících vytváření kvalitního softwaru a odpovídajících jejich specifickým potřebám, problémům a rizikům",
+                    "poskytnout základnu pro spolupráci více velmi malých podniků u projektů, které jsou pro jeden podnik příliš složité",
+                    "vytvořit škálovatelné profily a návody, které umožní velmi malým podnikům dosažení shody s normami ISO/IEC 12207 a/nebo ISO/IEC 9001 a posouzení procesů s nutností jejich minimálního přepracování."
+                ),
+                "Zdroje normy:" => "Norma ISO/IEC 29110 byla založena na modelu Mexického standardu MoProSoft a vychází z následujících zdrojů (jejich návaznost a produkty, pro které byly použity, zachycuje obrázek níže):",
+                array(
+                    "SW-CMM (Software Capability Maturity Model)",
+                    "CMMI (Capability Maturity Model Integration)",
+                    "ISO/IEC 12207",
+                    "ISO/IEC 15288",
+                    "ISO/IEC 15504",
+                    "ISO/IEC 90003.",
+                ),
+                "Struktury normy:" => "Pro pokrytí potřeb celého spektra velmi malých podniků a projektů(VMP) jsou definovány čtyři profily :",
+                array(
+                    "vstupní (Entry): Je určen pro začínající VMP nebo VMP pracu-jící na malých projektech. Je odrazovým můstkem pro zavedení procesů z dalšího profilu,",
+                    "základní (Basic): dokumenty pro základní profil byly schváleny v listopadu 2010. Byly publikovány začátkem roku 2011,",
+                    "střední (Intermediate): dosud není specifikován,",
+                    "pokročilý (Advanced): dosud není specifikován.",
+                ),
+                "Norma je rozdělena do pěti základních částí a skládá se z technických zpráv (TR) a mezinárodních standardizovaných profilů (ISP) – viz obrázek 2-3. Části 1, 2 a 3 jsou obecnými dokumenty aplikovatelnými pro všechny profily, části 4 a 5 jsou pak vytvářeny zvlášť pro jednotlivé profily. Dokumenty mají následující strukturu :",
+                array(
+                    "Část 1: Přehled (TR), určena pro VMP – Malé a střední podniky, posuzovatelé, producenti norem, prodejci nástrojů a metodologií,",
+                    "Část 2: Framework a taxonomie (ISP) – Producenti norem, prodejci nástrojů a metodologií. Není určeno pro malé a střední podniky,",
+                    "Část 3: Příručka pro posuzování procesů (TR) – Posuzovatelé,",
+                    "Část 4: Specifikace profilů – Producenti norem, prodejci nástrojů a metodologií. Není určeno pro malé a střední podniky,",
+                    "Část 5: Příručka pro řízení a implementaci – Malé a střední podniky:",
+                    "Část 5-1: Příručka pro řízení a implementaci 1 (TR),",
+                    "Část 5-n: Příručka pro řízení a implementaci n (TR).",
+                ),
+                "Nyní jsou schváleny následující dokumenty (části 1, 3 a 5-1 budou po zveřejnění ze strany ISO volně dostupné):",
+                array(
+                    "TR 29110-1 Overview: představuje koncepty nezbytné pro pochopení celé sady dokumentů normy, základní charakteristiky a požadavky VMP.",
+                    "ISP 29110-2 Framework and Taxonomy: definuje prvky společné pro všechny profily a uvádí hierarchii profilů.",
+                    "TR 29110-3 Profile Assessment Guide: popisuje postup pro posouzení zralosti procesů organizace a jejich úrovně, může být použit třetí stranou hodnotící organizaci nebo organizací samotnou pro samoposouzení procesů (Self-assessment).",
+                    "ISP 29110-4.1 Specification – Basic VSE Profile: definuje složení procesů základního profilu, povinné a informativní odkazy na další normy a modely.",
+                    "TR 29110-5.1 Management and Engineering Guide – Basic VSE Profile: poskytuje návod pro implementaci a použití základního profilu pro VMP. Je detailněji popsán v následující kapitole.",
+                ),
+                "Co to jsou Implementační balíčky?" => "„Implementační balíček je sada artefaktů vytvořených pro usnadnění implementace souboru praktik vybraného rámce“",
+                "Balíčky jsou navrhovány pro jednotlivé aktivity procesů základního profilu tak, aby bylo možné zavedení jejich obsahu bez nutnosti implementace všech procesů daného profilu – zavedení implementačního balíčku Testování softwaru by tak mělo být proveditelné bez úprav dalších aktivit, do kterých tento balíček ne-zasahuje. Implementační balíček by měl obsahovat definici pokrytí normy ISO/IEC 29110 (přesné určení dokumentu normy a jeho částí, které jsou zpracovány v implementačním balíčku), přehled a popis jednotlivých procesů (aktivity, úkoly, vstupy, výstupy, role), šablony, příklady, kontrolní seznam (checklist), seznam nástrojů a odkazy na další standardy a modely (ISO/IEC 9001, ISO/IEC 12207, CMMI).",
+                "V současné době jsou na webových stránkách projektu pro základní profil dostupné následující implementační balíčky:",
+                array(
+                    "Analýza požadavků systému (Requirement Analysis)",
+                    "Architektura a detailní návrh systému (Architecture and Detailed Design)",
+                    "Konstrukce a testování jednotek (Construction and Unit testing)",
+                    "Testování softwaru (Software testing) – lokalizace balíčku do českého jazyka viz příloha 1",
+                    "Dodání produktu (Product Delivery)",
+                    "Správa verzí (Version Control)",
+                    "Verifikace a validace (Verification and Validation)",
+                    "Samohodnocení (Self-assessment).",
+                ),
+                "Průvodce: Základní profil VMP" => "Detailnější informace o základním profilu se dozvíte v práci Basic Profile (Holý Michal, Moravcová Jana, Vodička Petr)",
+                "Management a Engineering guide" => "Tento dokument, který je z celé sady dokumentů pro VMP(Velmi Malé Podniky) nejdůležitější, poskytuje návod pro implementaci a použití procesů základního profilu. Popisuje souvislosti jednotlivých procesů, jejich účel, cíle, vstupy, výstupy a jednotlivé činnosti procesů a jejich úkoly. Uvádí rovněž detailní popis všech rolí, produktů a požadavky na nástroje nutné pro vykonání jednotlivých aktivit.",
+                "Cílovou skupinou pro použití této technické zprávy jsou VMP, které jsou charakterizo-vány jako podniky, organizace, oddělení nebo projekty do 25 osob, věnující se vývoji softwaru7 [13, s. 1]. Pro použití této příručky pak musí VMP splňovat následující podmínky [13, s. 5]:",
+                array(
+                    "zdokumentovaná Specifikace prací (Statement of work),",
+                    "před začátkem projektu byla ověřena jeho proveditelnost,",
+                    "projekt má přiřazen vyškolený projektový tým, včetně projektového manažera,",
+                    "jsou dostupné zdroje, služby a infrastruktura pro zahájení projektu.",
+                ),
+                "Základní profil pro VMP se skládá ze dvou hlavních procesů:",
+                array(
+                    "Řízení projektu,",
+                    "Implementace softwaru",
+                ),
+                "Pilotní projekty" => "Za účelem ověření implementačních balíčků a získání informací k jejich zlepšení jsou realizovány pilotní projekty v různých prostředích. Výsledky projektů v odlišných podmín-kách by měly ukázat, zda jsou vytvořené artefakty aplikovatelné v celém spektru VMP. Jelikož jsou pilotní projekty koordinovány členy skupiny WG24 (z různých zemí světa), mo-hou být výsledky ověřeny i v různých kulturních prostředích. V současné době (prosinec 2010) probíhají pilotní projekty v Belgii, Francii, Irsku a Kanadě.",
+                "Pro provedení pilotního projektu jsou dostupné podklady na stránkách skupiny. Konkrétně se jedná o tyto dokumenty:",
+                array(
+                    "implementační balíček Výběr a provedení pilotních projektů,",
+                    "návod pro posuzování procesů (Assessment tool),",
+                    "šablona plánu pilotního projektu,",
+                    "šablona zprávy o pilotním projektu,",
+                    "šablona dohody o důvěrnosti poskytovaných informací (confidentiality agree-ment).",
+                ),
+            ),
+            "images" => array(
+                "http://www.youtube.com/watch?v=viP7WLaFC8E",
+                "iso-29110-zdroje.png",
+            ),
+            "specifications" => array(
+                array(
+                    "title" => "Stránka profesora Claude Y. Laporteho",
+                    "href" => "http://profs.etsmtl.ca/claporte/English/VSE/index.html",
+                ),
+                array(
+                    "title" => "ISO/IEC 29110 na wikipedii",
+                    "href" => "http://cs.wikipedia.org/wiki/ISO_29110",
+                ),
+            ),
+            "works" => array(
+                array(
+                    "title" => "Struktura normy",
+                    "works" => array(
+                        array(
+                            "title" => "Vstupni profil – Příručka pro řízení a implementaci",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/ISO_TR_29110_Entry_Profile.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Základní profil – Příručka pro řízení a implementaci",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/ISO_TR_29110_Basic_Profile.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                    ),
+                ),
+                array(
+                    "title" => "Implementační balíčky",
+                    "works" => array(
+                        array(
+                            "title" => "Vstupni profil – Implementace SW",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/Entry_Profile_DP_Software_Implementation_final.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Základní profil – Řízení projektu",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/Basic_Profile-DP-Project_Management_cz.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Základní profil – Analýza požadavků na SW",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/4it421_dp-software-requirements-analysis-v1_2_cs_xlozp02_preklad_v18.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Základní profil – Konstrukce a jednotkové testování",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/Konstrukce_a_Jednotkove_testovani.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Základní profil – Dodání produktu",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/Deployment_Package-_Product_Delivery_CZ.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Základní profil – Správa verzí",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/Dufek-Implementacni_balicek___Sprava_verzi___CZ_lokalizace_v1.4.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Základní profil – Verifikace a Validace",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/DP_V_V_CZ_v3.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                    ),
+                ),
+                array(
+                    "title" => "Ostatní",
+                    "works" => array(
+                        array(
+                            "title" => "Profily životního cyklu pro velmi malé podniky část 1",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/Tomcova-ISOIEC_TR_29110_-_1_2011_Overview_CZ.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Profily životního cyklu pro velmi malé podniky část 2",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/Preklad_Software_engineering___Lifecycle_profiles_for_VSEs__Part_3__Assessment_guide.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Zlepšování SW procesů ve velmi malých podnicích",
+                            "href" => "http://nb.vse.cz/~buchalc/clanky/procesy.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                        array(
+                            "title" => "Aplikace agilních metodik v rámci ISO/IEC 29110",
+                            "href" => "http://spicenter.vse.cz/wp-content/uploads/Sindelarova-xsins02.pdf",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
+                    ),
+                ),
+            ),
+            "tools" => array(
+            ),
+            "similar" => array(
+            ),
+            "projects" => array(
+            ),
+        ),
+
     );
 
     /**

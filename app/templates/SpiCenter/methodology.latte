@@ -39,9 +39,61 @@
                    title="{$link['title']}"
                    href="{$link['href']}"></a>
             </div>
-            <p>
-                {$m['principleDesc']}
-            </p>
+
+            <!-- principle description -->
+            {if is_string($m['principleDesc'])}
+                <p>
+                    {$m['principleDesc']}
+                </p>
+            {else}
+                <p n:foreach="$m['principleDesc'] as $head => $paragraph">
+                {if is_string($head)}
+                    <h3>{$head}</h3>
+                {/if}
+                {if is_array($paragraph)}
+                    <ul>
+                        <li n:foreach="$paragraph as $item">{$item}</li>
+                    </ul>
+                {else}
+                    {$paragraph}
+                {/if}
+                </p>
+            {/if}
+        </div>
+
+
+
+        <!-- Obrázky -->
+        <div n:if="isset($m['images'])"
+             id="methodology-images" class="part images">
+            <h2>Obrázky</h2>
+            <div id="carousel-images" class="images carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li n:foreach="$m['images'] as $i => $image"
+                        data-target="#carousel-images" data-slide-to="{$i}"
+                        class="{first}active{/first}"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div n:foreach="$m['images'] as $image"
+                         class="item{first} active{/first}">
+                        <img src="{$baseUrl}/resource/{$image}"
+                             alt="Obrázek {$m['name']}"
+                             class="image" />
+                        <div class="carousel-caption"></div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-images" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-images" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
         </div>
 
 
@@ -70,13 +122,16 @@
                         <li n:foreach="$column['works'] as $work"
                             class="work">
                             <a href="{$work['href']}" class="name">{$work['title']}</a>
-                            <span class="author">{$work['author']}</span>
+                            <span class="author" n:if="$work['author']">{$work['author']}</span>
                             <span class="year">{$work['year']}</span>
                             <span class="desc">{$work['desc']}</span>
                         </li>
                     </ul>
                 </div>
             </div>
+            <p n:if="empty($m['works'])">
+                Zatím nejsou k dispozici žádné práce
+            </p>
         </div>
 
         <div id="methodology-tools" class="part tools">
@@ -89,6 +144,9 @@
                     <span class="desc">{$tool['desc']}</span>
                 </li>
             </ul>
+            <p n:if="empty($m['tools'])">
+                Zatím nejsou přiřazeny žádné nástroje
+            </p>
         </div>
 
         <div id="methodology-similar" class="part similar methodologies">
@@ -101,6 +159,9 @@
                     <span class="desc">{$met['desc']}</span>
                 </li>
             </ul>
+            <p n:if="empty($m['similar'])">
+                Zatím nejsou specifikovány žádné podobné metodiky
+            </p>
         </div>
 
         <div id="methodology-projects" class="part projects">
@@ -126,6 +187,7 @@
             <ul class="nav bs-sidenav">
                 <li><a href="#methodology-info" n:class="empty($m['info'])?missing">Informace</a></li>
                 <li><a href="#methodology-principle" n:class="!$m['principleImage']?missing">Princip</a></li>
+                <li><a href="#methodology-images" n:if="isset($m['images'])">Obrázky</a></li>
                 <li><a href="#methodology-specifications" n:class="empty($m['specifications'])?missing">Specifikace</a></li>
                 <li><a href="#methodology-works" n:class="empty($m['works'])?missing">Práce</a></li>
                 <li><a href="#methodology-tools" n:class="empty($m['tools'])?missing">Nástroje</a></li>
