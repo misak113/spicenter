@@ -879,7 +879,7 @@ class Methodologies {
         // CMMI
         "cmmi" => array(
             "name" => "CMMI",
-            "desc" => "",
+            "desc" => "model kvality organizace práce určený pro vývojové týmy",
             "parameters" => array(
                 "generality" => 3, // řízení projektů (1) x vývoj software (10)
                 "formality" => 1, // formální (1) x volné (10)
