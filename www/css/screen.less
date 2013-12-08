@@ -396,6 +396,25 @@ html.js .jshidden {
 
     &.principle {
 
+      .map {
+        position: relative;
+        .link {
+          display: block;
+          position: absolute;
+          opacity: 0;
+          border: 2px solid #992200;
+          border-radius: 20px;
+          transition: all 0.5s;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
       .image {
         width: 100%;
         min-height: 400px;
@@ -413,8 +432,8 @@ html.js .jshidden {
   }
 }
 
-.works {
-  .work {
+.works, .principle {
+  .work, .map {
     .name {
       font-weight: bold;
       display: block;

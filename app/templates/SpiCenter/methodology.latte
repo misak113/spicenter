@@ -35,10 +35,16 @@
                      class="image" />
                 <a n:foreach="$m['principleLinks'] as $link"
                    class="link"
-                   alt="{$link['title']}"
-                   title="{$link['title']}"
+                   target="_blank"
+                   {if isset($link['l'])}
+                   style="left: {$link['l']}%; top: {$link['t']}%; width: {$link['w']}%; height: {$link['h']}%;"
+                   {/if}
+                   title="<small>Kliknutím otevřete práci</small> <span class='name'>{$link['title']}</span>{if isset($link['author']) && $link['author']} <span class='author'>{$link['author']}</span>{/if}{ifset $link['year']} <span class='year'>{$link['year']}</span>{/ifset}"
                    href="{$link['href']}"></a>
             </div>
+            <script type="text/javascript">
+                jQuery('.map .link').tooltip({ html: true });
+            </script>
 
             <!-- principle description -->
             {if is_string($m['principleDesc'])}
@@ -108,7 +114,8 @@
             <h2>Specifikace</h2>
             <ul class="link-list">
                 <li n:foreach="$m['specifications'] as $spec">
-                    <a href="{$spec['href']}">
+                    <a href="{$spec['href']}"
+                       target="_blank">
                         {$spec['title']}
                     </a>
                 </li>
@@ -127,7 +134,9 @@
                     <ul class="download-list">
                         <li n:foreach="$column['works'] as $work"
                             class="work">
-                            <a href="{$work['href']}" class="name">{$work['title']}</a>
+                            <a href="{$work['href']}"
+                               target="_blank"
+                               class="name">{$work['title']}</a>
                             <span class="author" n:if="$work['author']">{$work['author']}</span>
                             <span class="year">{$work['year']}</span>
                             <span class="desc">{$work['desc']}</span>
@@ -172,10 +181,11 @@
 
         <div id="methodology-projects" class="part projects">
             <h2>Projekty</h2>
-
             <ul class="link-list">
                 <li n:foreach="$m['projects'] as $project">
-                    <a href="{$project['href']}">
+                    <a href="{$project['href']}"
+                       target="_blank"
+                       data-toggle="tooltip">
                         {$project['title']}
                     </a>
                 </li>

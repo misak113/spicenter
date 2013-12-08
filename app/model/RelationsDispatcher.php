@@ -67,6 +67,26 @@ class RelationsDispatcher {
                     $tool['missing'] = true;
                 }
             }
+            // doplnění info o pracích do mapy odkazů
+            foreach ($methodology['principleLinks'] as &$link) {
+                // nalezení práce ve works
+                $work = null;
+                foreach ($methodology['works'] as $column) {
+                    foreach ($column['works'] as $w) {
+                        if ($link['href'] == $w['href']) {
+                            $work = $w;
+                            break 2;
+                        }
+                    }
+                }
+                if ($work) {
+                    $link['title'] = $work['title'];
+                    $link['author'] = $work['author'];
+                    $link['year'] = $work['year'];
+                } else {
+                    $link['missing'] = true;
+                }
+            }
         }
         $this->methodologies->setMethodologies($methodologies);
     }

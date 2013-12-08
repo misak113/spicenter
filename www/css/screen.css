@@ -430,6 +430,27 @@ html.js .jshidden {
 .tool .part h2 {
   margin-top: 10px;
 }
+.methodology .part.principle .map,
+.tool .part.principle .map {
+  position: relative;
+}
+.methodology .part.principle .map .link,
+.tool .part.principle .map .link {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  border: 2px solid #992200;
+  border-radius: 20px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+}
+.methodology .part.principle .map .link:hover,
+.tool .part.principle .map .link:hover {
+  opacity: 1;
+}
 .methodology .part.principle .image,
 .tool .part.principle .image {
   width: 100%;
@@ -442,28 +463,49 @@ html.js .jshidden {
   min-height: 400px;
   max-height: 500px;
 }
-.works .work {
+.works .work,
+.principle .work,
+.works .map,
+.principle .map {
   border-top: 1px solid #777777;
   margin-bottom: 15px;
 }
-.works .work .name {
+.works .work .name,
+.principle .work .name,
+.works .map .name,
+.principle .map .name {
   font-weight: bold;
   display: block;
 }
-.works .work .author {
+.works .work .author,
+.principle .work .author,
+.works .map .author,
+.principle .map .author {
   font-weight: bold;
   font-size: 80%;
 }
-.works .work .author:before {
+.works .work .author:before,
+.principle .work .author:before,
+.works .map .author:before,
+.principle .map .author:before {
   content: '(';
 }
-.works .work .author:after {
+.works .work .author:after,
+.principle .work .author:after,
+.works .map .author:after,
+.principle .map .author:after {
   content: ')';
 }
-.works .work .year {
+.works .work .year,
+.principle .work .year,
+.works .map .year,
+.principle .map .year {
   font-size: 90%;
 }
-.works .work .desc {
+.works .work .desc,
+.principle .work .desc,
+.works .map .desc,
+.principle .map .desc {
   display: block;
   padding-left: 20px;
   font-size: 90%;
