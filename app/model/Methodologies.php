@@ -299,7 +299,7 @@ class Methodologies {
         // Lean
         "lean" => array(
             "name" => "Lean",
-            "desc" => "",
+            "desc" => "Metodika Lean Software Development je štíhlý přístup k vývoji software dle základních principů Lean",
             "parameters" => array(
                 "generality" => 4, // řízení projektů (1) x vývoj software (10)
                 "formality" => 9, // formální (1) x volné (10)
@@ -318,59 +318,64 @@ class Methodologies {
             "principleImage" => "lean.png",
             "principleLinks" => array(
                 array(
-                    "title" => "",
-                    "href" => "",
+                    "title" => "Lean Software Development",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Filipcik-Seminarni_prace_Lean_Software_Development.pdf",
+                    "l" => 5,
+                    "t" => 5,
+                    "w" => 90,
+                    "h" => 90,
                 ),
             ),
-            "principleDesc" => "",
+            "principleDesc" => "Přehled praktik a principů, které využívá Lean Software Development",
             "specifications" => array(
                 array(
                     "title" => "Tom and Marry Poppendieck - Lean Software Development : An Agile Toolkit",
                     "href" => "http://www.amazon.com/exec/obidos/ASIN/0321150783/poppendieckco-20",
                 ),
+                array(
+                    "title" => "Lean Software Development - Homepage metodiky",
+                    "href" => "http://www.poppendieck.com/",
+                ),
             ),
             "works" => array(
                 array(
-                    "title" => "Práce",
+                    "title" => "Základní",
                     "works" => array(
                         array(
-                            "title" => "",
-                            "href" => "",
-                            "author" => "",
-                            "year" => "",
-                            "desc" => "",
+                            "title" => "Lean Software Development",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Filipcik-Seminarni_prace_Lean_Software_Development.pdf",
+                            "author" => "Jan Filipčík",
+                            "year" => "2011",
+                            "desc" => "Úvod do problematiky Lean SW development",
                         ),
                     ),
                 ),
             ),
             "tools" => array(
                 array(
-                    "href" => "",
-                    "title" => "",
-                    "desc" => "",
+                    "href" => "vision-flow",
+                    "title" => "Vision Flow",
+                    "http" => "http://www.visionflow.com",
+                    "desc" => "Webový nástroj pro implementaci Lean",
                 ),
             ),
             "similar" => array(
                 array(
-                    "href" => "",
-                    "title" => "",
+                    "href" => "lean-startup",
+                    "title" => "Lean Startup",
                     "desc" => "",
                 ),
             ),
             "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
             ),
         ),
 
         // Lean startup
         "lean-startup" => array(
             "name" => "Lean Startup",
-            "desc" => "",
+            "desc" => "Metodika, která pomáhá dodat nový produkt na trh s minimálním rizikem",
             "parameters" => array(
-                "generality" => 5, // řízení projektů (1) x vývoj software (10)
+                "generality" => 4, // řízení projektů (1) x vývoj software (10)
                 "formality" => 8, // formální (1) x volné (10)
                 "agility" => 1, // agilní (1) x robustní (10)
                 "waterfall" => 10, // vodopádové (1) x iterativní (10)
@@ -385,10 +390,14 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "Princip - Lean startup",
-                    "href" => "http://theleanstartup.com/principles",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Hejl-LeanStartup-xhejd08-xjerm11.pdf",
+                    "l" => 5,
+                    "t" => 5,
+                    "w" => 90,
+                    "h" => 90,
                 ),
             ),
-            "principleDesc" => "",
+            "principleDesc" => "Diagram základního principu procesu Lean Startup",
             "specifications" => array(
                 array(
                     "title" => "The Lean Startup - Eric Ries",
@@ -400,11 +409,11 @@ class Methodologies {
                     "title" => "",
                     "works" => array(
                         array(
-                            "title" => "",
-                            "href" => "",
-                            "author" => "",
-                            "year" => "",
-                            "desc" => "",
+                            "title" => "Lean Startup – Revoluční přístup v agilních metodikách",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Hejl-LeanStartup-xhejd08-xjerm11.pdf",
+                            "author" => "Daniel Hejl",
+                            "year" => "2011",
+                            "desc" => "Průvodce revoluční metodikou na podporu startupů",
                         ),
                     ),
                 ),
@@ -413,6 +422,7 @@ class Methodologies {
                 array(
                     "href" => "validation-board",
                     "title" => "Validation Board",
+                    "http" => "https://www.leanstartupmachine.com/validationboard/",
                     "desc" => "",
                 ),
                 array(
@@ -423,23 +433,19 @@ class Methodologies {
             ),
             "similar" => array(
                 array(
-                    "href" => "",
-                    "title" => "",
+                    "href" => "lean",
+                    "title" => "Lean",
                     "desc" => "",
                 ),
             ),
             "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
             ),
         ),
 
         // DAD
         "dad" => array(
             "name" => "DAD",
-            "desc" => "",
+            "desc" => "metodiky pro postupy a způsoby dodání IT řešení zákazníkovi",
             "parameters" => array(
                 "generality" => 7, // řízení projektů (1) x vývoj software (10)
                 "formality" => 7, // formální (1) x volné (10)
@@ -455,57 +461,81 @@ class Methodologies {
             "principleImage" => "dad.jpg",
             "principleLinks" => array(
                 array(
-                    "title" => "Disciplined agile delivery: a practitioner's guide to agile software delivery in the enterprise. ISBN 978-013-2810-135.",
-                    "href" => "http://public.dhe.ibm.com/common/ssi/ecm/en/raw14261usen/RAW14261USEN.PDF",
+                    "title" => "Disciplined agile delivery",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Koudelka-4it421_DAD.pdf",
+                    "l" => 5,
+                    "t" => 5,
+                    "w" => 90,
+                    "h" => 90,
                 ),
             ),
-            "principleDesc" => "",
+            "principleDesc" => "Základní životní cyklus vývoje pomocí Disciplined Agile Delivery",
             "specifications" => array(
                 array(
-                    "title" => "",
-                    "href" => "",
+                    "title" => "Základní příručka pro Disciplined Agile Delivery",
+                    "href" => "http://public.dhe.ibm.com/common/ssi/ecm/en/raw14261usen/RAW14261USEN.PDF",
+                ),
+                array(
+                    "title" => "IBM Software -  Disciplined agile delivery: a practitioner's guide to agile software delivery in the enterprise",
+                    "href" => "http://www.amazon.com/Disciplined-Agile-Delivery-Practitioners-Enterprise/dp/0132810131",
                 ),
             ),
             "works" => array(
                 array(
-                    "title" => "",
+                    "title" => "Základní info",
                     "works" => array(
                         array(
-                            "title" => "",
-                            "href" => "",
-                            "author" => "",
-                            "year" => "",
-                            "desc" => "",
+                            "title" => "Disciplined Agile Delivery",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Koudelka-4it421_DAD.pdf",
+                            "author" => "Tomáš Koudelka, Ondřej Sklenář",
+                            "year" => "2012",
+                            "desc" => "Podrobný popis metodiky DAD",
+                        ),
+                        array(
+                            "title" => "Disciplined Agile Delivery (DAD) framework",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/dad.pdf",
+                            "author" => "Radim Klepetko",
+                            "year" => "2011",
+                            "desc" => "Základní informace o DAD a podrobný popis jeho principů",
+                        ),
+                        array(
+                            "title" => "Disciplined Agile Delivery (DAD) framework",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Podpora-DAD-v-RTC.pdf",
+                            "author" => "Tomáš Svoboda",
+                            "year" => "2011",
+                            "desc" => "Spojení metodiky DAD a IBM platformy Jazz",
                         ),
                     ),
                 ),
             ),
             "tools" => array(
                 array(
-                    "href" => "",
+                    "href" => "platforma-jazz",
                     "title" => "Platforma Jazz od IBM",
                     "desc" => "",
+                    "http" => "http://www-01.ibm.com/software/rational/jazz/",
                 ),
             ),
             "similar" => array(
                 array(
-                    "href" => "",
-                    "title" => "",
+                    "href" => "xp",
+                    "title" => "XP",
+                    "desc" => "",
+                ),
+                array(
+                    "href" => "scrum",
+                    "title" => "Scrum",
                     "desc" => "",
                 ),
             ),
             "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
             ),
         ),
 
         // Kanban
         "kanban" => array(
             "name" => "Kanban",
-            "desc" => "",
+            "desc" => "Jednoduché principy pro vývoj software (původně výrobu)",
             "parameters" => array(
                 "generality" => 3, // řízení projektů (1) x vývoj software (10)
                 "formality" => 10, // formální (1) x volné (10)
@@ -522,35 +552,60 @@ class Methodologies {
             "principleImage" => "kanban.png",
             "principleLinks" => array(
                 array(
-                    "title" => "",
-                    "href" => "",
+                    "title" => "Kanban a jeho využití při vývoji SW",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Filipcik-xfilz02-kanban.pdf",
+                    "l" => 5,
+                    "t" => 5,
+                    "w" => 90,
+                    "h" => 90,
                 ),
             ),
-            "principleDesc" => "",
+            "principleDesc" => "Ukázka názorného příkladu Kanban boardu",
             "specifications" => array(
                 array(
-                    "title" => "",
+                    "title" => "Kenji Hiranabe - Kanban Applied to Software Development: from Agile to Lean",
                     "href" => "http://www.infoq.com/articles/hiranabe-lean-agile-kanban",
                 ),
                 array(
-                    "title" => "",
+                    "title" => "Kanban for software engineering",
                     "href" => "http://leanandkanban.files.wordpress.com/2009/04/kanban-for-software-engineering-apr-242.pdf",
                 ),
                 array(
-                    "title" => "",
+                    "title" => "How to get started with Kanban in software development",
                     "href" => "http://lostechies.com/derickbailey/2009/08/05/how-to-get-started-with-kanban-in-software-development/",
                 ),
             ),
             "works" => array(
                 array(
-                    "title" => "",
+                    "title" => "Základní",
                     "works" => array(
                         array(
-                            "title" => "",
-                            "href" => "",
-                            "author" => "",
-                            "year" => "",
-                            "desc" => "",
+                            "title" => "Kanban a jeho využití při vývoji SW",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Filipcik-xfilz02-kanban.pdf",
+                            "author" => "Zdeněk Filipčík",
+                            "year" => "2011",
+                            "desc" => "Popis Kanbanu a jeho implementace na SW projekty",
+                        ),
+                        array(
+                            "title" => "Prehľad a porovnanie nástrojov metodiky Kanban",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Podpora-DAD-v-RTC.pdf",
+                            "author" => "Richard Nagrant",
+                            "year" => "2011",
+                            "desc" => "Spojení metodiky DAD a IBM platformy Jazz",
+                        ),
+                        array(
+                            "title" => "Porovnání Scrum a Kanban",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Uridil-xurim00.pdf",
+                            "author" => "Martin Uřídil",
+                            "year" => "2012",
+                            "desc" => "Práce shrnuje obě metodiky a porovnává rozdíly v jejich pojetí vývoje SW ",
+                        ),
+                        array(
+                            "title" => "Kanban a jeho využití při vývoji softwaru",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Krejci-Kanban_a_jeho_vyuziti_pri_vyvoji_softwaru_xkrej44.pdf",
+                            "author" => "Jiří Krejčí",
+                            "year" => "2011",
+                            "desc" => "Představení metodiky Kanban a její porovnání z metodikou Scrum",
                         ),
                     ),
                 ),
@@ -559,17 +614,17 @@ class Methodologies {
                 array(
                     "href" => "lean-kit-kanban",
                     "title" => "LeankitKanban",
-                    "desc" => "",
+                    "desc" => "Webová aplikace pro podporu projektů řízených pomocí Kanban.",
                 ),
                 array(
                     "href" => "kanbanize",
                     "title" => "Kanbanize",
-                    "desc" => "",
+                    "desc" => "Webová aplikace pro podporu projektů řízených pomocí Kanban.",
                 ),
                 array(
                     "href" => "kanbanery",
                     "title" => "Kanbanery",
-                    "desc" => "",
+                    "desc" => "Nástroj určený pro podporu práce větších týmu v reálném čase při vysoké mobilitě.",
                 ),
                 array(
                     "href" => "trello",
@@ -579,16 +634,22 @@ class Methodologies {
             ),
             "similar" => array(
                 array(
-                    "href" => "",
+                    "href" => "lean",
+                    "title" => "",
+                    "desc" => "",
+                ),
+                array(
+                    "href" => "lean-startup",
+                    "title" => "",
+                    "desc" => "",
+                ),
+                array(
+                    "href" => "scrum",
                     "title" => "",
                     "desc" => "",
                 ),
             ),
             "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
             ),
         ),
 
@@ -613,86 +674,112 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "",
-                    "href" => "",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Podpora-DAD-v-RTC.pdf",
+                    "l" => 5,
+                    "t" => 16,
+                    "w" => 11,
+                    "h" => 18,
                 ),
             ),
-            "principleDesc" => "",
+            "principleDesc" => "Životní cyklus vývoje software s pomocí metodiky Extreme programing",
             "specifications" => array(
                 array(
-                    "title" => "",
+                    "title" => "Oficiální stránka, sloužící také jako rozcestník, se vším podstatným",
                     "href" => "http://www.extremeprogramming.org/",
                 ),
             ),
             "works" => array(
                 array(
-                    "title" => "",
+                    "title" => "Problematika user stories",
                     "works" => array(
                         array(
-                            "title" => "",
-                            "href" => "",
-                            "author" => "",
-                            "year" => "",
-                            "desc" => "",
+                            "title" => "User story požadavky dle XP",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Jesuta-SP_User_Stories_Martin_Jesuta.pdf",
+                            "author" => "Martin Ješuta",
+                            "year" => "2011",
+                            "desc" => "Praktické rady ke tvorbě a dokumentování User strories",
+                        ),
+                        array(
+                            "title" => "User story (požadavky dle XP)",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Podpora-DAD-v-RTC.pdf",
+                            "author" => "Jakub Resl",
+                            "year" => "2011",
+                            "desc" => "Charakteristika, jak psát dobré user stories, formát zápisu, odhadování",
+                        ),
+                    ),
+                ),
+                array(
+                    "title" => "Nástroje",
+                    "works" => array(
+                        array(
+                            "title" => "Prehľad a porovnanie nástrojovna podporu metodiky XP",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Slapka-orovnanie_nastrojov_XP.pdf",
+                            "author" => "Miroslav Šlapka",
+                            "year" => "2011",
+                            "desc" => "Přehled nástrojů pro podporu metodiky XP",
+                        ),
+                        array(
+                            "title" => "Přehled a porovnání nástrojů na podporu metodiky Scrum a XP",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Cizek-Nastroje_na_podporu_metodiky_SCRUM_a_XP.pdf",
+                            "author" => "Michal Čížek",
+                            "year" => "2011",
+                            "desc" => "Přehled a porovnání nástrojů pro metodiky XP a Scrum",
                         ),
                     ),
                 ),
             ),
             "tools" => array(
                 array(
-                    "href" => "polarion-alm",
-                    "title" => "Polarion ALM",
-                    "desc" => "",
-                ),
-                array(
                     "href" => "version-one",
                     "title" => "Version One",
-                    "desc" => "",
+                    "desc" => "Software pro řízení agilních projektů",
                 ),
                 array(
                     "href" => "extreme-planner",
                     "title" => "Extreme Planner",
-                    "desc" => "",
+                    "desc" => "Užitečný nástroj pro sledování a podporu agilních projektů",
                 ),
                 array(
                     "href" => "sprintometer",
                     "title" => "Sprintometer",
-                    "desc" => "",
+                    "desc" => "Sprintometer je jednoduchý a silný agilní nástroj pro řízení projektů  XP",
                 ),
                 array(
                     "href" => "xplanner",
                     "title" => "XPlanner",
-                    "desc" => "",
+                    "desc" => "XPlanner+ je open source nástroj na správu projektů a sledovaní defektů",
                 ),
                 array(
                     "href" => "mingle",
                     "title" => "Mingle",
-                    "desc" => "",
+                    "desc" => "Mingle je produkt  zaměřený na agilní řízení projektů",
                 ),
                 array(
                     "href" => "spira-plan",
                     "title" => "SpiraPlan",
-                    "desc" => "",
+                    "desc" => "SpiraPlanv je silný nástroj na podporu agilních metodik",
                 ),
             ),
             "similar" => array(
                 array(
-                    "href" => "",
+                    "href" => "scrum",
+                    "title" => "",
+                    "desc" => "",
+                ),
+                array(
+                    "href" => "dad",
                     "title" => "",
                     "desc" => "",
                 ),
             ),
             "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
             ),
         ),
 
         // Scrum
         "scrum" => array(
             "name" => "Scrum",
-            "desc" => "",
+            "desc" => "moderní agilní metodika projektového řízení",
             "parameters" => array(
                 "generality" => 2, // řízení projektů (1) x vývoj software (10)
                 "formality" => 9, // formální (1) x volné (10)
@@ -712,23 +799,61 @@ class Methodologies {
                     "href" => "",
                 ),
             ),
-            "principleDesc" => "",
+            "principleDesc" => "Životní cyklus vývoje software s pomocí projektové metodiky Scrum",
             "specifications" => array(
                 array(
-                    "title" => "Scrum Guide™",
+                    "title" => "Oficíální příručka pro metodiku Scrum - Scrum Guide™",
                     "href" => "https://www.scrum.org/Portals/0/Documents/Scrum%20Guides/2013/Scrum-Guide-CS.pdf#zoom=100",
                 ),
             ),
             "works" => array(
                 array(
-                    "title" => "",
+                    "title" => "Velké distribuce a distribuované projekty",
                     "works" => array(
                         array(
-                            "title" => "",
-                            "href" => "",
-                            "author" => "",
-                            "year" => "",
-                            "desc" => "",
+                            "title" => "Agilní metodiky pro distribuované projekty",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Palus-xpalm29-agilne_metodiky_v_distribuovanych_projektech.pdf",
+                            "author" => "Matej Paluš",
+                            "year" => "2011",
+                            "desc" => "Problematika distribuovaných projektů a možnosti využití distribuovaného Scrumu",
+                        ),
+                        array(
+                            "title" => "Využití metodiky Scrum pro velké projekty - Scrum of Scrums pro Energy Software",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Host-SCRUM_pro_velke_projekty_Daniel_Host.pdf",
+                            "author" => "Daniel Host",
+                            "year" => "2011",
+                            "desc" => "Případová studie využití Metodiky Scrum na velkých projektech ve firmě Energy Software",
+                        ),
+                        array(
+                            "title" => "Využití metodiky Scrum pro velké projekty – Scrum of Scrums",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Krena-ScrumOfScrums.pdf",
+                            "author" => "Martin Křena",
+                            "year" => "2011",
+                            "desc" => "Práce ukazuju adaptaci jednotlivých fází životního cyklu Scrumu na velké projekty",
+                        ),
+                    ),
+                ),
+                array(
+                    "title" => "Nástroje",
+                    "works" => array(
+                        array(
+                            "title" => "Přehled a porovnání nástrojů na podporu metodiky Scrum aXP",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Cizek-Nastroje_na_podporu_metodiky_SCRUM_a_XP.pdf",
+                            "author" => "Michal Čížek",
+                            "year" => "2011",
+                            "desc" => "Přehled a porovnání nástrojů pro metodiky XP a Scrum",
+                        ),
+                    ),
+                ),
+                array(
+                    "title" => "Porovnání metodik",
+                    "works" => array(
+                        array(
+                            "title" => "Porovnání Scrum a Kanban",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Uridil-xurim00.pdf",
+                            "author" => "Martin Uřídil",
+                            "year" => "2012",
+                            "desc" => "Práce shrnuje obě metodiky a porovnává rozdíly v jejich pojetí vývoje SW ",
                         ),
                     ),
                 ),
@@ -737,46 +862,52 @@ class Methodologies {
                 array(
                     "href" => "polarion-alm",
                     "title" => "Polarion ALM",
-                    "desc" => "",
+                    "desc" => "Agilní projektový SW, který díky podpoře dodavatele umožňuje dosáhnout vysoké ergonomie a použitelnosti",
                 ),
                 array(
                     "href" => "version-one",
                     "title" => "Version One",
-                    "desc" => "",
+                    "desc" => "Software pro řízení agilních projektů",
                 ),
                 array(
                     "href" => "extreme-planner",
                     "title" => "Extreme Planner ",
-                    "desc" => "",
+                    "desc" => "Užitečný nástroj pro sledování a podporu agilních projektů",
                 ),
                 array(
                     "href" => "trello",
                     "title" => "Trello",
-                    "desc" => "",
+                    "desc" => "Jednoduchý webový nástroj na podporu řízení projektů",
                 ),
                 array(
                     "href" => "scrum-do",
                     "title" => "ScrumDo",
-                    "desc" => "",
+                    "desc" => "Rozšířený nástroj vyvinutý pro podporuju projektů řízených Scrumem",
                 ),
                 array(
                     "href" => "scrumwise",
                     "title" => "Scrumwise",
-                    "desc" => "",
+                    "desc" => "Jedoduchý, ale efektivní webový nástroj pro podporu Scumu",
                 ),
             ),
             "similar" => array(
                 array(
-                    "href" => "",
+                    "href" => "xp",
+                    "title" => "",
+                    "desc" => "",
+                ),
+                array(
+                    "href" => "dad",
+                    "title" => "",
+                    "desc" => "",
+                ),
+                array(
+                    "href" => "kanban",
                     "title" => "",
                     "desc" => "",
                 ),
             ),
             "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
             ),
         ),
 
@@ -784,7 +915,7 @@ class Methodologies {
         // Plannig poker
         "planning-poker" => array(
             "name" => "Plannig poker",
-            "desc" => "",
+            "desc" => "Nástroj a metodika pro vytváření odhadů náročnosti během vývoje",
             "parameters" => array(
                 "generality" => 5, // řízení projektů (1) x vývoj software (10)
                 "formality" => 5, // formální (1) x volné (10)
@@ -801,30 +932,46 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "",
-                    "href" => "",
+                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Tvrdikova-planning_poker_xtvrl05.pdf",
+                    "l" => 5,
+                    "t" => 5,
+                    "w" => 90,
+                    "h" => 90,
                 ),
             ),
-            "principleDesc" => "",
+            "principleDesc" => "Ukázka procesu odhadování pomocí Planning poker",
             "specifications" => array(
                 array(
-                    "title" => "",
+                    "title" => "James Grenning – How to avoid analisys paralysis while release planning",
                     "href" => "http://renaissancesoftware.net/files/articles/PlanningPoker-v1.1.pdf",
                 ),
                 array(
-                    "title" => "",
+                    "title" => "Bob Hartman - An Introduction to Planning Poker",
                     "href" => "http://agile.dzone.com/articles/introduction-planning-poker",
                 ),
             ),
             "works" => array(
                 array(
+                    "title" => "Popis Planning poker",
+                    "works" => array(
+                        array(
+                            "title" => "Planning poker",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Tvrdikova-planning_poker_xtvrl05.pdf",
+                            "author" => "Lucie Tvrdíková",
+                            "year" => "2011",
+                            "desc" => "Práce představuje metodu Planning poker a postup při její realizaci",
+                        ),
+                    ),
+                ),
+                array(
                     "title" => "",
                     "works" => array(
                         array(
-                            "title" => "",
-                            "href" => "",
-                            "author" => "",
-                            "year" => "",
-                            "desc" => "",
+                            "title" => "Planning poker",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Planning-poker-Danek.pdf",
+                            "author" => "Michal Daněk",
+                            "year" => "2011",
+                            "desc" => "Popis metody, přehled SW nástrojů na její podporu",
                         ),
                     ),
                 ),
@@ -833,46 +980,47 @@ class Methodologies {
                 array(
                     "href" => "planning-poker-mgs",
                     "title" => "Planning Poker od Mountain Goat Software",
-                    "desc" => "",
+                    "desc" => "Jedná se o online nástroj, který je obzvláště vhodný pro  distribuované týmy.",
                 ),
                 array(
                     "href" => "ice-scrum",
                     "title" => "IceScrum",
-                    "desc" => "",
+                    "desc" => "Nástroj pro metodiku Scrum, který podporuje i Planning poker nebo Kanban",
                 ),
                 array(
                     "href" => "planning-poker-bbv",
                     "title" => "Planning Poker od BBV Software Services AG",
-                    "desc" => "",
+                    "desc" => "Mobilní aplikace pro iPhone",
                 ),
                 array(
                     "href" => "planning-poker-plus-plus",
                     "title" => "Planning Poker ++",
-                    "desc" => "",
+                    "desc" => "Mobilní aplikace pro iPhone",
                 ),
                 array(
                     "href" => "planning-poker-kanjih-droid",
                     "title" => "Planning Poker Android od KanjihDroid",
-                    "desc" => "",
+                    "desc" => "Mobilní aplikace pro Android",
                 ),
                 array(
                     "href" => "planning-poker-unboxed-consulting",
                     "title" => "Planning Poker od Unboxed Consulting",
-                    "desc" => "",
+                    "desc" => "Mobilní aplikace pro Android",
                 ),
             ),
             "similar" => array(
                 array(
-                    "href" => "",
+                    "href" => "scrum",
+                    "title" => "",
+                    "desc" => "",
+                ),
+                array(
+                    "href" => "kanban",
                     "title" => "",
                     "desc" => "",
                 ),
             ),
             "projects" => array(
-                array(
-                    "href" => "",
-                    "title" => "",
-                ),
             ),
         ),
 
