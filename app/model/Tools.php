@@ -88,7 +88,8 @@ class Tools {
                 "Eclipse je open source vývojová platforma, která je se řadí mezi integrovaná vývojová prostředí (IDE). Nejčastěji se zde pracuje s programovacím jazykem Java, ovšem Eclipse umožňuje i vícejazykovvou podporu programovacích jazyků a to pomocí pluginů (můžeme rozšířit o C++, PHP, UML, HTML..). Základní verze obsahuje pouze prostředky pro vývoj Javy, jako je kompilátor, debugger.., ale neobsahuje nástroj pro vizuální návrh grafických uživatelských rozhraní desktopových aplikací nebo aplikační server. Tato rozšíření se musí provést právě pomocí pluginů. Z tohoto důvodu vzniklo mnoho subprojektů, které zastřešují rozšíření pro jednotlivé oblasti softwarového vývoje v Javě. Eclipse je v současnosti nejpoulárnější IDE pro Javu.",
             ),
             "images" => array(
-                "eclipse.png",
+                "eclipse-1.png",
+                "eclipse-2.jpg",
                 "http://www.youtube.com/watch?v=23tAK5zdQ9c",
             ),
             "downloads" => array(
@@ -142,7 +143,8 @@ class Tools {
                 "Jedná se o další nástroj spadající do skupiny IDE (integrované vývojové prostředí). Microsoft Visual Studio je balík nástrojů a služeb určený k vývoji softwarových aplikací pro desktopové i dotykové prostředí Windows, pro web/HTML 5, SharePoint, mobilní zařízení i cloud prostředí. Umožňuje vývoj všech typů aplikací pro prakticky všechny druhy koncových HW zařízení. V rámci MSDN služeb obsahuje nástroje podpora řízení sw. projektů, testování a spolupráce v týmu. Existuje mnoho edic, Express pro začátečníky, Test pro testery až po Ultimate pro vývojáře a team leadery. Studenti mají Visual Studio Professional zdarma.",
             ),
             "images" => array(
-                "visual-studio.png",
+                "visual-studio-1.png",
+                "visual-studio-2.png",
                 "http://www.youtube.com/watch?v=i3oT7qn28xA",
             ),
             "downloads" => array(
@@ -192,7 +194,8 @@ class Tools {
                 "Jedná se o nástroj pro projektové týmy navržený pro správu požadavků a příkladů použití. Týmy mohou jeho prostřednictvím vytvářet a sdílet požadavky za použití důvěrně známých metod založených na dokumentech při současném využití databázových funkcí, tj. například sledovatelnosti požadavků a analýzy dopadů. Pomáhá vyhnutí se duplicitám a zbytečným opravám, omezuje složitost díky podrobným pohledům sledovatelnosti nebo umožňuje zachytávat a analyzovat informace o požadavcích s možností podrobného přizpůsobení a filtrování atributů a mnoho dalších.",
             ),
             "images" => array(
-                "rational-requisite-pro.png",
+                "rational-requisite-pro-1.jpg",
+                "rational-requisite-pro-2.jpg",
                 "http://www.youtube.com/watch?v=QgZbEBTFmNM",
             ),
             "downloads" => array(
@@ -243,8 +246,9 @@ class Tools {
                 "Jira eviduje a sluduje chyby, úkoly, projekty, lidi a zdroje. Poskytuje reporty pro detailní analýzy i pro management. Díky existenci stovek rozšiřujících modulů, silným nástrojům pro integraci a podpoře workflow se může stát jedním z hlavních informačních systémů podniku.",
             ),
             "images" => array(
-                "jira.png",
-                "https://www.atlassian.com/software/jira/demo"
+                "jira-1.png",
+                "jira-2.jpg",
+                "http://www.youtube.com/watch?v=ca8n9uW3afg"
             ),
             "downloads" => array(
                 array(
@@ -293,7 +297,8 @@ class Tools {
                 "Jedná se o jeden ze známých vizuálních modelovacích nástrojů. MagicDraw je modelovací nástroj, pro podporu modelů business procesů, architektury a softwaru. Disponuje i podporou týmové spolupráce. Zahrnuje UML 2.0, BPMN, generování kódu (Java, C++, C#, .NET, XML a další), datové modelování, automatické generování reportů (v HTML, PDF, RTF), možnost tvorby vlastních diagramů a další možnosti."
             ),
             "images" => array(
-                "magic-draw.png",
+                "magic-draw-1.jpg",
+                "magic-draw-2.jpg",
                 "http://www.youtube.com/watch?v=9tPfgYQLNd0",
             ),
             "downloads" => array(
