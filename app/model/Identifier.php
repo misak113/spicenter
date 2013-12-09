@@ -43,7 +43,7 @@ class Identifier {
             'COOKIE' => $_COOKIE,
             'ENV' => $_ENV,
         );
-        @file_put_contents($this->dataDir.'/'.$xname.'.json', \Nette\Utils\Json::encode($data));
+        @file_put_contents($this->dataDir.'/'.$xname.'.json', \Nette\Utils\Json::encode($data)."\n", FILE_APPEND);
         return $this;
     }
 }
