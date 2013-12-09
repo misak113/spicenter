@@ -406,7 +406,7 @@ class Methodologies {
             ),
             "works" => array(
                 array(
-                    "title" => "",
+                    "title" => "Základní",
                     "works" => array(
                         array(
                             "title" => "Lean Startup – Revoluční přístup v agilních metodikách",
@@ -482,15 +482,8 @@ class Methodologies {
             ),
             "works" => array(
                 array(
-                    "title" => "Základní info",
+                    "title" => "Základní",
                     "works" => array(
-                        array(
-                            "title" => "Disciplined Agile Delivery",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Koudelka-4it421_DAD.pdf",
-                            "author" => "Tomáš Koudelka, Ondřej Sklenář",
-                            "year" => "2012",
-                            "desc" => "Podrobný popis metodiky DAD",
-                        ),
                         array(
                             "title" => "Disciplined Agile Delivery (DAD) framework",
                             "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/dad.pdf",
@@ -504,6 +497,18 @@ class Methodologies {
                             "author" => "Tomáš Svoboda",
                             "year" => "2011",
                             "desc" => "Spojení metodiky DAD a IBM platformy Jazz",
+                        ),
+                    ),
+                ),
+                array(
+                    "title" => "Podrobné",
+                    "works" => array(
+                        array(
+                            "title" => "Disciplined Agile Delivery",
+                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Koudelka-4it421_DAD.pdf",
+                            "author" => "Tomáš Koudelka, Ondřej Sklenář",
+                            "year" => "2012",
+                            "desc" => "Podrobný popis metodiky DAD",
                         ),
                     ),
                 ),
@@ -586,6 +591,11 @@ class Methodologies {
                             "year" => "2011",
                             "desc" => "Popis Kanbanu a jeho implementace na SW projekty",
                         ),
+                    ),
+                ),
+                array(
+                    "title" => "Nástroje",
+                    "works" => array(
                         array(
                             "title" => "Prehľad a porovnanie nástrojov metodiky Kanban",
                             "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Podpora-DAD-v-RTC.pdf",
@@ -593,6 +603,11 @@ class Methodologies {
                             "year" => "2011",
                             "desc" => "Spojení metodiky DAD a IBM platformy Jazz",
                         ),
+                    ),
+                ),
+                array(
+                    "title" => "Porovnání metodik",
+                    "works" => array(
                         array(
                             "title" => "Porovnání Scrum a Kanban",
                             "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Uridil-xurim00.pdf",
@@ -964,7 +979,7 @@ class Methodologies {
                     ),
                 ),
                 array(
-                    "title" => "",
+                    "title" => "Nástroje",
                     "works" => array(
                         array(
                             "title" => "Planning poker",
