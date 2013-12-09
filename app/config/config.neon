@@ -38,6 +38,7 @@ common:
 				- relateMethodologies()
 			run: true
 		javaVseCzParser: JavaVseCzParser
+		identifier: Identifier(%appDir%/data)
 
 
 	factories:

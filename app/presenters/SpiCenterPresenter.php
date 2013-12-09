@@ -11,9 +11,15 @@ class SpiCenterPresenter extends BasePresenter
     public $tools;
     /** @var JavaVseCzParser @inject */
     public $javaVseCzParser;
+    /** @var Identifier @inject */
+    public $identifier;
 
     protected function startup() {
         parent::startup();
+        if (!$this->identifier->getIdentity()) {
+            $this->redirect('Identify:default');
+        }
+
         $this->template->registerHelper('count', function ($array, $key) {
             $count = 0;
             foreach ($array as $value) {
