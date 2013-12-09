@@ -10,6 +10,10 @@
 class IdentifyPresenter extends BasePresenter {
     /** @var Identifier @inject */
     public $identifier;
+    /** @var array  */
+    protected $allowedXnames = array("xbarg00","xbedj17","xbril00","xcerj105","xcocf00","xdlus00","xdrea00","xdvob13","xdzib00","xelzm00","xfilj16","xfouo00","xhanm50","xhavj56","xherr11","xhosz00","xhrbm00","xhybj00","xillp02","xjasj00","xjusm02","xkalv00","xkasv12","xkloo04","xkram136","xkrba00","xkrej46","xkulb00","xlank10","xmajp04","xmanm11","xmats00","xmunh00","qnaht00","xnapm00","xnemj00","xparj00","xpavt27","xpetj65","xpisl07","xpokd00","xripm00","xruzv00","xrydv00","xsakv00","xsari00","xsasm02","xsedt11","xsimp00","xsubo00","xtimm03","xvalk14","xvodm12","xzdej00","xzikj00","xzabm00"
+        ,"xtest00","xtest01","xtest02","xtest03","xtest04","xtest05");
+
 
     protected function startup() {
         parent::startup();
@@ -28,6 +32,11 @@ class IdentifyPresenter extends BasePresenter {
             $this->flashMessage('xname musí být ve tvaru xprij00', 'error');
             return;
         }
+        if (!in_array($xname, $this->allowedXnames)) {
+            $this->flashMessage('Zadaný xname není mezi povolenými. Musíte v tomto semestru studovat předmět 4IT421', 'error');
+            return;
+        }
+
 
         $this->identifier->setIdentity($xname);
         $this->redirect('SpiCenter:default');
