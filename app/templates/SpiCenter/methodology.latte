@@ -19,7 +19,7 @@
             <p n:foreach="$m['info'] as $paragraph">
                 {if is_array($paragraph)}
                     <ul>
-                        <li n:foreach="$paragraph as $item">{$item}</li>
+                        <li n:foreach="$paragraph as $item">{!$item}</li>
                     </ul>
                 {else}
                     {$paragraph}

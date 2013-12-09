@@ -23,7 +23,7 @@ class Methodologies {
                 "Celkem je definováno 6 praktik:",
                 array(
                     "Iterativní a inkrementální vývoj",
-                    "Správa požadavků - http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Stas-Sprava_poziadaviek_ako_disciplina_RUP.pdf",
+                    '<a href="http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Stas-Sprava_poziadaviek_ako_disciplina_RUP.pdf" target="_blank">Správa požadavků</a>',
                     "Použití komponentové architektury",
                     "Vizuální modelování",
                     "Kontrola a ověřování kvality",
