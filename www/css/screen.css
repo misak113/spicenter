@@ -575,3 +575,7 @@ html.js .jshidden {
     white-space: nowrap;
   }
 }
+.desc {
+  font-size: 90%;
+  font-style: italic;
+}

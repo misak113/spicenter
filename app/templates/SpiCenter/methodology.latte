@@ -19,7 +19,7 @@
             <p n:foreach="$m['info'] as $paragraph">
                 {if is_array($paragraph)}
                     <ul>
-                        <li n:foreach="$paragraph as $item">{$item}</li>
+                        <li n:foreach="$paragraph as $item">{!$item}</li>
                     </ul>
                 {else}
                     {$paragraph}
@@ -159,8 +159,9 @@
 
             <ul class="internal-link-list">
                 <li n:foreach="$m['tools'] as $tool"
-                    n:class="isset($tool['missing'])?missing">
-                    <a n:href="SpiCenter:tool, id => $tool['href']" class="name">{$tool['title']}</a>
+                    n:class="isset($tool['missing'])?missing, isset($tool['http'])?external-link">
+                    <a n:if="!isset($tool['http'])" n:href="SpiCenter:tool, id => $tool['href']" class="name">{$tool['title']}</a>
+                    <a n:if="isset($tool['http'])" href="{$tool['http']}">{$tool['title']}</a>
                     <span class="desc">{$tool['desc']}</span>
                 </li>
             </ul>

@@ -14,11 +14,16 @@ class SpiCenterPresenter extends BasePresenter
     /** @var Identifier @inject */
     public $identifier;
 
+    /** @var string @persistent */
+    public $xname = null;
+
     protected function startup() {
         parent::startup();
-        if (!$this->identifier->getIdentity()) {
+        if (!($xname = $this->identifier->getIdentity())) {
             $this->redirect('Identify:default');
         }
+
+        $this->xname = $xname;
 
         $this->template->registerHelper('count', function ($array, $key) {
             $count = 0;
