@@ -447,9 +447,9 @@ class Methodologies {
             "name" => "DAD",
             "desc" => "metodiky pro postupy a způsoby dodání IT řešení zákazníkovi",
             "parameters" => array(
-                "generality" => 7, // řízení projektů (1) x vývoj software (10)
+                "generality" => 6, // řízení projektů (1) x vývoj software (10)
                 "formality" => 7, // formální (1) x volné (10)
-                "agility" => 8, // agilní (1) x robustní (10)
+                "agility" => 3, // agilní (1) x robustní (10)
                 "waterfall" => 7, // vodopádové (1) x iterativní (10)
                 "usability" => 9, // v praxi využívané (1) x nevyužívané (10)
                 "enveloped" => 2008, // rok kdy byla hitem resp. vytvoření
@@ -544,7 +544,7 @@ class Methodologies {
             "parameters" => array(
                 "generality" => 3, // řízení projektů (1) x vývoj software (10)
                 "formality" => 10, // formální (1) x volné (10)
-                "agility" => 10, // agilní (1) x robustní (10)
+                "agility" => 1, // agilní (1) x robustní (10)
                 "waterfall" => 10, // vodopádové (1) x iterativní (10)
                 "usability" => 3, // v praxi využívané (1) x nevyužívané (10)
                 "enveloped" => 1985, // rok kdy byla hitem resp. vytvoření
@@ -1389,7 +1389,7 @@ class Methodologies {
                     "title" => "MS Visual Studio",
                     "desc" => "",
                 ),
-                /*array(
+                array(
                     "href" => "centre",
                     "title" => "Centre",
                     "desc" => "",
@@ -1398,7 +1398,7 @@ class Methodologies {
                     "href" => "cmm-assistant",
                     "title" => "CMMI Assistant",
                     "desc" => "",
-                ),*/
+                ),
             ),
             "similar" => array(
                 array(
