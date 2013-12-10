@@ -154,7 +154,7 @@
 
 
         <!-- Nástroje  -->
-        <div id="methodology-tools" class="part tools">
+        <div n:if="!empty($m['tools'])" id="methodology-tools" class="part tools">
             <h2>Nástroje</h2>
 
             <ul class="internal-link-list">
@@ -171,7 +171,7 @@
 
 
         <!-- Podobné -->
-        <div id="methodology-similar" class="part similar methodologies">
+        <div n:if="!empty($m['similar'])" id="methodology-similar" class="part similar methodologies">
             <h2>Podobné metodiky</h2>
 
             <ul class="internal-link-list">

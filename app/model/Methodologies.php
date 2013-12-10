@@ -1226,7 +1226,7 @@ class Methodologies {
                     "title" => "MS Visual Studio",
                     "desc" => "",
                 ),
-                array(
+                /*array(
                     "href" => "centre",
                     "title" => "Centre",
                     "desc" => "",
@@ -1235,7 +1235,7 @@ class Methodologies {
                     "href" => "cmm-assistant",
                     "title" => "CMMI Assistant",
                     "desc" => "",
-                ),
+                ),*/
             ),
             "similar" => array(
                 array(
