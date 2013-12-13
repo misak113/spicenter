@@ -1,7 +1,13 @@
 
 <ifModule mod_rewrite.c>
 	RewriteEngine on
-	RewriteBase /spicenter/
+	RewriteBase /spicenter
+  
+  
+  ####### Redirect na verzi domény s www #######
+  RewriteCond %{HTTP_HOST} ^my-events.cz
+  RewriteRule (.*) http://www.my-events.cz/spicenter/$1 [R=301,QSA,L]
+  
 	RewriteCond ${REQUEST_FILENAME} !-f
 	RewriteRule ^(.*)$ www/$1
 </ifModule>
