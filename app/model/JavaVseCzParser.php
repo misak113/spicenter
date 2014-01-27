@@ -92,7 +92,7 @@ class JavaVseCzParser {
 
     protected function getPage() {
         if (!($page = $this->cache->load($this->pageUri))) {
-            $page = @file_get_contents($this->pageUri);
+            $page = $this->file_get_contents($this->pageUri);
             $this->cache->save($this->pageUri, $page, array(
                 Cache::EXPIRE => '+ 1 day'
             ));
@@ -108,4 +108,15 @@ class JavaVseCzParser {
         return $array;
     }
 
+	function file_get_contents($URL)
+	{
+		$c = curl_init();
+		curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($c, CURLOPT_URL, $URL);
+		$contents = curl_exec($c);
+		curl_close($c);
+
+		if ($contents) return $contents;
+		else return FALSE;
+	}
 } 
