@@ -15,6 +15,7 @@ class SpiCenterPresenter extends BasePresenter
     protected function startup() {
         parent::startup();
 
+        // pro spočítání součtu prací v metodice či nástroji
         $this->template->registerHelper('count', function ($array, $key) {
             $count = 0;
             foreach ($array as $value) {
@@ -24,9 +25,6 @@ class SpiCenterPresenter extends BasePresenter
         });
     }
 
-    public function actionDefault() {
-        $this->redirect('SpiCenter:methodologies');
-    }
 
     /**
      * @param string $id
