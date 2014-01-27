@@ -1550,6 +1550,10 @@ class Methodologies {
                     "title" => "Bug tracking",
                     "href" => "http://en.wikipedia.org/wiki/Bug_tracking_system",
                 ),
+                array(
+                    "title" => "SPEM 2.0",
+                    "href" => "http://www.omg.org/spec/SPEM/2.0/",
+                ),
             ),
             "works" => array(
                 array(
@@ -1600,6 +1604,30 @@ class Methodologies {
                             "desc" => "Představení metodického rámce MFS od společnosti Microsoft. ",
                             "keywords" => "Microsoft Solutions Framework, metodický rámec, agilní vývoj, CMMI, týmový model, governance model, řízení projektu",
                         ),
+                        array(
+                            "title" => "SPEM 2.0 úvod, účel (kap. 6.2, 6.3)",
+                            "href" => "/resource/works/Hyblbauer_4it421_xhybj00_spem.pdf",
+                            "author" => "Jan Hyblbauer",
+                            "year" => "2013",
+                            "desc" => "Představení a specifika procesního metamodelu SPEM 2.0.",
+                            "keywords" => "SPEM, procesní metamodel, proces, UML, Enterprise Architect",
+                        ),
+                        array(
+                            "title" => "Přehled rolí v jednotlivých metodikách",
+                            "href" => "/resource/works/Langrova_4IT421_Langrova_Kamila_xlank10.pdf",
+                            "author" => "Bc. Kamila Langrová",
+                            "year" => "2013",
+                            "desc" => "Porovnání projektových rolí podle konkrétní metodiky – RUP, XP, OpenUP, MMSP, Scrum.",
+                            "keywords" => "RUP, Extrémní programování, Scrum, OpenUP, MMSP, projekt, projektová role, metodika",
+                        ),
+                        array(
+                            "title" => "SPEM 2.0 úvod, účel",
+                            "href" => "/resource/works/Matouskova_Matouskova_Sona_SPEM.pdf",
+                            "author" => "Matoušková Soňa",
+                            "year" => "2013",
+                            "desc" => "Práce popisuje účel a užití metamodelu SPEM 2.0",
+                            "keywords" => "SPEM, proces, UML, Object Management Group, modelování procesů, metamodel",
+                        ),
                     ),
                 ),
                 array(
@@ -1647,6 +1675,13 @@ class Methodologies {
                             "year" => "",
                             "desc" => "",
                         ),
+                        array(
+                            "title" => "SPEM",
+                            "href" => "http://www.slideshare.net/fdgiraldo/introduction-to-rup-spem",
+                            "author" => "",
+                            "year" => "",
+                            "desc" => "",
+                        ),
                     ),
                 ),
             ),
@@ -1666,6 +1701,10 @@ class Methodologies {
                 array(
                     "href" => "https://www.google.cz/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CC8QFjAA&url=http%3A%2F%2Fwww.lifesize.com%2F~%2Fmedia%2FDocuments%2FCase%2520Studies%2FCompanies%2520A%2520Through%2520L%2FActivision%2520Case%2520Study%2520EN.ashx&ei=4vakUrfMDYbW7Qaq6IHoDQ&usg=AFQjCNGBK2DN14mtqBhdJq-tDGkeI85c3Q&sig2=ip8grRxEB2-nKpL0D_t6vg&bvm=bv.57752919,d.ZGU",
                     "title" => "Case study popisující spolupráci vývojářů ve společnosti Activision",
+                ),
+                array(
+                    "href" => "http://www.omg.org/spec/SPEM/2.0/",
+                    "title" => "Case study SPEM",
                 ),
             ),
         ),
