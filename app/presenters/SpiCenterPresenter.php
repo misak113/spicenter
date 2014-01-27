@@ -11,19 +11,9 @@ class SpiCenterPresenter extends BasePresenter
     public $tools;
     /** @var JavaVseCzParser @inject */
     public $javaVseCzParser;
-    /** @var Identifier @inject */
-    public $identifier;
-
-    /** @var string @persistent */
-    public $xname = null;
 
     protected function startup() {
         parent::startup();
-        if (!($xname = $this->identifier->getIdentity())) {
-            $this->redirect('Identify:default');
-        }
-
-        $this->xname = $xname;
 
         $this->template->registerHelper('count', function ($array, $key) {
             $count = 0;
