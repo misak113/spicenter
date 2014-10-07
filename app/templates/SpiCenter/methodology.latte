@@ -42,7 +42,7 @@
                    style="left: {$link['l']}%; top: {$link['t']}%; width: {$link['w']}%; height: {$link['h']}%;"
                    {/if}
                    title="<small>Kliknutím otevřete práci</small> <span class='name'>{$link['title']}</span>{if isset($link['author']) && $link['author']} <span class='author'>{$link['author']}</span>{/if}{ifset $link['year']} <span class='year'>{$link['year']}</span>{/ifset}"
-                   href="{$link['href']}"></a>
+                   href="{$link['href']|urlExists}"></a>
             </div>
             <script type="text/javascript">
                 jQuery('.map .link').tooltip({ html: true });
@@ -116,7 +116,7 @@
             <h2>Specifikace</h2>
             <ul class="link-list">
                 <li n:foreach="$m['specifications'] as $spec" class="spec">
-                    <a href="{$spec['href']}"
+                    <a href="{$spec['href']|urlExists}"
                        target="_blank">
                         {$spec['title']}
                     </a>
@@ -137,7 +137,7 @@
                     <ul class="download-list">
                         <li n:foreach="$column['works'] as $work"
                             class="work">
-                            <a href="{$work['href']}"
+                            <a href="{$work['href']|urlExists}"
                                target="_blank"
                                class="name">{$work['title']}</a>
                             <span class="author" n:if="$work['author']">{$work['author']}</span>
@@ -194,7 +194,7 @@
             <h2>Projekty</h2>
             <ul class="link-list">
                 <li n:foreach="$m['projects'] as $project">
-                    <a href="{$project['href']}"
+                    <a href="{$project['href']|urlExists}"
                        target="_blank"
                        data-toggle="tooltip">
                         {$project['title']}

@@ -1,7 +1,10 @@
 <?php
 
+use Nette\Templating\FileTemplate;
+
 /**
  * Homepage presenter.
+ * @property FileTemplate $template
  */
 class SpiCenterPresenter extends BasePresenter
 {
@@ -23,6 +26,16 @@ class SpiCenterPresenter extends BasePresenter
             }
             return $count;
         });
+		$this->template->registerHelper('urlExists', function ($url) {
+			if (substr($url, 0, 7) == 'http://' || substr($url, 0, 8) == 'https://') {
+				return $url;
+			}
+			$filePath = $this->getContext()->parameters['wwwDir'] . $url;
+			if (!file_exists($filePath)) {
+				$url = 'error: ' . $url;
+			}
+			return $url;
+		});
     }
 
 

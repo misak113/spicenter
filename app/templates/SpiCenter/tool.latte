@@ -75,7 +75,7 @@
             <h2>Ke stažení</h2>
             <ul class="link-list">
                 <li n:foreach="$t['downloads'] as $download">
-                    <a href="{$download['href']}"
+                    <a href="{$download['href']|urlExists}"
                        target="_blank">
                         {$download['title']}
                     </a>
@@ -98,7 +98,7 @@
                     <ul class="download-list">
                         <li n:foreach="$column['works'] as $work"
                             class="work">
-                            <a href="{$work['href']}"
+                            <a href="{$work['href']|urlExists}"
                                target="_blank"
                                class="name">{$work['title']}</a>
                             <span class="author">{$work['author']}</span>
@@ -149,7 +149,7 @@
 
             <ul class="link-list">
                 <li n:foreach="$t['projects'] as $project">
-                    <a href="{$project['href']}"
+                    <a href="{$project['href']|urlExists}"
                        target="_blank">
                         {$project['title']}
                     </a>

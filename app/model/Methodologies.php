@@ -18,12 +18,12 @@ class Methodologies {
             ),
             "info" => array(
                 "Metodika vznikal v roce 1995 spojením přístupu Rational a metodiky Objectory Process. Díky své podrobnosti se původně řadila do kategorie rigorózních metodik. Od roku 2003 je však doplňována o agilní praktiky. RUP je deskriptivní a proto se často používá pro vývoj systémů založených na objektových a komponentových technologiích. Jedná se o komerční metodiku, ale existuje i volně dostupná verze Unified Process (UP). Ta byla posléze zeštíhlena a vznikla OpenUP.",
-                "Poslední verzí je RUPv7, který je postaven na konceptu Unified Method Architecture (UMA) http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Kufner-Obecny_koncept_UMA.pdf. ",
+                "Poslední verzí je RUPv7, který je postaven na konceptu Unified Method Architecture (UMA) /resource/works/Kufner-Obecny_koncept_UMA.pdf. ",
                 "RUP stanovuje klíčové praktiky a procesy a vede uživatele k vytváření pouze toho, co je opravdu potřeba, minimalizaci papírové dokumentace, poučení se z chyb, prověřování rizik, definovaní cílů a metrik pokroku.",
                 "Celkem je definováno 6 praktik:",
                 array(
                     "Iterativní a inkrementální vývoj",
-                    '<a href="http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Stas-Sprava_poziadaviek_ako_disciplina_RUP.pdf" target="_blank">Správa požadavků</a>',
+                    '<a href="/resource/works/Stas-Sprava_poziadaviek_ako_disciplina_RUP.pdf" target="_blank">Správa požadavků</a>',
                     "Použití komponentové architektury",
                     "Vizuální modelování",
                     "Kontrola a ověřování kvality",
@@ -34,7 +34,7 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "Tvorba podnikového modelu",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kocura-Business_modeling_podle_metodiky_RUP.pdf",
+                    "href" => "/resource/works/Kocura-Business_modeling_podle_metodiky_RUP.pdf",
                     "l" => 5,
                     "t" => 17,
                     "w" => 27,
@@ -42,7 +42,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Správa požadavků",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Noskova-RUP_-_requirements.pdf",
+                    "href" => "/resource/works/Noskova-RUP_-_requirements.pdf",
                     "l" => 5,
                     "t" => 25,
                     "w" => 27,
@@ -50,7 +50,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Analýza a návrh",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Soukup-4IT421_RUP_Analysis_and_Design.pdf",
+                    "href" => "/resource/works/Soukup-4IT421_RUP_Analysis_and_Design.pdf",
                     "l" => 5,
                     "t" => 33,
                     "w" => 27,
@@ -58,7 +58,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Implementace",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Bazala-RUP_Implementation_Bazala_Guhl.pdf",
+                    "href" => "/resource/works/Bazala-RUP_Implementation_Bazala_Guhl.pdf",
                     "l" => 5,
                     "t" => 40,
                     "w" => 27,
@@ -66,7 +66,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Testování",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kastner-xkasv10_RUP_test.pdf",
+                    "href" => "/resource/works/Kastner-xkasv10_RUP_test.pdf",
                     "l" => 5,
                     "t" => 48,
                     "w" => 27,
@@ -74,7 +74,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Nasazení",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Koroleva-RUP_disciplina_Deployment_xkorj35.pdf",
+                    "href" => "/resource/works/Koroleva-RUP_disciplina_Deployment_xkorj35.pdf",
                     "l" => 5,
                     "t" => 56,
                     "w" => 27,
@@ -82,7 +82,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Konfigurace a změny",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Majer-4IT421CMMIConfig.pdf",
+                    "href" => "/resource/works/Majer-4IT421CMMIConfig.pdf",
                     "l" => 5,
                     "t" => 64,
                     "w" => 27,
@@ -90,7 +90,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Řízení projektu",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hanusova-4IT421-_Seminarni_prace_-_Hanusova_Kuliskova.pdf",
+                    "href" => "/resource/works/Hanusova-4IT421-Seminarni_prace_Hanusova_Kuliskova.pdf",
                     "l" => 5,
                     "t" => 71,
                     "w" => 27,
@@ -98,7 +98,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Správa prostředí",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2013/01/RUP_Environment.pdf",
+                    "href" => "/resource/works/RUP_Environment.pdf",
                     "l" => 5,
                     "t" => 79,
                     "w" => 27,
@@ -130,63 +130,63 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Business modeling podle metodiky RUP",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kocura-Business_modeling_podle_metodiky_RUP.pdf",
+                            "href" => "/resource/works/Kocura-Business_modeling_podle_metodiky_RUP.pdf",
                             "author" => "Petr Kocura",
                             "year" => "2011",
                             "desc" => "Práce popisuje disciplínu Byznys modelování podle ve verzi 7 pro velké projekty. Detailněji popisuje proces modelování a jednotlivé metodické prvky – role, artefakty a související návody.",
                         ),
                         array(
                             "title" => "RUP disciplína Requirements",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Noskova-RUP_-_requirements.pdf",
+                            "href" => "/resource/works/Noskova-RUP_-_requirements.pdf",
                             "author" => "Michaela Nosková",
                             "year" => "2011",
                             "desc" => "Práce popisuje disciplínu Správa požadavků z manažerského pohledu. Práce charakterizuje úkoly, aktivity, artefakty a role, které se v této disciplíně využívají.",
                         ),
                         array(
                             "title" => "RUP disciplína Analysis & Design",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Roman-RUP_disciplina_Analysis__Design.pdf",
+                            "href" => "/resource/works/Roman-RUP_disciplina_Analysis_Design.pdf",
                             "author" => "Martin Roman",
                             "year" => "2011",
                             "desc" => "Práce popisuje disciplínu Analýza a návrh, uvádí jednotlivé role pracovníků, popisuje činnosti, které se mají vykonat a uvádí jaké by měly být výsledné produkty této fáze.",
                         ),
                         array(
                             "title" => "RUP – Disciplína implementation",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Bazala-RUP_Implementation_Bazala_Guhl.pdf",
+                            "href" => "/resource/works/Bazala-RUP_Implementation_Bazala_Guhl.pdf",
                             "author" => "Jan Bazala",
                             "year" => "2012",
                             "desc" => "Práce popisuje role, činnosti, produkty a návody disciplíny Implementace. Dále porovnává využití této disciplíny velkými a malými projekty.",
                         ),
                         array(
                             "title" => "RUP - disciplína Test",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kucera-KUCERA-RUP-TEST.pdf",
+                            "href" => "/resource/works/Kucera-KUCERA-RUP-TEST.pdf",
                             "author" => "Antonín Kučera",
                             "year" => "2011",
                             "desc" => "Práce se detailně zabývá disciplínou Testování, uvádí jednotlivé role pracovníků, detailněji specifikuje úkoly, které mají být řešeny a jednotlivé vstupy a výstupy.",
                         ),
                         array(
                             "title" => "RUP – disciplína Deployment",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Koroleva-RUP_disciplina_Deployment_xkorj35.pdf",
+                            "href" => "/resource/works/Koroleva-RUP_disciplina_Deployment_xkorj35.pdf",
                             "author" => "Julie Koroleva",
                             "year" => "2011",
                             "desc" => "Práce se detailně zabývá disciplínou Nasazení, uvádí jednotlivé role pracovníků, detailněji specifikuje úkoly, které mají být řešeny a jednotlivé vstupy a výstupy.",
                         ),
                         array(
                             "title" => "RUP disciplína Configuration & Change Management",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Majer-4IT421CMMIConfig.pdf",
+                            "href" => "/resource/works/Majer-4IT421CMMIConfig.pdf",
                             "author" => "Patrik Majer, Filip Mikschik",
                             "year" => "2012",
                             "desc" => "Práce charakterizuje disciplínu Konfigurace a změny, jednotlivé role pracovníků, činnosti, produkty a návody.",
                         ),
                         array(
                             "title" => "RUP disciplína Project management",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hanusova-4IT421-_Seminarni_prace_-_Hanusova_Kuliskova.pdf",
+                            "href" => "/resource/works/Hanusova-4IT421-Seminarni_prace_Hanusova_Kuliskova.pdf",
                             "author" => "Lucie Hanusová, Romana Kulíšková",
                             "year" => "2012",
                             "desc" => "Práce popisuje disciplínu řízení projektu, životní cyklus projektu, činnosti, které by měly být vykonávány a výhody a nevýhody metodiky RUP.",
                         ),
                         array(
                             "title" => "RUP disciplína Environment",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2013/01/RUP_Environment.pdf",
+                            "href" => "/resource/works/RUP_Environment.pdf",
                             "author" => "Richard Günzl",
                             "year" => "2012",
                             "desc" => "Práce charakterizuje disciplínu Enviroment, jednotlivé role pracovníků, činnosti, produkty, návody a rozdíly v disciplíně při aplikaci na malé projekty.",
@@ -198,49 +198,49 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Správa požiadaviek ako disciplína RUP",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Stas-Sprava_poziadaviek_ako_disciplina_RUP.pdf",
+                            "href" => "/resource/works/Stas-Sprava_poziadaviek_ako_disciplina_RUP.pdf",
                             "author" => "Jakub Staš",
                             "year" => "2011",
                             "desc" => "Práce shrnuje manažerské shrnutí disciplíny správa požadavků. Stručný popis disciplíny, popis významu požadavků, dopady na use case modelování, popis cyklu správy požadavků a popis rolí a artefaktů.",
                         ),
                         array(
                             "title" => "RUP disciplína Deployment",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Sich-4IT421_xsicj03_RUP_deployement.pdf",
+                            "href" => "/resource/works/Sich-4IT421_xsicj03_RUP_deployement.pdf",
                             "author" => "Jan Šich",
                             "year" => "2011",
                             "desc" => "Práce se detailně zabývá disciplínou Nasazení, uvádí jednotlivé role pracovníků a detailněji specifikuje úkoly, které mají být řešeny.",
                         ),
                         array(
                             "title" => "RUP – disciplína Analysis & Design",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Soukup-4IT421_RUP_Analysis_and_Design.pdf",
+                            "href" => "/resource/works/Soukup-4IT421_RUP_Analysis_and_Design.pdf",
                             "author" => "Petr Soukup",
                             "year" => "2011",
                             "desc" => "Práce se zaměřuje na detailní popis procesu disciplíny Analýza a Design v metodice Rational Unified Process ver.: 7.5.1 ve variantě metodiky pro menší projekty.",
                         ),
                         array(
                             "title" => "RUP disciplína Test",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Kastner-xkasv10_RUP_test.pdf",
+                            "href" => "/resource/works/Kastner-xkasv10_RUP_test.pdf",
                             "author" => "Vojtěch Kastner",
                             "year" => "2011",
                             "desc" => "Práce je zaměřena na praktické přiblížení disciplíny Testování, kterou teoreticky popisuje práce RUP - disciplína Test (Antonín Kučera), 2011",
                         ),
                         array(
                             "title" => "RUP: Service oriented modeling architecture",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011RUP-Neumann-4IT421_RUP_-_SOMA_v5.pdf",
+                            "href" => "/resource/works/Neumann-4IT421_RUP_-_SOMA_v5.pdf",
                             "author" => "Marek Jansa, Martin Neumann",
                             "year" => "2011",
                             "desc" => "Práce podrobně rozebírá metodu RUP – Service-Oriented Modeling and Architecture (SOMA). Metodiku vymezuje, rozebírá jednotlivé fáze SOMA a popisuje činnosti a podčinnosti. V závěru je stručný výčet rolí.",
                         ),
                         array(
                             "title" => "RUP pro malé a velké projekty – Rozdíly",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Pacourek-RUP_Rozdily_Pacourek_Nespor.pdf",
+                            "href" => "/resource/works/Pacourek-RUP_Rozdily_Pacourek_Nespor.pdf",
                             "author" => "Jan Nešpor, Kryštof Pacourek",
                             "year" => "2012",
                             "desc" => "Práce srovnává využití metodiky RUP pro malé a velké projekty. Pro názornost práce obsahuje reálné využití metodiky v prostředí malého projektu.",
                         ),
                         array(
                             "title" => "Popis konceptu Unified Method Architecture (UMA) a jeho použití v RUPv.7",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Kufner-Obecny_koncept_UMA.pdf",
+                            "href" => "/resource/works/Kufner-Obecny_koncept_UMA.pdf",
                             "author" => "Jiří Kűfner, Ondřej Andr",
                             "year" => "2012",
                             "desc" => "Práce uvádí vznik a popis konceptu UMA. Dále jsou definovány jednotlivé elementy a klíčové vlastnosti. Práce obsahuje několik příkladů a také porovnání RUPv7 s RUPv2003.",
@@ -319,7 +319,7 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "Lean Software Development",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Filipcik-Seminarni_prace_Lean_Software_Development.pdf",
+                    "href" => "/resource/works/Filipcik-Seminarni_prace_Lean_Software_Development.pdf",
                     "l" => 5,
                     "t" => 5,
                     "w" => 90,
@@ -343,7 +343,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Lean Software Development",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Filipcik-Seminarni_prace_Lean_Software_Development.pdf",
+                            "href" => "/resource/works/Filipcik-Seminarni_prace_Lean_Software_Development.pdf",
                             "author" => "Jan Filipčík",
                             "year" => "2011",
                             "desc" => "Úvod do problematiky Lean SW development",
@@ -390,7 +390,7 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "Princip - Lean startup",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Hejl-LeanStartup-xhejd08-xjerm11.pdf",
+                    "href" => "/resource/works/Hejl-LeanStartup-xhejd08-xjerm11.pdf",
                     "l" => 5,
                     "t" => 5,
                     "w" => 90,
@@ -410,7 +410,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Lean Startup – Revoluční přístup v agilních metodikách",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Hejl-LeanStartup-xhejd08-xjerm11.pdf",
+                            "href" => "/resource/works/Hejl-LeanStartup-xhejd08-xjerm11.pdf",
                             "author" => "Daniel Hejl",
                             "year" => "2011",
                             "desc" => "Průvodce revoluční metodikou na podporu startupů",
@@ -462,7 +462,7 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "Disciplined agile delivery",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Koudelka-4it421_DAD.pdf",
+                    "href" => "/resource/works/Koudelka-4it421_DAD.pdf",
                     "l" => 5,
                     "t" => 5,
                     "w" => 90,
@@ -486,14 +486,14 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Disciplined Agile Delivery (DAD) framework",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/dad.pdf",
+                            "href" => "/resource/works/dad.pdf",
                             "author" => "Radim Klepetko",
                             "year" => "2011",
                             "desc" => "Základní informace o DAD a podrobný popis jeho principů",
                         ),
                         array(
                             "title" => "Disciplined Agile Delivery (DAD) framework",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Podpora-DAD-v-RTC.pdf",
+                            "href" => "/resource/works/Podpora-DAD-v-RTC.pdf",
                             "author" => "Tomáš Svoboda",
                             "year" => "2011",
                             "desc" => "Spojení metodiky DAD a IBM platformy Jazz",
@@ -505,7 +505,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Disciplined Agile Delivery",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Koudelka-4it421_DAD.pdf",
+                            "href" => "/resource/works/Koudelka-4it421_DAD.pdf",
                             "author" => "Tomáš Koudelka, Ondřej Sklenář",
                             "year" => "2012",
                             "desc" => "Podrobný popis metodiky DAD",
@@ -558,7 +558,7 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "Kanban a jeho využití při vývoji SW",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Filipcik-xfilz02-kanban.pdf",
+                    "href" => "/resource/works/Filipcik-xfilz02-kanban.pdf",
                     "l" => 5,
                     "t" => 5,
                     "w" => 90,
@@ -586,7 +586,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Kanban a jeho využití při vývoji SW",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Filipcik-xfilz02-kanban.pdf",
+                            "href" => "/resource/works/Filipcik-xfilz02-kanban.pdf",
                             "author" => "Zdeněk Filipčík",
                             "year" => "2011",
                             "desc" => "Popis Kanbanu a jeho implementace na SW projekty",
@@ -598,7 +598,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Prehľad a porovnanie nástrojov metodiky Kanban",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Podpora-DAD-v-RTC.pdf",
+                            "href" => "/resource/works/Podpora-DAD-v-RTC.pdf",
                             "author" => "Richard Nagrant",
                             "year" => "2011",
                             "desc" => "Spojení metodiky DAD a IBM platformy Jazz",
@@ -610,14 +610,14 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Porovnání Scrum a Kanban",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Uridil-xurim00.pdf",
+                            "href" => "/resource/works/Uridil-xurim00.pdf",
                             "author" => "Martin Uřídil",
                             "year" => "2012",
                             "desc" => "Práce shrnuje obě metodiky a porovnává rozdíly v jejich pojetí vývoje SW ",
                         ),
                         array(
                             "title" => "Kanban a jeho využití při vývoji softwaru",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Krejci-Kanban_a_jeho_vyuziti_pri_vyvoji_softwaru_xkrej44.pdf",
+                            "href" => "/resource/works/Krejci-Kanban_a_jeho_vyuziti_pri_vyvoji_softwaru_xkrej44.pdf",
                             "author" => "Jiří Krejčí",
                             "year" => "2011",
                             "desc" => "Představení metodiky Kanban a její porovnání z metodikou Scrum",
@@ -689,7 +689,7 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Podpora-DAD-v-RTC.pdf",
+                    "href" => "/resource/works/Podpora-DAD-v-RTC.pdf",
                     "l" => 5,
                     "t" => 16,
                     "w" => 11,
@@ -709,14 +709,14 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "User story požadavky dle XP",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Jesuta-SP_User_Stories_Martin_Jesuta.pdf",
+                            "href" => "/resource/works/Jesuta-SP_User_Stories_Martin_Jesuta.pdf",
                             "author" => "Martin Ješuta",
                             "year" => "2011",
                             "desc" => "Praktické rady ke tvorbě a dokumentování User strories",
                         ),
                         array(
                             "title" => "User story (požadavky dle XP)",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Podpora-DAD-v-RTC.pdf",
+                            "href" => "/resource/works/Podpora-DAD-v-RTC.pdf",
                             "author" => "Jakub Resl",
                             "year" => "2011",
                             "desc" => "Charakteristika, jak psát dobré user stories, formát zápisu, odhadování",
@@ -728,14 +728,14 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Prehľad a porovnanie nástrojovna podporu metodiky XP",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Slapka-orovnanie_nastrojov_XP.pdf",
+                            "href" => "/resource/works/Slapka-Porovnanie_nastrojov_XP.pdf",
                             "author" => "Miroslav Šlapka",
                             "year" => "2011",
                             "desc" => "Přehled nástrojů pro podporu metodiky XP",
                         ),
                         array(
                             "title" => "Přehled a porovnání nástrojů na podporu metodiky Scrum a XP",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Cizek-Nastroje_na_podporu_metodiky_SCRUM_a_XP.pdf",
+                            "href" => "/resource/works/Cizek-Nastroje_na_podporu_metodiky_SCRUM_a_XP.pdf",
                             "author" => "Michal Čížek",
                             "year" => "2011",
                             "desc" => "Přehled a porovnání nástrojů pro metodiky XP a Scrum",
@@ -827,21 +827,21 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Agilní metodiky pro distribuované projekty",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Palus-xpalm29-agilne_metodiky_v_distribuovanych_projektech.pdf",
+                            "href" => "/resource/works/Palus-xpalm29-agilne_metodiky_v_distribuovanych_projektech.pdf",
                             "author" => "Matej Paluš",
                             "year" => "2011",
                             "desc" => "Problematika distribuovaných projektů a možnosti využití distribuovaného Scrumu",
                         ),
                         array(
                             "title" => "Využití metodiky Scrum pro velké projekty - Scrum of Scrums pro Energy Software",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Host-SCRUM_pro_velke_projekty_Daniel_Host.pdf",
+                            "href" => "/resource/works/Host-SCRUM_pro_velke_projekty_Daniel_Host.pdf",
                             "author" => "Daniel Host",
                             "year" => "2011",
                             "desc" => "Případová studie využití Metodiky Scrum na velkých projektech ve firmě Energy Software",
                         ),
                         array(
                             "title" => "Využití metodiky Scrum pro velké projekty – Scrum of Scrums",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Krena-ScrumOfScrums.pdf",
+                            "href" => "/resource/works/Krena-ScrumOfScrums.pdf",
                             "author" => "Martin Křena",
                             "year" => "2011",
                             "desc" => "Práce ukazuju adaptaci jednotlivých fází životního cyklu Scrumu na velké projekty",
@@ -853,7 +853,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Přehled a porovnání nástrojů na podporu metodiky Scrum aXP",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Cizek-Nastroje_na_podporu_metodiky_SCRUM_a_XP.pdf",
+                            "href" => "/resource/works/Cizek-Nastroje_na_podporu_metodiky_SCRUM_a_XP.pdf",
                             "author" => "Michal Čížek",
                             "year" => "2011",
                             "desc" => "Přehled a porovnání nástrojů pro metodiky XP a Scrum",
@@ -865,7 +865,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Porovnání Scrum a Kanban",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Uridil-xurim00.pdf",
+                            "href" => "/resource/works/Uridil-xurim00.pdf",
                             "author" => "Martin Uřídil",
                             "year" => "2012",
                             "desc" => "Práce shrnuje obě metodiky a porovnává rozdíly v jejich pojetí vývoje SW ",
@@ -947,7 +947,7 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Tvrdikova-planning_poker_xtvrl05.pdf",
+                    "href" => "/resource/works/Tvrdikova-planning_poker_xtvrl05.pdf",
                     "l" => 5,
                     "t" => 5,
                     "w" => 90,
@@ -971,7 +971,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Planning poker",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Tvrdikova-planning_poker_xtvrl05.pdf",
+                            "href" => "/resource/works/Tvrdikova-planning_poker_xtvrl05.pdf",
                             "author" => "Lucie Tvrdíková",
                             "year" => "2011",
                             "desc" => "Práce představuje metodu Planning poker a postup při její realizaci",
@@ -983,7 +983,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Planning poker",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Planning-poker-Danek.pdf",
+                            "href" => "/resource/works/Planning-poker-Danek.pdf",
                             "author" => "Michal Daněk",
                             "year" => "2011",
                             "desc" => "Popis metody, přehled SW nástrojů na její podporu",
@@ -1061,7 +1061,7 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "OPD",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Paulech_CMMI_OPF_OPD_OT.pdf",
+                    "href" => "/resource/works/Paulech_CMMI_OPF_OPD_OT.pdf",
                     "l" => 30,
                     "t" => 45,
                     "w" => 20,
@@ -1069,7 +1069,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "OT",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Paulech_CMMI_OPF_OPD_OT.pdf",
+                    "href" => "/resource/works/Paulech_CMMI_OPF_OPD_OT.pdf",
                     "l" => 30,
                     "t" => 66,
                     "w" => 20,
@@ -1077,7 +1077,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "OPP",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2013/01/stross_CMMI_DEV_OPP_OPM.pdf",
+                    "href" => "/resource/works/stross_CMMI_DEV_OPP_OPM.pdf",
                     "l" => 53,
                     "t" => 24,
                     "w" => 20,
@@ -1085,7 +1085,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "OPM",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2013/01/stross_CMMI_DEV_OPP_OPM.pdf",
+                    "href" => "/resource/works/stross_CMMI_DEV_OPP_OPM.pdf",
                     "l" => 75,
                     "t" => 24,
                     "w" => 20,
@@ -1093,7 +1093,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "PI",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Kovar-CMMI_Productintegration.pdf",
+                    "href" => "/resource/works/Kovar-CMMI_Productintegration.pdf",
                     "l" => 30,
                     "t" => 77,
                     "w" => 20,
@@ -1101,7 +1101,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "PMC",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Hendrich-xhenm07_project_monitoring_and_control.pdf",
+                    "href" => "/resource/works/Hendrich-xhenm07_project_monitoring_and_control.pdf",
                     "l" => 8,
                     "t" => 45,
                     "w" => 20,
@@ -1109,7 +1109,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "PP",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Matas-xmatr21_CMMI_project_planning.pdf",
+                    "href" => "/resource/works/Matas-xmatr21_CMMI_project_planning.pdf",
                     "l" => 8,
                     "t" => 56,
                     "w" => 20,
@@ -1117,7 +1117,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "PPQA",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Rumplikova-CMMI_PPQA.pdf",
+                    "href" => "/resource/works/Rumplikova-CMMI_PPQA.pdf",
                     "l" => 8,
                     "t" => 66,
                     "w" => 20,
@@ -1125,7 +1125,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "QPM",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Verner-zajisteni_kvality_cmmi.pdf",
+                    "href" => "/resource/works/Verner-zajisteni_kvality_cmmi.pdf",
                     "l" => 53,
                     "t" => 34,
                     "w" => 20,
@@ -1133,7 +1133,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "RD",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2013/01/xsubz02.pdf",
+                    "href" => "/resource/works/xsubz02.pdf",
                     "l" => 30,
                     "t" => 87,
                     "w" => 20,
@@ -1141,7 +1141,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "RM",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Vachalec-CMMIReqMan.pdf",
+                    "href" => "/resource/works/Vachalec-CMMIReqMan.pdf",
                     "l" => 8,
                     "t" => 77,
                     "w" => 20,
@@ -1149,7 +1149,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "RSKM",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Karkoskova-CMMI_RSKM_Karkoskova_xkars05.pdf",
+                    "href" => "/resource/works/Karkoskova-CMMI_RSKM_Karkoskova_xkars05.pdf",
                     "l" => 53,
                     "t" => 45,
                     "w" => 20,
@@ -1157,7 +1157,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "TS",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hrdinka-CMMI_Technical_Solution___Hrdinka__Taborsky.pdf",
+                    "href" => "/resource/works/Hrdinka-CMMI_Technical_Solution___Hrdinka__Taborsky.pdf",
                     "l" => 53,
                     "t" => 56,
                     "w" => 20,
@@ -1165,7 +1165,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "VAL",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Mlejnek-xmlep03_4it421_cmmi_validation.pdf",
+                    "href" => "/resource/works/Mlejnek-xmlep03_4it421_cmmi_validation.pdf",
                     "l" => 53,
                     "t" => 66,
                     "w" => 20,
@@ -1173,7 +1173,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "VER",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Andilova-CMMI_DEV_Verification_xanda07.pdf",
+                    "href" => "/resource/works/Andilova-CMMI_DEV_Verification_xanda07.pdf",
                     "l" => 53,
                     "t" => 77,
                     "w" => 20,
@@ -1181,7 +1181,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "OPF",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Paulech_CMMI_OPF_OPD_OT.pdf",
+                    "href" => "/resource/works/Paulech_CMMI_OPF_OPD_OT.pdf",
                     "l" => 30,
                     "t" => 56,
                     "w" => 20,
@@ -1220,7 +1220,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "CMMI for dev 1.3 GG and GP",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/xfeit03-CMMI_for_Dev_v_1_3-GG_and_GP-paper.pdf",
+                            "href" => "/resource/works/xfeit03-CMMI_for_Dev_v_1_3-GG_and_GP-paper.pdf",
                             "author" => "Tomáš Feige",
                             "year" => "2011",
                             "desc" => "",
@@ -1228,7 +1228,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "Generické cíle a praktiky",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Polakovic-genericke-cile-a-praktiky-CMMI.pdf",
+                            "href" => "/resource/works/Polakovic-genericke-cile-a-praktiky-CMMI.pdf",
                             "author" => "Robert Polakovič",
                             "year" => "2011",
                             "desc" => "",
@@ -1241,7 +1241,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "CMMI OPF OPD OT",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Paulech_CMMI_OPF_OPD_OT.pdf",
+                            "href" => "/resource/works/Paulech_CMMI_OPF_OPD_OT.pdf",
                             "author" => "Bc. Matej Paulech",
                             "year" => "2012",
                             "desc" => "",
@@ -1249,7 +1249,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "CMMI dev OPP OPM",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2013/01/stross_CMMI_DEV_OPP_OPM.pdf",
+                            "href" => "/resource/works/stross_CMMI_DEV_OPP_OPM.pdf",
                             "author" => "Pavel Štross",
                             "year" => "2012",
                             "desc" => "",
@@ -1257,7 +1257,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "CMMI Product integration",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Kovar-CMMI_Productintegration.pdf",
+                            "href" => "/resource/works/Kovar-CMMI_Productintegration.pdf",
                             "author" => "Martin Kovář",
                             "year" => "2012",
                             "desc" => "",
@@ -1265,7 +1265,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "Project monitoring and control",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Hendrich-xhenm07_project_monitoring_and_control.pdf",
+                            "href" => "/resource/works/Hendrich-xhenm07_project_monitoring_and_control.pdf",
                             "author" => "Michal Hendrich",
                             "year" => "2011",
                             "desc" => "",
@@ -1273,7 +1273,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "CMMI Project planning",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Matas-xmatr21_CMMI_project_planning.pdf",
+                            "href" => "/resource/works/Matas-xmatr21_CMMI_project_planning.pdf",
                             "author" => "Radek Matas",
                             "year" => "2011",
                             "desc" => "",
@@ -1281,7 +1281,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "CMMI PPQA",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Rumplikova-CMMI_PPQA.pdf",
+                            "href" => "/resource/works/Rumplikova-CMMI_PPQA.pdf",
                             "author" => "Blanka Rumplíková",
                             "year" => "2011",
                             "desc" => "",
@@ -1289,7 +1289,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "Zajištění kvality CMMI",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Verner-zajisteni_kvality_cmmi.pdf",
+                            "href" => "/resource/works/Verner-zajisteni_kvality_cmmi.pdf",
                             "author" => "Tomáš Verner",
                             "year" => "2011",
                             "desc" => "",
@@ -1297,7 +1297,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "Requirements Development",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2013/01/xsubz02.pdf",
+                            "href" => "/resource/works/xsubz02.pdf",
                             "author" => "Zdeněk Šubr",
                             "year" => "2012",
                             "desc" => "",
@@ -1305,7 +1305,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "Requirements Management",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Vachalec-CMMIReqMan.pdf",
+                            "href" => "/resource/works/Vachalec-CMMIReqMan.pdf",
                             "author" => "Vachalec Vladan",
                             "year" => "2012",
                             "desc" => "",
@@ -1313,7 +1313,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "CMMI Risk Management",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Karkoskova-CMMI_RSKM_Karkoskova_xkars05.pdf",
+                            "href" => "/resource/works/Karkoskova-CMMI_RSKM_Karkoskova_xkars05.pdf",
                             "author" => "Soňa Karkošková",
                             "year" => "2011",
                             "desc" => "",
@@ -1321,7 +1321,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "CMMI Technical Solution",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hrdinka-CMMI_Technical_Solution___Hrdinka__Taborsky.pdf",
+                            "href" => "/resource/works/Hrdinka-CMMI_Technical_Solution___Hrdinka__Taborsky.pdf",
                             "author" => "Jan Hrdinka, Tomáš Táborský",
                             "year" => "2012",
                             "desc" => "",
@@ -1329,7 +1329,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "CMMI Validation",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/Mlejnek-xmlep03_4it421_cmmi_validation.pdf",
+                            "href" => "/resource/works/Mlejnek-xmlep03_4it421_cmmi_validation.pdf",
                             "author" => "Bc. Petr Mlejnek",
                             "year" => "2011",
                             "desc" => "",
@@ -1337,7 +1337,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "CMMI dev Verification",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Andilova-CMMI_DEV_Verification_xanda07.pdf",
+                            "href" => "/resource/works/Andilova-CMMI_DEV_Verification_xanda07.pdf",
                             "author" => "Bc. Alexandra Andiľová",
                             "year" => "2012",
                             "desc" => "",
@@ -1469,7 +1469,7 @@ class Methodologies {
             "principleLinks" => array(
                 array(
                     "title" => "Nástroj na sledování chyb",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011O-Zmatlik-nastrojeNaSledovaniChyb.pdf",
+                    "href" => "/resource/works/Zmatlik-nastrojeNaSledovaniChyb.pdf",
                     "l" => 0,
                     "t" => 1,
                     "w" => 50,
@@ -1477,7 +1477,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Implementace RUP",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hanus-4it421_hanus_meszaros.pdf",
+                    "href" => "/resource/works/Hanus-4it421_hanus_meszaros.pdf",
                     "l" => 1,
                     "t" => 29,
                     "w" => 27,
@@ -1485,7 +1485,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "MSF",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Smahel-smahel_MSF.pdf",
+                    "href" => "/resource/works/Smahel-smahel_MSF.pdf",
                     "l" => 1,
                     "t" => 85,
                     "w" => 63,
@@ -1493,7 +1493,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "PC games",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011O-Kotlaba-Metodiky_pro_vyvoj_pocitacovych_her.pdf",
+                    "href" => "/resource/works/Kotlaba-Metodiky_pro_vyvoj_pocitacovych_her.pdf",
                     "l" => 30,
                     "t" => 33,
                     "w" => 69,
@@ -1501,7 +1501,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "Bugzilla",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011O-Zmatlik-nastrojeNaSledovaniChyb.pdf",
+                    "href" => "/resource/works/Zmatlik-nastrojeNaSledovaniChyb.pdf",
                     "l" => 6,
                     "t" => 53,
                     "w" => 48,
@@ -1509,7 +1509,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Smahel-smahel_MSF.pdf",
+                    "href" => "/resource/works/Smahel-smahel_MSF.pdf",
                     "l" => 50,
                     "t" => 4,
                     "w" => 50,
@@ -1517,7 +1517,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Smahel-smahel_MSF.pdf",
+                    "href" => "/resource/works/Smahel-smahel_MSF.pdf",
                     "l" => 54,
                     "t" => 19,
                     "w" => 29,
@@ -1525,7 +1525,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hanus-4it421_hanus_meszaros.pdf",
+                    "href" => "/resource/works/Hanus-4it421_hanus_meszaros.pdf",
                     "l" => 57,
                     "t" => 60,
                     "w" => 33,
@@ -1533,7 +1533,7 @@ class Methodologies {
                 ),
                 array(
                     "title" => "",
-                    "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hanus-4it421_hanus_meszaros.pdf",
+                    "href" => "/resource/works/Hanus-4it421_hanus_meszaros.pdf",
                     "l" => 74,
                     "t" => 78,
                     "w" => 23,
@@ -1561,7 +1561,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Porovnání nástrojů na sledování chyb",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011O-Zmatlik-nastrojeNaSledovaniChyb.pdf",
+                            "href" => "/resource/works/Zmatlik-nastrojeNaSledovaniChyb.pdf",
                             "author" => "Rostislav Zmátlík",
                             "year" => "2011",
                             "desc" => "Srovnání tří nástrojů na sledování chyb.",
@@ -1569,7 +1569,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "Srovnání issue a bug tracking komerčních nástrojů",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011O-BugTracking.pdf",
+                            "href" => "/resource/works/BugTracking.pdf",
                             "author" => "Jakub Houžvička",
                             "year" => "2011",
                             "desc" => "Metodické srovnání tří komerčních Bug tracking řešení. ",
@@ -1582,7 +1582,7 @@ class Methodologies {
                     "works" => array(
                         array(
                             "title" => "Metodiky pro vývoj počítačových her",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/10/2011O-Kotlaba-Metodiky_pro_vyvoj_pocitacovych_her.pdf",
+                            "href" => "/resource/works/Kotlaba-Metodiky_pro_vyvoj_pocitacovych_her.pdf",
                             "author" => "Josef Kotlaba",
                             "year" => "2011",
                             "desc" => "Popis metodik pro vývoj počítačových her.",
@@ -1590,7 +1590,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "Implementace metodiky Rational Unified Process v systému Unicorn Universe",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Hanus-4it421_hanus_meszaros.pdf",
+                            "href" => "/resource/works/Hanus-4it421_hanus_meszaros.pdf",
                             "author" => "Mészáros Maroš, Oldřich Hanuš",
                             "year" => "2012",
                             "desc" => "Vývoj SW dle RUP v Unicorn Universe",
@@ -1598,7 +1598,7 @@ class Methodologies {
                         ),
                         array(
                             "title" => "Microsoft Solutions Framework ",
-                            "href" => "http://filipmartin.cz/4IT421/wp-content/uploads/2012/12/Smahel-smahel_MSF.pdf",
+                            "href" => "/resource/works/Smahel-smahel_MSF.pdf",
                             "author" => "Martin Šmahel",
                             "year" => "2012",
                             "desc" => "Představení metodického rámce MFS od společnosti Microsoft. ",
